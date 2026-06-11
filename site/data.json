@@ -3474,6 +3474,1100 @@
      "exposure_rationale": "其他基层工作多为体力劳动，AI影响极小。"
     }
    ]
+  },
+  "PAK": {
+   "name_cn": "巴基斯坦",
+   "name_en": "Pakistan",
+   "title": "巴基斯坦职业地图",
+   "description": "本工具可视化展示了巴基斯坦<b>40个职业分类</b>的就业分布数据，涵盖约<b>7761万</b>就业人口。数据来源为国际劳工组织（ILO）ILOSTAT数据库，基于巴基斯坦统计局（PBS）《劳动力调查》（Labour Force Survey）。职业分类采用ISCO-08标准（2位亚大类级别），2025年波次职业未分类比例极低（约0.04%）；就业趋势为劳动力调查微观数据2020→2025年各职业真实份额变化。每个方块的<b>面积</b>与就业人数成正比，<b>颜色</b>展示所选指标。",
+   "source": "数据来源：ILO ILOSTAT / 巴基斯坦PBS劳动力调查 2025",
+   "source_links": [
+    {
+     "label": "ILO ILOSTAT 就业人数×职业（ISCO-08 2位，巴基斯坦）",
+     "url": "https://rshiny.ilo.org/dataexplorer56/?lang=en&id=EMP_TEMP_SEX_OC2_NB_A&ref_area=PAK"
+    },
+    {
+     "label": "巴基斯坦统计局（PBS）劳动力调查",
+     "url": "https://www.pbs.gov.pk/lfs-publications"
+    },
+    {
+     "label": "ILOSTAT SDMX API 原始数据（CSV）",
+     "url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/PAK.A..SEX_T.?format=csv&startPeriod=2015"
+    }
+   ],
+   "data_year": "2025",
+   "total_jobs": 77608612,
+   "occ_count": 40,
+   "education_system": {
+    "name": "学历要求（巴基斯坦教育体系）",
+    "levels": [
+     [
+      "无正规学历（对标：无正式教育）",
+      "No formal education",
+      0
+     ],
+     [
+      "小学/初中（对标：初中及以下）",
+      "Primary/Middle (Class 1-8)",
+      1
+     ],
+     [
+      "中学/高中（对标：高中文凭）",
+      "Matric/Intermediate (SSC/HSSC)",
+      2
+     ],
+     [
+      "文凭/技术证书（对标：职业教育证书）",
+      "Diploma/Technical Certificate (DAE)",
+      3
+     ],
+     [
+      "学士学位（对标：学士学位）",
+      "Bachelor's Degree (BA/BSc/BS)",
+      4
+     ],
+     [
+      "硕士学位（对标：硕士学位）",
+      "Master's Degree (MA/MSc/MPhil)",
+      5
+     ],
+     [
+      "博士/专业学位（对标：博士学位）",
+      "Ph.D./Professional Degree (MBBS/LLB)",
+      6
+     ]
+    ]
+   },
+   "occupations": [
+    {
+     "title": "首席执行官/高级官员/立法者",
+     "title_en": "Chief Executives/Senior Officials/Legislators",
+     "code": "11",
+     "category": "1-管理人员",
+     "jobs": 144643,
+     "share_change": -0.08,
+     "share_change_desc": "2020-2025",
+     "education": "硕士学位（对标：硕士学位）",
+     "education_idx": 5,
+     "exposure": 7,
+     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。"
+    },
+    {
+     "title": "行政和商务经理",
+     "title_en": "Administrative & Commercial Managers",
+     "code": "12",
+     "category": "1-管理人员",
+     "jobs": 184408,
+     "share_change": -0.17,
+     "share_change_desc": "2020-2025",
+     "education": "学士学位（对标：学士学位）",
+     "education_idx": 4,
+     "exposure": 7,
+     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。"
+    },
+    {
+     "title": "生产和专业服务经理",
+     "title_en": "Production & Specialized Services Managers",
+     "code": "13",
+     "category": "1-管理人员",
+     "jobs": 728012,
+     "share_change": -0.01,
+     "share_change_desc": "2020-2025",
+     "education": "学士学位（对标：学士学位）",
+     "education_idx": 4,
+     "exposure": 6,
+     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。"
+    },
+    {
+     "title": "酒店/零售及其他服务经理",
+     "title_en": "Hospitality/Retail/Other Services Managers",
+     "code": "14",
+     "category": "1-管理人员",
+     "jobs": 729905,
+     "share_change": 0.27,
+     "share_change_desc": "2020-2025",
+     "education": "文凭/技术证书（对标：职业教育证书）",
+     "education_idx": 3,
+     "exposure": 5,
+     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。"
+    },
+    {
+     "title": "科学和工程专业人员",
+     "title_en": "Science & Engineering Professionals",
+     "code": "21",
+     "category": "2-专业人员",
+     "jobs": 148953,
+     "share_change": -0.07,
+     "share_change_desc": "2020-2025",
+     "education": "硕士学位（对标：硕士学位）",
+     "education_idx": 5,
+     "exposure": 8,
+     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。"
+    },
+    {
+     "title": "卫生专业人员",
+     "title_en": "Health Professionals",
+     "code": "22",
+     "category": "2-专业人员",
+     "jobs": 427390,
+     "share_change": -0.04,
+     "share_change_desc": "2020-2025",
+     "education": "博士/专业学位（对标：博士学位）",
+     "education_idx": 6,
+     "exposure": 6,
+     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。"
+    },
+    {
+     "title": "教学专业人员",
+     "title_en": "Teaching Professionals",
+     "code": "23",
+     "category": "2-专业人员",
+     "jobs": 3007898,
+     "share_change": 0.65,
+     "share_change_desc": "2020-2025",
+     "education": "硕士学位（对标：硕士学位）",
+     "education_idx": 5,
+     "exposure": 6,
+     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。"
+    },
+    {
+     "title": "商业和行政专业人员",
+     "title_en": "Business & Administration Professionals",
+     "code": "24",
+     "category": "2-专业人员",
+     "jobs": 265343,
+     "share_change": -0.17,
+     "share_change_desc": "2020-2025",
+     "education": "学士学位（对标：学士学位）",
+     "education_idx": 4,
+     "exposure": 8,
+     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。"
+    },
+    {
+     "title": "信息通信技术专业人员",
+     "title_en": "ICT Professionals",
+     "code": "25",
+     "category": "2-专业人员",
+     "jobs": 220844,
+     "share_change": 0.13,
+     "share_change_desc": "2020-2025",
+     "education": "学士学位（对标：学士学位）",
+     "education_idx": 4,
+     "exposure": 9,
+     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。"
+    },
+    {
+     "title": "法律/社会/文化专业人员",
+     "title_en": "Legal/Social/Cultural Professionals",
+     "code": "26",
+     "category": "2-专业人员",
+     "jobs": 605297,
+     "share_change": -0.06,
+     "share_change_desc": "2020-2025",
+     "education": "硕士学位（对标：硕士学位）",
+     "education_idx": 5,
+     "exposure": 7,
+     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。"
+    },
+    {
+     "title": "科学和工程助理专业人员",
+     "title_en": "Science & Engineering Associate Professionals",
+     "code": "31",
+     "category": "3-技术员和助理专业人员",
+     "jobs": 431219,
+     "share_change": 0.0,
+     "share_change_desc": "2020-2025",
+     "education": "文凭/技术证书（对标：职业教育证书）",
+     "education_idx": 3,
+     "exposure": 6,
+     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。"
+    },
+    {
+     "title": "卫生助理专业人员",
+     "title_en": "Health Associate Professionals",
+     "code": "32",
+     "category": "3-技术员和助理专业人员",
+     "jobs": 958908,
+     "share_change": 0.5,
+     "share_change_desc": "2020-2025",
+     "education": "文凭/技术证书（对标：职业教育证书）",
+     "education_idx": 3,
+     "exposure": 5,
+     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。"
+    },
+    {
+     "title": "商业和行政助理专业人员",
+     "title_en": "Business & Administration Associate Professionals",
+     "code": "33",
+     "category": "3-技术员和助理专业人员",
+     "jobs": 1591198,
+     "share_change": -0.01,
+     "share_change_desc": "2020-2025",
+     "education": "文凭/技术证书（对标：职业教育证书）",
+     "education_idx": 3,
+     "exposure": 7,
+     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。"
+    },
+    {
+     "title": "法律/社会/文化助理专业人员",
+     "title_en": "Legal/Social/Cultural Associate Professionals",
+     "code": "34",
+     "category": "3-技术员和助理专业人员",
+     "jobs": 273278,
+     "share_change": -0.08,
+     "share_change_desc": "2020-2025",
+     "education": "文凭/技术证书（对标：职业教育证书）",
+     "education_idx": 3,
+     "exposure": 6,
+     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。"
+    },
+    {
+     "title": "信息通信技术技术员",
+     "title_en": "ICT Technicians",
+     "code": "35",
+     "category": "3-技术员和助理专业人员",
+     "jobs": 149430,
+     "share_change": -0.12,
+     "share_change_desc": "2020-2025",
+     "education": "文凭/技术证书（对标：职业教育证书）",
+     "education_idx": 3,
+     "exposure": 7,
+     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。"
+    },
+    {
+     "title": "一般文职人员",
+     "title_en": "General & Keyboard Clerks",
+     "code": "41",
+     "category": "4-文职支持人员",
+     "jobs": 768167,
+     "share_change": 0.0,
+     "share_change_desc": "2020-2025",
+     "education": "中学/高中（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 9,
+     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。"
+    },
+    {
+     "title": "客户服务人员",
+     "title_en": "Customer Services Clerks",
+     "code": "42",
+     "category": "4-文职支持人员",
+     "jobs": 371036,
+     "share_change": 0.19,
+     "share_change_desc": "2020-2025",
+     "education": "中学/高中（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 8,
+     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。"
+    },
+    {
+     "title": "数字记录和材料记录人员",
+     "title_en": "Numerical & Material Recording Clerks",
+     "code": "43",
+     "category": "4-文职支持人员",
+     "jobs": 179284,
+     "share_change": 0.03,
+     "share_change_desc": "2020-2025",
+     "education": "中学/高中（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 9,
+     "exposure_rationale": "数字记录和会计工作高度程式化，AI和RPA可自动化大部分任务。"
+    },
+    {
+     "title": "其他文职支持人员",
+     "title_en": "Other Clerical Support Workers",
+     "code": "44",
+     "category": "4-文职支持人员",
+     "jobs": 41452,
+     "share_change": -0.04,
+     "share_change_desc": "2020-2025",
+     "education": "中学/高中（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 8,
+     "exposure_rationale": "其他文职工作涉及多种行政任务，AI可自动化其中大部分。"
+    },
+    {
+     "title": "个人服务人员",
+     "title_en": "Personal Service Workers",
+     "code": "51",
+     "category": "5-服务和销售人员",
+     "jobs": 1971236,
+     "share_change": 0.24,
+     "share_change_desc": "2020-2025",
+     "education": "小学/初中（对标：初中及以下）",
+     "education_idx": 1,
+     "exposure": 3,
+     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。"
+    },
+    {
+     "title": "销售人员",
+     "title_en": "Sales Workers",
+     "code": "52",
+     "category": "5-服务和销售人员",
+     "jobs": 9783279,
+     "share_change": -1.0,
+     "share_change_desc": "2020-2025",
+     "education": "小学/初中（对标：初中及以下）",
+     "education_idx": 1,
+     "exposure": 4,
+     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。"
+    },
+    {
+     "title": "个人护理人员",
+     "title_en": "Personal Care Workers",
+     "code": "53",
+     "category": "5-服务和销售人员",
+     "jobs": 33700,
+     "share_change": -0.02,
+     "share_change_desc": "2020-2025",
+     "education": "中学/高中（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 3,
+     "exposure_rationale": "护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。"
+    },
+    {
+     "title": "保安服务人员",
+     "title_en": "Protective Services Workers",
+     "code": "54",
+     "category": "5-服务和销售人员",
+     "jobs": 1277178,
+     "share_change": -0.13,
+     "share_change_desc": "2020-2025",
+     "education": "中学/高中（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 3,
+     "exposure_rationale": "安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。"
+    },
+    {
+     "title": "面向市场的农业技术工人",
+     "title_en": "Market-oriented Skilled Agricultural Workers",
+     "code": "61",
+     "category": "6-农林渔业技术工人",
+     "jobs": 20561360,
+     "share_change": 6.0,
+     "share_change_desc": "2020-2025",
+     "education": "小学/初中（对标：初中及以下）",
+     "education_idx": 1,
+     "exposure": 2,
+     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。"
+    },
+    {
+     "title": "面向市场的林渔猎技术工人",
+     "title_en": "Market-oriented Skilled Forestry/Fishery/Hunting Workers",
+     "code": "62",
+     "category": "6-农林渔业技术工人",
+     "jobs": 145669,
+     "share_change": -0.11,
+     "share_change_desc": "2020-2025",
+     "education": "小学/初中（对标：初中及以下）",
+     "education_idx": 1,
+     "exposure": 2,
+     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。"
+    },
+    {
+     "title": "自给型农林渔业劳动者",
+     "title_en": "Subsistence Farmers/Fishers/Hunters/Gatherers",
+     "code": "63",
+     "category": "6-农林渔业技术工人",
+     "jobs": 2213270,
+     "share_change": -2.51,
+     "share_change_desc": "2020-2025",
+     "education": "无正规学历（对标：无正式教育）",
+     "education_idx": 0,
+     "exposure": 1,
+     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。"
+    },
+    {
+     "title": "建筑和相关行业工人",
+     "title_en": "Building & Related Trades Workers",
+     "code": "71",
+     "category": "7-手工艺及相关行业工人",
+     "jobs": 1937126,
+     "share_change": -0.13,
+     "share_change_desc": "2020-2025",
+     "education": "中学/高中（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 2,
+     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。"
+    },
+    {
+     "title": "金属/机械及相关行业工人",
+     "title_en": "Metal/Machinery & Related Trades Workers",
+     "code": "72",
+     "category": "7-手工艺及相关行业工人",
+     "jobs": 1840880,
+     "share_change": -0.14,
+     "share_change_desc": "2020-2025",
+     "education": "中学/高中（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 3,
+     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。"
+    },
+    {
+     "title": "手工艺和印刷工人",
+     "title_en": "Handicraft & Printing Workers",
+     "code": "73",
+     "category": "7-手工艺及相关行业工人",
+     "jobs": 545046,
+     "share_change": -0.0,
+     "share_change_desc": "2020-2025",
+     "education": "中学/高中（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 5,
+     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。"
+    },
+    {
+     "title": "电气和电子行业工人",
+     "title_en": "Electrical & Electronic Trades Workers",
+     "code": "74",
+     "category": "7-手工艺及相关行业工人",
+     "jobs": 1086516,
+     "share_change": 0.15,
+     "share_change_desc": "2020-2025",
+     "education": "中学/高中（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 3,
+     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。"
+    },
+    {
+     "title": "食品加工/木工/服装及相关工人",
+     "title_en": "Food Processing/Woodworking/Garment Workers",
+     "code": "75",
+     "category": "7-手工艺及相关行业工人",
+     "jobs": 4867286,
+     "share_change": 1.09,
+     "share_change_desc": "2020-2025",
+     "education": "小学/初中（对标：初中及以下）",
+     "education_idx": 1,
+     "exposure": 2,
+     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。"
+    },
+    {
+     "title": "固定设备和机器操作员",
+     "title_en": "Stationary Plant & Machine Operators",
+     "code": "81",
+     "category": "8-工厂操作员和装配工",
+     "jobs": 2038471,
+     "share_change": 0.93,
+     "share_change_desc": "2020-2025",
+     "education": "小学/初中（对标：初中及以下）",
+     "education_idx": 1,
+     "exposure": 4,
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+    },
+    {
+     "title": "装配工",
+     "title_en": "Assemblers",
+     "code": "82",
+     "category": "8-工厂操作员和装配工",
+     "jobs": 46713,
+     "share_change": 0.02,
+     "share_change_desc": "2020-2025",
+     "education": "中学/高中（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 4,
+     "exposure_rationale": "装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。"
+    },
+    {
+     "title": "驾驶员和移动设备操作员",
+     "title_en": "Drivers & Mobile Plant Operators",
+     "code": "83",
+     "category": "8-工厂操作员和装配工",
+     "jobs": 4240786,
+     "share_change": -0.51,
+     "share_change_desc": "2020-2025",
+     "education": "小学/初中（对标：初中及以下）",
+     "education_idx": 1,
+     "exposure": 3,
+     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。"
+    },
+    {
+     "title": "清洁工和帮佣",
+     "title_en": "Cleaners & Helpers",
+     "code": "91",
+     "category": "9-基层职业",
+     "jobs": 1390259,
+     "share_change": 0.05,
+     "share_change_desc": "2020-2025",
+     "education": "无正规学历（对标：无正式教育）",
+     "education_idx": 0,
+     "exposure": 1,
+     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。"
+    },
+    {
+     "title": "农林渔业劳工",
+     "title_en": "Agricultural/Forestry/Fishery Labourers",
+     "code": "92",
+     "category": "9-基层职业",
+     "jobs": 3806835,
+     "share_change": -0.01,
+     "share_change_desc": "2020-2025",
+     "education": "无正规学历（对标：无正式教育）",
+     "education_idx": 0,
+     "exposure": 1,
+     "exposure_rationale": "农林渔业劳工从事基础体力工作，AI影响极小。"
+    },
+    {
+     "title": "采矿/建筑/制造/运输劳工",
+     "title_en": "Mining/Construction/Manufacturing/Transport Labourers",
+     "code": "93",
+     "category": "9-基层职业",
+     "jobs": 7376244,
+     "share_change": -5.0,
+     "share_change_desc": "2020-2025",
+     "education": "无正规学历（对标：无正式教育）",
+     "education_idx": 0,
+     "exposure": 1,
+     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。"
+    },
+    {
+     "title": "食品加工助理",
+     "title_en": "Food Preparation Assistants",
+     "code": "94",
+     "category": "9-基层职业",
+     "jobs": 120345,
+     "share_change": 0.08,
+     "share_change_desc": "2020-2025",
+     "education": "无正规学历（对标：无正式教育）",
+     "education_idx": 0,
+     "exposure": 1,
+     "exposure_rationale": "食品加工助理从事基本体力工作，AI影响极小。"
+    },
+    {
+     "title": "街头和相关销售服务人员",
+     "title_en": "Street & Related Sales & Service Workers",
+     "code": "95",
+     "category": "9-基层职业",
+     "jobs": 362630,
+     "share_change": 0.21,
+     "share_change_desc": "2020-2025",
+     "education": "无正规学历（对标：无正式教育）",
+     "education_idx": 0,
+     "exposure": 2,
+     "exposure_rationale": "街头销售和服务涉及人际互动，AI影响有限。"
+    },
+    {
+     "title": "垃圾收集和其他基层工人",
+     "title_en": "Refuse Workers & Other Elementary Workers",
+     "code": "96",
+     "category": "9-基层职业",
+     "jobs": 737118,
+     "share_change": 0.29,
+     "share_change_desc": "2020-2025",
+     "education": "无正规学历（对标：无正式教育）",
+     "education_idx": 0,
+     "exposure": 1,
+     "exposure_rationale": "其他基层工作多为体力劳动，AI影响极小。"
+    }
+   ]
+  },
+  "KEN": {
+   "name_cn": "肯尼亚",
+   "name_en": "Kenya",
+   "title": "肯尼亚职业地图",
+   "description": "本工具可视化展示了肯尼亚<b>34个职业分类</b>的就业分布数据，涵盖约<b>1454万</b>就业人口。数据来源为国际劳工组织（ILO）ILOSTAT数据库，基于肯尼亚国家统计局（KNBS）连续住户调查（Continuous Household Survey）。职业分类采用ISCO-08标准（2位亚大类级别）；就业趋势为连续住户调查微观数据2021→2022年各职业真实份额变化。每个方块的<b>面积</b>与就业人数成正比，<b>颜色</b>展示所选指标。",
+   "source": "数据来源：ILO ILOSTAT / 肯尼亚KNBS连续住户调查 2022",
+   "source_links": [
+    {
+     "label": "ILO ILOSTAT 就业人数×职业（ISCO-08 2位，肯尼亚）",
+     "url": "https://rshiny.ilo.org/dataexplorer56/?lang=en&id=EMP_TEMP_SEX_OC2_NB_A&ref_area=KEN"
+    },
+    {
+     "label": "肯尼亚国家统计局（KNBS）报告库",
+     "url": "https://www.knbs.or.ke/all-reports/"
+    },
+    {
+     "label": "ILOSTAT SDMX API 原始数据（CSV）",
+     "url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/KEN.A..SEX_T.?format=csv&startPeriod=2015"
+    }
+   ],
+   "data_year": "2022",
+   "total_jobs": 14540336,
+   "occ_count": 34,
+   "education_system": {
+    "name": "学历要求（肯尼亚教育体系）",
+    "levels": [
+     [
+      "无正规学历（对标：无正式教育）",
+      "No formal education",
+      0
+     ],
+     [
+      "小学教育（对标：初中及以下）",
+      "Primary Education (KCPE)",
+      1
+     ],
+     [
+      "中学教育（对标：高中文凭）",
+      "Secondary Education (KCSE)",
+      2
+     ],
+     [
+      "技术职业证书/文凭（对标：职业教育证书）",
+      "TVET Certificate/Diploma",
+      3
+     ],
+     [
+      "学士学位（对标：学士学位）",
+      "Bachelor's Degree",
+      4
+     ],
+     [
+      "硕士学位（对标：硕士学位）",
+      "Master's Degree",
+      5
+     ],
+     [
+      "博士/专业学位（对标：博士学位）",
+      "Ph.D./Professional Degree",
+      6
+     ]
+    ]
+   },
+   "occupations": [
+    {
+     "title": "首席执行官/高级官员/立法者",
+     "title_en": "Chief Executives/Senior Officials/Legislators",
+     "code": "11",
+     "category": "1-管理人员",
+     "jobs": 30156,
+     "share_change": -0.03,
+     "share_change_desc": "2021-2022",
+     "education": "硕士学位（对标：硕士学位）",
+     "education_idx": 5,
+     "exposure": 7,
+     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。"
+    },
+    {
+     "title": "行政和商务经理",
+     "title_en": "Administrative & Commercial Managers",
+     "code": "12",
+     "category": "1-管理人员",
+     "jobs": 54018,
+     "share_change": -0.04,
+     "share_change_desc": "2021-2022",
+     "education": "学士学位（对标：学士学位）",
+     "education_idx": 4,
+     "exposure": 7,
+     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。"
+    },
+    {
+     "title": "生产和专业服务经理",
+     "title_en": "Production & Specialized Services Managers",
+     "code": "13",
+     "category": "1-管理人员",
+     "jobs": 62669,
+     "share_change": -1.24,
+     "share_change_desc": "2021-2022",
+     "education": "学士学位（对标：学士学位）",
+     "education_idx": 4,
+     "exposure": 6,
+     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。"
+    },
+    {
+     "title": "酒店/零售及其他服务经理",
+     "title_en": "Hospitality/Retail/Other Services Managers",
+     "code": "14",
+     "category": "1-管理人员",
+     "jobs": 819248,
+     "share_change": -1.33,
+     "share_change_desc": "2021-2022",
+     "education": "技术职业证书/文凭（对标：职业教育证书）",
+     "education_idx": 3,
+     "exposure": 5,
+     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。"
+    },
+    {
+     "title": "科学和工程专业人员",
+     "title_en": "Science & Engineering Professionals",
+     "code": "21",
+     "category": "2-专业人员",
+     "jobs": 3845,
+     "share_change": -0.08,
+     "share_change_desc": "2021-2022",
+     "education": "硕士学位（对标：硕士学位）",
+     "education_idx": 5,
+     "exposure": 8,
+     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。"
+    },
+    {
+     "title": "卫生专业人员",
+     "title_en": "Health Professionals",
+     "code": "22",
+     "category": "2-专业人员",
+     "jobs": 72091,
+     "share_change": 0.21,
+     "share_change_desc": "2021-2022",
+     "education": "博士/专业学位（对标：博士学位）",
+     "education_idx": 6,
+     "exposure": 6,
+     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。"
+    },
+    {
+     "title": "教学专业人员",
+     "title_en": "Teaching Professionals",
+     "code": "23",
+     "category": "2-专业人员",
+     "jobs": 97579,
+     "share_change": 0.11,
+     "share_change_desc": "2021-2022",
+     "education": "硕士学位（对标：硕士学位）",
+     "education_idx": 5,
+     "exposure": 6,
+     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。"
+    },
+    {
+     "title": "商业和行政专业人员",
+     "title_en": "Business & Administration Professionals",
+     "code": "24",
+     "category": "2-专业人员",
+     "jobs": 103135,
+     "share_change": 0.24,
+     "share_change_desc": "2021-2022",
+     "education": "学士学位（对标：学士学位）",
+     "education_idx": 4,
+     "exposure": 8,
+     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。"
+    },
+    {
+     "title": "信息通信技术专业人员",
+     "title_en": "ICT Professionals",
+     "code": "25",
+     "category": "2-专业人员",
+     "jobs": 187410,
+     "share_change": 0.19,
+     "share_change_desc": "2021-2022",
+     "education": "学士学位（对标：学士学位）",
+     "education_idx": 4,
+     "exposure": 9,
+     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。"
+    },
+    {
+     "title": "法律/社会/文化专业人员",
+     "title_en": "Legal/Social/Cultural Professionals",
+     "code": "26",
+     "category": "2-专业人员",
+     "jobs": 15891,
+     "share_change": 0.03,
+     "share_change_desc": "2021-2022",
+     "education": "硕士学位（对标：硕士学位）",
+     "education_idx": 5,
+     "exposure": 7,
+     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。"
+    },
+    {
+     "title": "科学和工程助理专业人员",
+     "title_en": "Science & Engineering Associate Professionals",
+     "code": "31",
+     "category": "3-技术员和助理专业人员",
+     "jobs": 102426,
+     "share_change": -0.04,
+     "share_change_desc": "2021-2022",
+     "education": "技术职业证书/文凭（对标：职业教育证书）",
+     "education_idx": 3,
+     "exposure": 6,
+     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。"
+    },
+    {
+     "title": "卫生助理专业人员",
+     "title_en": "Health Associate Professionals",
+     "code": "32",
+     "category": "3-技术员和助理专业人员",
+     "jobs": 101947,
+     "share_change": 0.21,
+     "share_change_desc": "2021-2022",
+     "education": "技术职业证书/文凭（对标：职业教育证书）",
+     "education_idx": 3,
+     "exposure": 5,
+     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。"
+    },
+    {
+     "title": "商业和行政助理专业人员",
+     "title_en": "Business & Administration Associate Professionals",
+     "code": "33",
+     "category": "3-技术员和助理专业人员",
+     "jobs": 41469,
+     "share_change": 0.18,
+     "share_change_desc": "2021-2022",
+     "education": "技术职业证书/文凭（对标：职业教育证书）",
+     "education_idx": 3,
+     "exposure": 7,
+     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。"
+    },
+    {
+     "title": "信息通信技术技术员",
+     "title_en": "ICT Technicians",
+     "code": "35",
+     "category": "3-技术员和助理专业人员",
+     "jobs": 100186,
+     "share_change": -0.36,
+     "share_change_desc": "2021-2022",
+     "education": "技术职业证书/文凭（对标：职业教育证书）",
+     "education_idx": 3,
+     "exposure": 7,
+     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。"
+    },
+    {
+     "title": "一般文职人员",
+     "title_en": "General & Keyboard Clerks",
+     "code": "41",
+     "category": "4-文职支持人员",
+     "jobs": 123120,
+     "share_change": 0.17,
+     "share_change_desc": "2021-2022",
+     "education": "中学教育（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 9,
+     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。"
+    },
+    {
+     "title": "客户服务人员",
+     "title_en": "Customer Services Clerks",
+     "code": "42",
+     "category": "4-文职支持人员",
+     "jobs": 40669,
+     "share_change": -0.09,
+     "share_change_desc": "2021-2022",
+     "education": "中学教育（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 8,
+     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。"
+    },
+    {
+     "title": "个人服务人员",
+     "title_en": "Personal Service Workers",
+     "code": "51",
+     "category": "5-服务和销售人员",
+     "jobs": 324314,
+     "share_change": -1.09,
+     "share_change_desc": "2021-2022",
+     "education": "小学教育（对标：初中及以下）",
+     "education_idx": 1,
+     "exposure": 3,
+     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。"
+    },
+    {
+     "title": "销售人员",
+     "title_en": "Sales Workers",
+     "code": "52",
+     "category": "5-服务和销售人员",
+     "jobs": 565718,
+     "share_change": 1.56,
+     "share_change_desc": "2021-2022",
+     "education": "小学教育（对标：初中及以下）",
+     "education_idx": 1,
+     "exposure": 4,
+     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。"
+    },
+    {
+     "title": "个人护理人员",
+     "title_en": "Personal Care Workers",
+     "code": "53",
+     "category": "5-服务和销售人员",
+     "jobs": 570004,
+     "share_change": 1.05,
+     "share_change_desc": "2021-2022",
+     "education": "中学教育（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 3,
+     "exposure_rationale": "护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。"
+    },
+    {
+     "title": "保安服务人员",
+     "title_en": "Protective Services Workers",
+     "code": "54",
+     "category": "5-服务和销售人员",
+     "jobs": 57654,
+     "share_change": -0.37,
+     "share_change_desc": "2021-2022",
+     "education": "中学教育（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 3,
+     "exposure_rationale": "安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。"
+    },
+    {
+     "title": "面向市场的农业技术工人",
+     "title_en": "Market-oriented Skilled Agricultural Workers",
+     "code": "61",
+     "category": "6-农林渔业技术工人",
+     "jobs": 5438566,
+     "share_change": 4.78,
+     "share_change_desc": "2021-2022",
+     "education": "小学教育（对标：初中及以下）",
+     "education_idx": 1,
+     "exposure": 2,
+     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。"
+    },
+    {
+     "title": "面向市场的林渔猎技术工人",
+     "title_en": "Market-oriented Skilled Forestry/Fishery/Hunting Workers",
+     "code": "62",
+     "category": "6-农林渔业技术工人",
+     "jobs": 7175,
+     "share_change": -0.25,
+     "share_change_desc": "2021-2022",
+     "education": "小学教育（对标：初中及以下）",
+     "education_idx": 1,
+     "exposure": 2,
+     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。"
+    },
+    {
+     "title": "自给型农林渔业劳动者",
+     "title_en": "Subsistence Farmers/Fishers/Hunters/Gatherers",
+     "code": "63",
+     "category": "6-农林渔业技术工人",
+     "jobs": 420155,
+     "share_change": -4.72,
+     "share_change_desc": "2021-2022",
+     "education": "无正规学历（对标：无正式教育）",
+     "education_idx": 0,
+     "exposure": 1,
+     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。"
+    },
+    {
+     "title": "建筑和相关行业工人",
+     "title_en": "Building & Related Trades Workers",
+     "code": "71",
+     "category": "7-手工艺及相关行业工人",
+     "jobs": 157906,
+     "share_change": -0.33,
+     "share_change_desc": "2021-2022",
+     "education": "中学教育（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 2,
+     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。"
+    },
+    {
+     "title": "金属/机械及相关行业工人",
+     "title_en": "Metal/Machinery & Related Trades Workers",
+     "code": "72",
+     "category": "7-手工艺及相关行业工人",
+     "jobs": 276597,
+     "share_change": 0.43,
+     "share_change_desc": "2021-2022",
+     "education": "中学教育（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 3,
+     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。"
+    },
+    {
+     "title": "手工艺和印刷工人",
+     "title_en": "Handicraft & Printing Workers",
+     "code": "73",
+     "category": "7-手工艺及相关行业工人",
+     "jobs": 26421,
+     "share_change": -0.01,
+     "share_change_desc": "2021-2022",
+     "education": "中学教育（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 5,
+     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。"
+    },
+    {
+     "title": "电气和电子行业工人",
+     "title_en": "Electrical & Electronic Trades Workers",
+     "code": "74",
+     "category": "7-手工艺及相关行业工人",
+     "jobs": 27925,
+     "share_change": 0.14,
+     "share_change_desc": "2021-2022",
+     "education": "中学教育（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 3,
+     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。"
+    },
+    {
+     "title": "食品加工/木工/服装及相关工人",
+     "title_en": "Food Processing/Woodworking/Garment Workers",
+     "code": "75",
+     "category": "7-手工艺及相关行业工人",
+     "jobs": 158664,
+     "share_change": -0.06,
+     "share_change_desc": "2021-2022",
+     "education": "小学教育（对标：初中及以下）",
+     "education_idx": 1,
+     "exposure": 2,
+     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。"
+    },
+    {
+     "title": "固定设备和机器操作员",
+     "title_en": "Stationary Plant & Machine Operators",
+     "code": "81",
+     "category": "8-工厂操作员和装配工",
+     "jobs": 15548,
+     "share_change": 0.03,
+     "share_change_desc": "2021-2022",
+     "education": "小学教育（对标：初中及以下）",
+     "education_idx": 1,
+     "exposure": 4,
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+    },
+    {
+     "title": "装配工",
+     "title_en": "Assemblers",
+     "code": "82",
+     "category": "8-工厂操作员和装配工",
+     "jobs": 9834,
+     "share_change": -0.04,
+     "share_change_desc": "2021-2022",
+     "education": "中学教育（对标：高中文凭）",
+     "education_idx": 2,
+     "exposure": 4,
+     "exposure_rationale": "装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。"
+    },
+    {
+     "title": "驾驶员和移动设备操作员",
+     "title_en": "Drivers & Mobile Plant Operators",
+     "code": "83",
+     "category": "8-工厂操作员和装配工",
+     "jobs": 28877,
+     "share_change": 0.01,
+     "share_change_desc": "2021-2022",
+     "education": "小学教育（对标：初中及以下）",
+     "education_idx": 1,
+     "exposure": 3,
+     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。"
+    },
+    {
+     "title": "清洁工和帮佣",
+     "title_en": "Cleaners & Helpers",
+     "code": "91",
+     "category": "9-基层职业",
+     "jobs": 2009530,
+     "share_change": 3.66,
+     "share_change_desc": "2021-2022",
+     "education": "无正规学历（对标：无正式教育）",
+     "education_idx": 0,
+     "exposure": 1,
+     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。"
+    },
+    {
+     "title": "农林渔业劳工",
+     "title_en": "Agricultural/Forestry/Fishery Labourers",
+     "code": "92",
+     "category": "9-基层职业",
+     "jobs": 1727973,
+     "share_change": -2.57,
+     "share_change_desc": "2021-2022",
+     "education": "无正规学历（对标：无正式教育）",
+     "education_idx": 0,
+     "exposure": 1,
+     "exposure_rationale": "农林渔业劳工从事基础体力工作，AI影响极小。"
+    },
+    {
+     "title": "采矿/建筑/制造/运输劳工",
+     "title_en": "Mining/Construction/Manufacturing/Transport Labourers",
+     "code": "93",
+     "category": "9-基层职业",
+     "jobs": 761616,
+     "share_change": -0.37,
+     "share_change_desc": "2021-2022",
+     "education": "无正规学历（对标：无正式教育）",
+     "education_idx": 0,
+     "exposure": 1,
+     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。"
+    }
+   ]
   }
  },
  "education_systems": {
@@ -3633,6 +4727,86 @@
     [
      "研究生学位（对标：博士学位）",
      "Kandidat/Doktor Nauk (Postgraduate)",
+     6
+    ]
+   ]
+  },
+  "PAK": {
+   "name": "学历要求（巴基斯坦教育体系）",
+   "levels": [
+    [
+     "无正规学历（对标：无正式教育）",
+     "No formal education",
+     0
+    ],
+    [
+     "小学/初中（对标：初中及以下）",
+     "Primary/Middle (Class 1-8)",
+     1
+    ],
+    [
+     "中学/高中（对标：高中文凭）",
+     "Matric/Intermediate (SSC/HSSC)",
+     2
+    ],
+    [
+     "文凭/技术证书（对标：职业教育证书）",
+     "Diploma/Technical Certificate (DAE)",
+     3
+    ],
+    [
+     "学士学位（对标：学士学位）",
+     "Bachelor's Degree (BA/BSc/BS)",
+     4
+    ],
+    [
+     "硕士学位（对标：硕士学位）",
+     "Master's Degree (MA/MSc/MPhil)",
+     5
+    ],
+    [
+     "博士/专业学位（对标：博士学位）",
+     "Ph.D./Professional Degree (MBBS/LLB)",
+     6
+    ]
+   ]
+  },
+  "KEN": {
+   "name": "学历要求（肯尼亚教育体系）",
+   "levels": [
+    [
+     "无正规学历（对标：无正式教育）",
+     "No formal education",
+     0
+    ],
+    [
+     "小学教育（对标：初中及以下）",
+     "Primary Education (KCPE)",
+     1
+    ],
+    [
+     "中学教育（对标：高中文凭）",
+     "Secondary Education (KCSE)",
+     2
+    ],
+    [
+     "技术职业证书/文凭（对标：职业教育证书）",
+     "TVET Certificate/Diploma",
+     3
+    ],
+    [
+     "学士学位（对标：学士学位）",
+     "Bachelor's Degree",
+     4
+    ],
+    [
+     "硕士学位（对标：硕士学位）",
+     "Master's Degree",
+     5
+    ],
+    [
+     "博士/专业学位（对标：博士学位）",
+     "Ph.D./Professional Degree",
      6
     ]
    ]

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Build country-specific career map JSON data files for 4 countries:
-India (Level 3 from PLFS), Nigeria, Indonesia, Russia (Level 2 from ILOSTAT)
+Build country-specific career map JSON data files for 6 countries:
+India (Level 3 from PLFS); Nigeria, Indonesia, Russia, Pakistan, Kenya
+(Level 2 from ILOSTAT EMP_TEMP_SEX_OC2_NB, national LFS micro-data).
 """
 import xml.etree.ElementTree as ET
 import csv as csv_mod
@@ -195,6 +196,30 @@ EDUCATION_SYSTEMS = {
             ('高等教育-学士（对标：学士学位）', 'Higher Education - Bakalavr (Bachelor)', 4),
             ('高等教育-硕士/专家（对标：硕士学位）', 'Higher Education - Magistr/Specialist', 5),
             ('研究生学位（对标：博士学位）', 'Kandidat/Doktor Nauk (Postgraduate)', 6),
+        ]
+    },
+    'PAK': {
+        'name': '学历要求（巴基斯坦教育体系）',
+        'levels': [
+            ('无正规学历（对标：无正式教育）', 'No formal education', 0),
+            ('小学/初中（对标：初中及以下）', 'Primary/Middle (Class 1-8)', 1),
+            ('中学/高中（对标：高中文凭）', 'Matric/Intermediate (SSC/HSSC)', 2),
+            ('文凭/技术证书（对标：职业教育证书）', 'Diploma/Technical Certificate (DAE)', 3),
+            ('学士学位（对标：学士学位）', "Bachelor's Degree (BA/BSc/BS)", 4),
+            ('硕士学位（对标：硕士学位）', "Master's Degree (MA/MSc/MPhil)", 5),
+            ('博士/专业学位（对标：博士学位）', 'Ph.D./Professional Degree (MBBS/LLB)', 6),
+        ]
+    },
+    'KEN': {
+        'name': '学历要求（肯尼亚教育体系）',
+        'levels': [
+            ('无正规学历（对标：无正式教育）', 'No formal education', 0),
+            ('小学教育（对标：初中及以下）', 'Primary Education (KCPE)', 1),
+            ('中学教育（对标：高中文凭）', 'Secondary Education (KCSE)', 2),
+            ('技术职业证书/文凭（对标：职业教育证书）', 'TVET Certificate/Diploma', 3),
+            ('学士学位（对标：学士学位）', "Bachelor's Degree", 4),
+            ('硕士学位（对标：硕士学位）', "Master's Degree", 5),
+            ('博士/专业学位（对标：博士学位）', 'Ph.D./Professional Degree', 6),
         ]
     },
 }
@@ -596,6 +621,28 @@ COUNTRY_DESCRIPTIONS = {
         ],
         'data_year': '2025',
     },
+    'PAK': {
+        'title': '巴基斯坦职业地图',
+        'description': '本工具可视化展示了巴基斯坦<b>{occ_count}个职业分类</b>的就业分布数据，涵盖约<b>{total_jobs_display}</b>就业人口。数据来源为国际劳工组织（ILO）ILOSTAT数据库，基于巴基斯坦统计局（PBS）《劳动力调查》（Labour Force Survey）。职业分类采用ISCO-08标准（2位亚大类级别），2025年波次职业未分类比例极低（约0.04%）；就业趋势为劳动力调查微观数据2020→2025年各职业真实份额变化。每个方块的<b>面积</b>与就业人数成正比，<b>颜色</b>展示所选指标。',
+        'source': '数据来源：ILO ILOSTAT / 巴基斯坦PBS劳动力调查 2025',
+        'source_links': [
+            {'label': 'ILO ILOSTAT 就业人数×职业（ISCO-08 2位，巴基斯坦）', 'url': 'https://rshiny.ilo.org/dataexplorer56/?lang=en&id=EMP_TEMP_SEX_OC2_NB_A&ref_area=PAK'},
+            {'label': '巴基斯坦统计局（PBS）劳动力调查', 'url': 'https://www.pbs.gov.pk/lfs-publications'},
+            {'label': 'ILOSTAT SDMX API 原始数据（CSV）', 'url': 'https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/PAK.A..SEX_T.?format=csv&startPeriod=2015'},
+        ],
+        'data_year': '2025',
+    },
+    'KEN': {
+        'title': '肯尼亚职业地图',
+        'description': '本工具可视化展示了肯尼亚<b>{occ_count}个职业分类</b>的就业分布数据，涵盖约<b>{total_jobs_display}</b>就业人口。数据来源为国际劳工组织（ILO）ILOSTAT数据库，基于肯尼亚国家统计局（KNBS）连续住户调查（Continuous Household Survey）。职业分类采用ISCO-08标准（2位亚大类级别）；就业趋势为连续住户调查微观数据2021→2022年各职业真实份额变化。每个方块的<b>面积</b>与就业人数成正比，<b>颜色</b>展示所选指标。',
+        'source': '数据来源：ILO ILOSTAT / 肯尼亚KNBS连续住户调查 2022',
+        'source_links': [
+            {'label': 'ILO ILOSTAT 就业人数×职业（ISCO-08 2位，肯尼亚）', 'url': 'https://rshiny.ilo.org/dataexplorer56/?lang=en&id=EMP_TEMP_SEX_OC2_NB_A&ref_area=KEN'},
+            {'label': '肯尼亚国家统计局（KNBS）报告库', 'url': 'https://www.knbs.or.ke/all-reports/'},
+            {'label': 'ILOSTAT SDMX API 原始数据（CSV）', 'url': 'https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/KEN.A..SEX_T.?format=csv&startPeriod=2015'},
+        ],
+        'data_year': '2022',
+    },
 }
 
 # ─── Main build ─────────────────────────────────────────────────────────
@@ -624,12 +671,20 @@ print(f"  India: {len(india_data)} occupations, {sum(d['jobs'] for d in india_da
 #          badly distort the occupation treemap; 2023 has near-complete coverage
 #          (~0.2% unclassified). Share-change kept on ILO modelled L1 estimates.
 # Indonesia: only 2023 available under ISCO-08, fall back to ILO modelled L1 trend
+# Pakistan: latest LFS wave (2025), occupation classification near-complete
+#           (~0.04% unclassified), real per-occupation share changes 2020->2025
+# Kenya: Continuous Household Survey; ISCO-08 available for 2019/2021/2022.
+#        Use 2022 levels; real per-occupation share changes 2021->2022 (same
+#        survey instrument, comparable coverage). 2019 wave used a different
+#        coverage and is not directly comparable for trend computation.
 L2_BUILD_PARAMS = {
     'NGA': {'level_year': '2023', 'share_years': None},
     'IDN': {'level_year': '2023', 'share_years': None},
     'RUS': {'level_year': '2025', 'share_years': ('2020', '2025')},
+    'PAK': {'level_year': '2025', 'share_years': ('2020', '2025')},
+    'KEN': {'level_year': '2022', 'share_years': ('2021', '2022')},
 }
-for cc in ['NGA', 'IDN', 'RUS']:
+for cc in ['NGA', 'IDN', 'RUS', 'PAK', 'KEN']:
     country_data = build_country_l2(cc, **L2_BUILD_PARAMS[cc])
     all_country_data[cc] = country_data
     print(f"  {cc}: {len(country_data)} occupations, {sum(d['jobs'] for d in country_data):,.0f} total jobs")
@@ -644,8 +699,8 @@ for cc, occupations in all_country_data.items():
     total_jobs = sum(d['jobs'] for d in occupations)
     desc = COUNTRY_DESCRIPTIONS[cc]
     output['countries'][cc] = {
-        'name_cn': {'IND': '印度', 'NGA': '尼日利亚', 'IDN': '印度尼西亚', 'RUS': '俄罗斯'}[cc],
-        'name_en': {'IND': 'India', 'NGA': 'Nigeria', 'IDN': 'Indonesia', 'RUS': 'Russia'}[cc],
+        'name_cn': {'IND': '印度', 'NGA': '尼日利亚', 'IDN': '印度尼西亚', 'RUS': '俄罗斯', 'PAK': '巴基斯坦', 'KEN': '肯尼亚'}[cc],
+        'name_en': {'IND': 'India', 'NGA': 'Nigeria', 'IDN': 'Indonesia', 'RUS': 'Russia', 'PAK': 'Pakistan', 'KEN': 'Kenya'}[cc],
         'title': desc['title'],
         'description': desc['description'].format(
             occ_count=len(occupations),
