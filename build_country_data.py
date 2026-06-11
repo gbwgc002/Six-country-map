@@ -195,7 +195,7 @@ EDUCATION_SYSTEMS = {
             ('中等职业教育（对标：职业教育证书）', 'Secondary Vocational Education (SPO)', 3),
             ('高等教育-学士（对标：学士学位）', 'Higher Education - Bakalavr (Bachelor)', 4),
             ('高等教育-硕士/专家（对标：硕士学位）', 'Higher Education - Magistr/Specialist', 5),
-            ('研究生学位（对标：博士学位）', 'Kandidat/Doktor Nauk (Postgraduate)', 6),
+            ('博士学位（对标：博士学位）', 'Doctorate - Kandidat/Doktor Nauk (PhD & higher)', 6),
         ]
     },
     'PAK': {

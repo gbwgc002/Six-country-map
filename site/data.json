@@ -3567,8 +3567,8 @@
       5
      ],
      [
-      "研究生学位（对标：博士学位）",
-      "Kandidat/Doktor Nauk (Postgraduate)",
+      "博士学位（对标：博士学位）",
+      "Doctorate - Kandidat/Doktor Nauk (PhD & higher)",
       6
      ]
     ]
@@ -3662,7 +3662,7 @@
      "jobs": 2031772,
      "share_change": 0.51,
      "share_change_desc": "2020-2025",
-     "education": "研究生学位（对标：博士学位）",
+     "education": "博士学位（对标：博士学位）",
      "education_idx": 6,
      "exposure": 6,
      "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。",
@@ -5688,8 +5688,8 @@
      5
     ],
     [
-     "研究生学位（对标：博士学位）",
-     "Kandidat/Doktor Nauk (Postgraduate)",
+     "博士学位（对标：博士学位）",
+     "Doctorate - Kandidat/Doktor Nauk (PhD & higher)",
      6
     ]
    ]
