@@ -4,6 +4,7 @@ Build country-specific career map JSON data files for 4 countries:
 India (Level 3 from PLFS), Nigeria, Indonesia, Russia (Level 2 from ILOSTAT)
 """
 import xml.etree.ElementTree as ET
+import csv as csv_mod
 import json, os, math
 import openpyxl
 
@@ -320,6 +321,48 @@ def get_latest_year_data(series_data, min_code_len=2):
             result[num] = {'value': years[latest], 'year': latest, 'history': years}
     return result
 
+def load_oc2_timeseries(country_code):
+    """Load ISCO-08 Level-2 employment time series from ILOSTAT SDMX CSV.
+
+    Source: https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/{CC}.A..SEX_T.
+    (indicator EMP_TEMP_SEX_OC2_NB, national LFS micro-data processed by ILO).
+    Values are in thousands (UNIT_MULT=3). Returns {year: {l2_code: persons}}.
+    """
+    path = f'ilostat_data/{country_code}_oc2_timeseries.csv'
+    data = {}
+    with open(path, newline='', encoding='utf-8') as f:
+        for row in csv_mod.DictReader(f):
+            oc2 = row.get('OC2', '')
+            val = row.get('OBS_VALUE', '')
+            if 'ISCO08' not in oc2 or not val:
+                continue
+            code = oc2.replace('OC2_ISCO08_', '')
+            if code in ('TOTAL', 'X') or not code.isdigit() or len(code) != 2:
+                continue
+            year = row['TIME_PERIOD']
+            mult = 10 ** int(row.get('UNIT_MULT') or 0)
+            data.setdefault(year, {})[code] = float(val) * mult
+    return data
+
+
+def compute_l2_share_changes(ts, year_from, year_to):
+    """Per-occupation (ISCO L2) employment share change in percentage points,
+    computed from actual LFS survey data (not modelled estimates)."""
+    a, b = ts.get(year_from, {}), ts.get(year_to, {})
+    ta, tb = sum(a.values()), sum(b.values())
+    changes = {}
+    if ta <= 0 or tb <= 0:
+        return changes
+    for code, v in b.items():
+        if code in a:
+            changes[code] = {
+                'change': round(v / tb * 100 - a[code] / ta * 100, 2),
+                'year_from': year_from,
+                'year_to': year_to,
+            }
+    return changes
+
+
 def compute_share_change(hist_data, years_back=5):
     """Compute employment share change over specified years"""
     # Get all occupation codes and their time series
@@ -365,6 +408,13 @@ def compute_share_change(hist_data, years_back=5):
 def build_india_data():
     """Build India data using PLFS Table 25 (3-digit NCO) + ILOSTAT Level 2 for shares"""
     print("Building India data...")
+
+    # Real per-occupation (ISCO L2) share changes from PLFS survey data 2022-2025
+    # (replaces the previous ILO modelled L1 estimates which produced implausible
+    #  artifacts like -12.55pp for managers)
+    ts = load_oc2_timeseries('IND')
+    ts_years = sorted(ts.keys())
+    share_changes_l2 = compute_l2_share_changes(ts, ts_years[0], ts_years[-1])
     
     # Parse PLFS Table 25 - percentage distributions at 3-digit level
     wb = openpyxl.load_workbook('ilostat_data/India_PLFS_Table25.xlsx')
@@ -385,16 +435,6 @@ def build_india_data():
     # Total employment India 2024: ~483 million (from ILOSTAT)
     total_employment = 482793235
     
-    # Parse ILOSTAT historical data for employment share changes
-    hist_data = parse_xml_series('ilostat_data/IND_model_hist.xml', 'OCU')
-    hist_clean = {}
-    for k, v in hist_data.items():
-        base = k.split('|')[0]
-        num = base.split('_')[-1]
-        if num.isdigit() and len(num) == 1:
-            hist_clean[num] = v
-    share_changes_l1 = compute_share_change(hist_clean)
-    
     # Build occupation list
     result = []
     for occ in occupations:
@@ -411,8 +451,9 @@ def build_india_data():
         # Category = major group
         cat_cn, cat_en = ISCO_L1_NAMES.get(major, (f'大类{major}', f'Major Group {major}'))
         
-        # Employment share change (inherit from L1 since L3 history not available)
-        share_info = share_changes_l1.get(major, {})
+        # Employment share change: real survey data at L2 (L3 history not available),
+        # each 3-digit occupation inherits its 2-digit sub-major group's change
+        share_info = share_changes_l2.get(l2_code, {})
         share_change = share_info.get('change', None)
         
         # Education
@@ -441,44 +482,47 @@ def build_india_data():
 
 # ─── Build other countries data (Level 2 from ILOSTAT) ──────────────────
 
-def build_country_l2(country_code):
-    """Build data for Nigeria, Indonesia, Russia using ILOSTAT Level 2"""
+def build_country_l2(country_code, level_year=None, share_years=None):
+    """Build data for Nigeria, Indonesia, Russia using ILOSTAT ISCO-08 Level 2.
+
+    level_year:  which survey year to use for employment levels (default: latest)
+    share_years: (year_from, year_to) to compute real per-occupation share changes
+                 from LFS survey data. If None, falls back to ILO modelled
+                 estimates at the major-group (L1) level.
+    """
     print(f"Building {country_code} data...")
-    
-    # Parse ISCO Level 2 data
-    l2_data = parse_xml_series(f'ilostat_data/{country_code}_isco2.xml', 'OC2')
-    l2_clean = get_latest_year_data(l2_data)
-    
-    # Parse historical data (Level 1) for share changes
-    hist_data = parse_xml_series(f'ilostat_data/{country_code}_model_hist.xml', 'OCU')
-    hist_clean = {}
-    for k, v in hist_data.items():
-        base = k.split('|')[0]
-        num = base.split('_')[-1]
-        if num.isdigit() and len(num) == 1:
-            hist_clean[num] = v
-    share_changes_l1 = compute_share_change(hist_clean)
-    
-    # Unit multiplier check
-    # ILOSTAT values might be in thousands (UNIT_MULT=3)
-    total_check = sum(d['value'] for d in l2_clean.values())
-    multiplier = 1
-    if total_check < 1000000:  # If total is small, values are in thousands
-        multiplier = 1000
-    
+
+    ts = load_oc2_timeseries(country_code)
+    ts_years = sorted(ts.keys())
+    year = level_year or ts_years[-1]
+    levels = ts[year]
+
+    # Per-occupation share changes from real survey data when possible
+    share_changes_l2 = {}
+    share_changes_l1 = {}
+    if share_years:
+        share_changes_l2 = compute_l2_share_changes(ts, share_years[0], share_years[1])
+    else:
+        # Fallback: ILO modelled estimates, major group (L1) only
+        hist_data = parse_xml_series(f'ilostat_data/{country_code}_model_hist.xml', 'OCU')
+        hist_clean = {}
+        for k, v in hist_data.items():
+            base = k.split('|')[0]
+            num = base.split('_')[-1]
+            if num.isdigit() and len(num) == 1:
+                hist_clean[num] = v
+        share_changes_l1 = compute_share_change(hist_clean)
+
     result = []
-    for num_code, info in sorted(l2_clean.items()):
-        if not num_code.isdigit() or len(num_code) != 2:
-            continue
-        
+    for num_code, value in sorted(levels.items()):
         major = num_code[0]
         name_cn, name_en = ISCO_L2_NAMES.get(num_code, (f'职业代码 {num_code}', f'Occupation {num_code}'))
         cat_cn, cat_en = ISCO_L1_NAMES.get(major, (f'大类{major}', f'Major Group {major}'))
-        
-        jobs = int(info['value'] * multiplier)
-        
-        # Share change from L1
-        share_info = share_changes_l1.get(major, {})
+
+        jobs = int(value)
+
+        # Share change: prefer real L2 survey data, else modelled L1
+        share_info = share_changes_l2.get(num_code) or share_changes_l1.get(major, {})
         share_change = share_info.get('change', None)
         
         # Education
@@ -510,27 +554,47 @@ def build_country_l2(country_code):
 COUNTRY_DESCRIPTIONS = {
     'IND': {
         'title': '印度职业地图',
-        'description': '本工具可视化展示了印度<b>{occ_count}个职业分类</b>的就业分布数据，涵盖约<b>{total_jobs_display}</b>就业人口。数据来源为印度统计和计划执行部（MOSPI）发布的《定期劳动力调查》（PLFS 2023-24）和国际劳工组织（ILO）统计数据。职业分类采用NCO-2015标准（对应ISCO-08的3位小类级别）。每个方块的<b>面积</b>与就业人数成正比，<b>颜色</b>展示所选指标。',
+        'description': '本工具可视化展示了印度<b>{occ_count}个职业分类</b>的就业分布数据，涵盖约<b>{total_jobs_display}</b>就业人口。数据来源为印度统计和计划执行部（MOSPI）发布的《定期劳动力调查》（PLFS 2023-24）和国际劳工组织（ILO）统计数据。职业分类采用NCO-2015标准（对应ISCO-08的3位小类级别）；就业趋势为PLFS调查微观数据2022→2025年各亚大类真实份额变化。每个方块的<b>面积</b>与就业人数成正比，<b>颜色</b>展示所选指标。',
         'source': '数据来源：印度MOSPI PLFS 2023-24 / ILO ILOSTAT',
+        'source_links': [
+            {'label': '印度MOSPI《定期劳动力调查年报 PLFS 2023-24》', 'url': 'https://www.mospi.gov.in/publication/annual-report-plfs-2023-24'},
+            {'label': 'ILO ILOSTAT 就业人数×职业（ISCO-08 2位，印度）', 'url': 'https://rshiny.ilo.org/dataexplorer56/?lang=en&id=EMP_TEMP_SEX_OC2_NB_A&ref_area=IND'},
+            {'label': 'ILOSTAT SDMX API 原始数据（CSV）', 'url': 'https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/IND.A..SEX_T.?format=csv&startPeriod=2015'},
+        ],
         'data_year': '2024',
     },
     'NGA': {
         'title': '尼日利亚职业地图',
-        'description': '本工具可视化展示了尼日利亚<b>{occ_count}个职业分类</b>的就业分布数据，涵盖约<b>{total_jobs_display}</b>就业人口。数据来源为国际劳工组织（ILO）ILOSTAT数据库，基于尼日利亚国家统计局（NBS）劳动力调查。职业分类采用ISCO-08标准（2位亚大类级别）。每个方块的<b>面积</b>与就业人数成正比，<b>颜色</b>展示所选指标。',
-        'source': '数据来源：ILO ILOSTAT / 尼日利亚NBS劳动力调查 2024',
-        'data_year': '2024',
+        'description': '本工具可视化展示了尼日利亚<b>{occ_count}个职业分类</b>的就业分布数据，涵盖约<b>{total_jobs_display}</b>就业人口。数据来源为国际劳工组织（ILO）ILOSTAT数据库，基于尼日利亚国家统计局（NBS）新版全国劳动力调查（NLFS 2023，职业分类覆盖率约99.8%；2024年波次约23%就业未分类，故不采用）。职业分类采用ISCO-08标准（2位亚大类级别）；就业趋势采用ILO建模估计（大类级别，2020-2025）。每个方块的<b>面积</b>与就业人数成正比，<b>颜色</b>展示所选指标。',
+        'source': '数据来源：ILO ILOSTAT / 尼日利亚NBS劳动力调查 2023',
+        'source_links': [
+            {'label': 'ILO ILOSTAT 就业人数×职业（ISCO-08 2位，尼日利亚）', 'url': 'https://rshiny.ilo.org/dataexplorer56/?lang=en&id=EMP_TEMP_SEX_OC2_NB_A&ref_area=NGA'},
+            {'label': '尼日利亚NBS 劳动力调查报告库', 'url': 'https://nigerianstat.gov.ng/elibrary?queries=labour%20force'},
+            {'label': 'ILOSTAT SDMX API 原始数据（CSV）', 'url': 'https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/NGA.A..SEX_T.?format=csv&startPeriod=2015'},
+        ],
+        'data_year': '2023',
     },
     'IDN': {
         'title': '印度尼西亚职业地图',
-        'description': '本工具可视化展示了印度尼西亚<b>{occ_count}个职业分类</b>的就业分布数据，涵盖约<b>{total_jobs_display}</b>就业人口。数据来源为国际劳工组织（ILO）ILOSTAT数据库，基于印尼中央统计局（BPS）Sakernas全国劳动力调查。职业分类采用ISCO-08标准（2位亚大类级别）。每个方块的<b>面积</b>与就业人数成正比，<b>颜色</b>展示所选指标。',
+        'description': '本工具可视化展示了印度尼西亚<b>{occ_count}个职业分类</b>的就业分布数据，涵盖约<b>{total_jobs_display}</b>就业人口。数据来源为国际劳工组织（ILO）ILOSTAT数据库，基于印尼中央统计局（BPS）Sakernas全国劳动力调查。职业分类采用ISCO-08标准（2位亚大类级别）；因ISCO-08口径仅有2023年一期调查数据，就业趋势采用ILO建模估计（大类级别，2020-2025）。每个方块的<b>面积</b>与就业人数成正比，<b>颜色</b>展示所选指标。',
         'source': '数据来源：ILO ILOSTAT / 印尼BPS Sakernas 2023',
+        'source_links': [
+            {'label': 'ILO ILOSTAT 就业人数×职业（ISCO-08 2位，印尼）', 'url': 'https://rshiny.ilo.org/dataexplorer56/?lang=en&id=EMP_TEMP_SEX_OC2_NB_A&ref_area=IDN'},
+            {'label': '印尼BPS 劳动力统计专题', 'url': 'https://www.bps.go.id/en/statistics-table?subject=520'},
+            {'label': 'ILOSTAT SDMX API 原始数据（CSV）', 'url': 'https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/IDN.A..SEX_T.?format=csv&startPeriod=2015'},
+        ],
         'data_year': '2023',
     },
     'RUS': {
         'title': '俄罗斯职业地图',
-        'description': '本工具可视化展示了俄罗斯<b>{occ_count}个职业分类</b>的就业分布数据，涵盖约<b>{total_jobs_display}</b>就业人口。数据来源为国际劳工组织（ILO）ILOSTAT数据库，基于俄罗斯联邦统计局（Rosstat）劳动力调查。职业分类采用ISCO-08标准（2位亚大类级别）。每个方块的<b>面积</b>与就业人数成正比，<b>颜色</b>展示所选指标。',
-        'source': '数据来源：ILO ILOSTAT / 俄罗斯Rosstat劳动力调查 2024',
-        'data_year': '2024',
+        'description': '本工具可视化展示了俄罗斯<b>{occ_count}个职业分类</b>的就业分布数据，涵盖约<b>{total_jobs_display}</b>就业人口。数据来源为国际劳工组织（ILO）ILOSTAT数据库，基于俄罗斯联邦统计局（Rosstat）劳动力调查（2025年）。职业分类采用ISCO-08标准（2位亚大类级别）；就业趋势为Rosstat劳动力调查数据2020→2025年各职业真实份额变化。每个方块的<b>面积</b>与就业人数成正比，<b>颜色</b>展示所选指标。',
+        'source': '数据来源：ILO ILOSTAT / 俄罗斯Rosstat劳动力调查 2025',
+        'source_links': [
+            {'label': 'ILO ILOSTAT 就业人数×职业（ISCO-08 2位，俄罗斯）', 'url': 'https://rshiny.ilo.org/dataexplorer56/?lang=en&id=EMP_TEMP_SEX_OC2_NB_A&ref_area=RUS'},
+            {'label': '俄罗斯Rosstat 劳动力调查专题（俄文）', 'url': 'https://rosstat.gov.ru/labour_force'},
+            {'label': 'ILOSTAT SDMX API 原始数据（CSV）', 'url': 'https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/RUS.A..SEX_T.?format=csv&startPeriod=2015'},
+        ],
+        'data_year': '2025',
     },
 }
 
@@ -554,8 +618,19 @@ all_country_data['IND'] = india_data
 print(f"  India: {len(india_data)} occupations, {sum(d['jobs'] for d in india_data):,.0f} total jobs")
 
 # Build other 3 countries (Level 2)
+# Russia: latest survey year (2025), real per-occupation share changes 2020->2025
+# Nigeria: use 2023 NLFS levels — the 2024 wave reports ~23% of employment as
+#          "occupation not elsewhere classified" (21.7M of 93.1M), which would
+#          badly distort the occupation treemap; 2023 has near-complete coverage
+#          (~0.2% unclassified). Share-change kept on ILO modelled L1 estimates.
+# Indonesia: only 2023 available under ISCO-08, fall back to ILO modelled L1 trend
+L2_BUILD_PARAMS = {
+    'NGA': {'level_year': '2023', 'share_years': None},
+    'IDN': {'level_year': '2023', 'share_years': None},
+    'RUS': {'level_year': '2025', 'share_years': ('2020', '2025')},
+}
 for cc in ['NGA', 'IDN', 'RUS']:
-    country_data = build_country_l2(cc)
+    country_data = build_country_l2(cc, **L2_BUILD_PARAMS[cc])
     all_country_data[cc] = country_data
     print(f"  {cc}: {len(country_data)} occupations, {sum(d['jobs'] for d in country_data):,.0f} total jobs")
 
@@ -577,6 +652,7 @@ for cc, occupations in all_country_data.items():
             total_jobs_display=format_jobs_display(total_jobs),
         ),
         'source': desc['source'],
+        'source_links': desc.get('source_links', []),
         'data_year': desc['data_year'],
         'total_jobs': total_jobs,
         'occ_count': len(occupations),
