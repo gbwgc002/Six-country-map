@@ -75,7 +75,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。"
+     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。",
+     "male": 5648597,
+     "female": 740490,
+     "female_share": 11.6
     },
     {
      "title": "总经理和执行董事",
@@ -88,7 +91,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。"
+     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。",
+     "male": 5648597,
+     "female": 740490,
+     "female_share": 11.6
     },
     {
      "title": "商务服务和行政经理",
@@ -101,7 +107,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 7,
-     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。"
+     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。",
+     "male": 2526421,
+     "female": 331873,
+     "female_share": 11.6
     },
     {
      "title": "销售/市场/开发经理",
@@ -114,7 +123,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 7,
-     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。"
+     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。",
+     "male": 2526421,
+     "female": 331873,
+     "female_share": 11.6
     },
     {
      "title": "农林渔业生产经理",
@@ -127,7 +139,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 6,
-     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。"
+     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。",
+     "male": 1737044,
+     "female": 268585,
+     "female_share": 13.4
     },
     {
      "title": "制造/采矿/建筑/物流经理",
@@ -140,7 +155,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 6,
-     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。"
+     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。",
+     "male": 1737044,
+     "female": 268585,
+     "female_share": 13.4
     },
     {
      "title": "信息通信技术服务经理",
@@ -153,7 +171,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 6,
-     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。"
+     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。",
+     "male": 1737044,
+     "female": 268585,
+     "female_share": 13.4
     },
     {
      "title": "专业服务经理",
@@ -166,7 +187,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 6,
-     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。"
+     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。",
+     "male": 1737044,
+     "female": 268585,
+     "female_share": 13.4
     },
     {
      "title": "酒店和餐饮经理",
@@ -179,7 +203,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。"
+     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。",
+     "male": 1915995,
+     "female": 204884,
+     "female_share": 9.7
     },
     {
      "title": "零售和批发贸易经理",
@@ -192,7 +219,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。"
+     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。",
+     "male": 1915995,
+     "female": 204884,
+     "female_share": 9.7
     },
     {
      "title": "其他服务经理",
@@ -205,7 +235,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。"
+     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。",
+     "male": 1915995,
+     "female": 204884,
+     "female_share": 9.7
     },
     {
      "title": "物理和地球科学专业人员",
@@ -218,7 +251,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 8,
-     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。"
+     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。",
+     "male": 2044906,
+     "female": 307004,
+     "female_share": 13.1
     },
     {
      "title": "生命科学专业人员",
@@ -231,7 +267,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 8,
-     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。"
+     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。",
+     "male": 2044906,
+     "female": 307004,
+     "female_share": 13.1
     },
     {
      "title": "工程专业人员（不含电气电子）",
@@ -244,7 +283,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 8,
-     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。"
+     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。",
+     "male": 2044906,
+     "female": 307004,
+     "female_share": 13.1
     },
     {
      "title": "电气工程专业人员",
@@ -257,7 +299,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 8,
-     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。"
+     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。",
+     "male": 2044906,
+     "female": 307004,
+     "female_share": 13.1
     },
     {
      "title": "建筑师/规划师/测量师/设计师",
@@ -270,7 +315,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 8,
-     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。"
+     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。",
+     "male": 2044906,
+     "female": 307004,
+     "female_share": 13.1
     },
     {
      "title": "医生",
@@ -283,7 +331,10 @@
      "education": "博士/专业学位（对标：博士学位）",
      "education_idx": 6,
      "exposure": 6,
-     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。"
+     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。",
+     "male": 1521142,
+     "female": 1200338,
+     "female_share": 44.1
     },
     {
      "title": "护理和助产专业人员",
@@ -296,7 +347,10 @@
      "education": "博士/专业学位（对标：博士学位）",
      "education_idx": 6,
      "exposure": 6,
-     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。"
+     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。",
+     "male": 1521142,
+     "female": 1200338,
+     "female_share": 44.1
     },
     {
      "title": "传统医学和替代医学专业人员",
@@ -309,7 +363,10 @@
      "education": "博士/专业学位（对标：博士学位）",
      "education_idx": 6,
      "exposure": 6,
-     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。"
+     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。",
+     "male": 1521142,
+     "female": 1200338,
+     "female_share": 44.1
     },
     {
      "title": "急救医师和护理人员",
@@ -322,7 +379,10 @@
      "education": "博士/专业学位（对标：博士学位）",
      "education_idx": 6,
      "exposure": 6,
-     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。"
+     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。",
+     "male": 1521142,
+     "female": 1200338,
+     "female_share": 44.1
     },
     {
      "title": "兽医",
@@ -335,7 +395,10 @@
      "education": "博士/专业学位（对标：博士学位）",
      "education_idx": 6,
      "exposure": 6,
-     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。"
+     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。",
+     "male": 1521142,
+     "female": 1200338,
+     "female_share": 44.1
     },
     {
      "title": "其他卫生专业人员",
@@ -348,7 +411,10 @@
      "education": "博士/专业学位（对标：博士学位）",
      "education_idx": 6,
      "exposure": 6,
-     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。"
+     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。",
+     "male": 1521142,
+     "female": 1200338,
+     "female_share": 44.1
     },
     {
      "title": "大学和高等教育教师",
@@ -361,7 +427,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 6,
-     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。"
+     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。",
+     "male": 5652352,
+     "female": 6206335,
+     "female_share": 52.3
     },
     {
      "title": "职业教育教师",
@@ -374,7 +443,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 6,
-     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。"
+     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。",
+     "male": 5652352,
+     "female": 6206335,
+     "female_share": 52.3
     },
     {
      "title": "中学教师",
@@ -387,7 +459,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 6,
-     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。"
+     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。",
+     "male": 5652352,
+     "female": 6206335,
+     "female_share": 52.3
     },
     {
      "title": "小学和学前教师",
@@ -400,7 +475,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 6,
-     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。"
+     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。",
+     "male": 5652352,
+     "female": 6206335,
+     "female_share": 52.3
     },
     {
      "title": "其他教学专业人员",
@@ -413,7 +491,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 6,
-     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。"
+     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。",
+     "male": 5652352,
+     "female": 6206335,
+     "female_share": 52.3
     },
     {
      "title": "财务专业人员",
@@ -426,7 +507,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 8,
-     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。"
+     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。",
+     "male": 3073507,
+     "female": 968275,
+     "female_share": 24.0
     },
     {
      "title": "行政专业人员",
@@ -439,7 +523,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 8,
-     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。"
+     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。",
+     "male": 3073507,
+     "female": 968275,
+     "female_share": 24.0
     },
     {
      "title": "销售/市场/公关专业人员",
@@ -452,7 +539,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 8,
-     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。"
+     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。",
+     "male": 3073507,
+     "female": 968275,
+     "female_share": 24.0
     },
     {
      "title": "软件和应用开发人员/分析师",
@@ -465,7 +555,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 9,
-     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。"
+     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。",
+     "male": 2599565,
+     "female": 987637,
+     "female_share": 27.5
     },
     {
      "title": "数据库和网络专业人员",
@@ -478,7 +571,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 9,
-     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。"
+     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。",
+     "male": 2599565,
+     "female": 987637,
+     "female_share": 27.5
     },
     {
      "title": "法律专业人员",
@@ -491,7 +587,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。"
+     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。",
+     "male": 2904512,
+     "female": 407994,
+     "female_share": 12.3
     },
     {
      "title": "图书馆和档案专业人员",
@@ -504,7 +603,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。"
+     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。",
+     "male": 2904512,
+     "female": 407994,
+     "female_share": 12.3
     },
     {
      "title": "社会和宗教专业人员",
@@ -517,7 +619,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。"
+     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。",
+     "male": 2904512,
+     "female": 407994,
+     "female_share": 12.3
     },
     {
      "title": "作者/记者/语言学家",
@@ -530,7 +635,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。"
+     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。",
+     "male": 2904512,
+     "female": 407994,
+     "female_share": 12.3
     },
     {
      "title": "创意和表演艺术家",
@@ -543,7 +651,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。"
+     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。",
+     "male": 2904512,
+     "female": 407994,
+     "female_share": 12.3
     },
     {
      "title": "物理和工程科学技术员",
@@ -556,7 +667,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。"
+     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。",
+     "male": 2817999,
+     "female": 201138,
+     "female_share": 6.7
     },
     {
      "title": "采矿/制造/建筑监督员",
@@ -569,7 +683,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。"
+     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。",
+     "male": 2817999,
+     "female": 201138,
+     "female_share": 6.7
     },
     {
      "title": "过程控制技术员",
@@ -582,7 +699,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。"
+     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。",
+     "male": 2817999,
+     "female": 201138,
+     "female_share": 6.7
     },
     {
      "title": "生命科学技术员和相关助理",
@@ -595,7 +715,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。"
+     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。",
+     "male": 2817999,
+     "female": 201138,
+     "female_share": 6.7
     },
     {
      "title": "船舶和航空控制及技术员",
@@ -608,7 +731,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。"
+     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。",
+     "male": 2817999,
+     "female": 201138,
+     "female_share": 6.7
     },
     {
      "title": "医学和药学技术员",
@@ -621,7 +747,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。"
+     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。",
+     "male": 996476,
+     "female": 2286354,
+     "female_share": 69.6
     },
     {
      "title": "护理和助产助理专业人员",
@@ -634,7 +763,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。"
+     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。",
+     "male": 996476,
+     "female": 2286354,
+     "female_share": 69.6
     },
     {
      "title": "兽医技术员和助理",
@@ -647,7 +779,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。"
+     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。",
+     "male": 996476,
+     "female": 2286354,
+     "female_share": 69.6
     },
     {
      "title": "其他卫生助理专业人员",
@@ -660,7 +795,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。"
+     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。",
+     "male": 996476,
+     "female": 2286354,
+     "female_share": 69.6
     },
     {
      "title": "金融和数学助理专业人员",
@@ -673,7 +811,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。"
+     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。",
+     "male": 3655214,
+     "female": 584753,
+     "female_share": 13.8
     },
     {
      "title": "销售和采购代理/经纪人",
@@ -686,7 +827,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。"
+     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。",
+     "male": 3655214,
+     "female": 584753,
+     "female_share": 13.8
     },
     {
      "title": "商业服务代理",
@@ -699,7 +843,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。"
+     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。",
+     "male": 3655214,
+     "female": 584753,
+     "female_share": 13.8
     },
     {
      "title": "行政和专业秘书",
@@ -712,7 +859,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。"
+     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。",
+     "male": 3655214,
+     "female": 584753,
+     "female_share": 13.8
     },
     {
      "title": "政府监管助理专业人员",
@@ -725,7 +875,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。"
+     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。",
+     "male": 3655214,
+     "female": 584753,
+     "female_share": 13.8
     },
     {
      "title": "法律/社会助理专业人员",
@@ -738,7 +891,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。"
+     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。",
+     "male": 1163687,
+     "female": 202706,
+     "female_share": 14.8
     },
     {
      "title": "体育和健身工作者",
@@ -751,7 +907,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。"
+     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。",
+     "male": 1163687,
+     "female": 202706,
+     "female_share": 14.8
     },
     {
      "title": "艺术/文化/烹饪助理专业人员",
@@ -764,7 +923,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。"
+     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。",
+     "male": 1163687,
+     "female": 202706,
+     "female_share": 14.8
     },
     {
      "title": "信息通信技术运营技术员",
@@ -777,7 +939,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。"
+     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。",
+     "male": 601414,
+     "female": 138069,
+     "female_share": 18.7
     },
     {
      "title": "通信技术员",
@@ -790,7 +955,10 @@
      "education": "ITI/文凭课程（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。"
+     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。",
+     "male": 601414,
+     "female": 138069,
+     "female_share": 18.7
     },
     {
      "title": "一般办事员",
@@ -803,7 +971,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 9,
-     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。"
+     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。",
+     "male": 4356813,
+     "female": 1367568,
+     "female_share": 23.9
     },
     {
      "title": "秘书（一般）",
@@ -816,7 +987,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 9,
-     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。"
+     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。",
+     "male": 4356813,
+     "female": 1367568,
+     "female_share": 23.9
     },
     {
      "title": "键盘操作员",
@@ -829,7 +1003,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 9,
-     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。"
+     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。",
+     "male": 4356813,
+     "female": 1367568,
+     "female_share": 23.9
     },
     {
      "title": "出纳员和相关人员",
@@ -842,7 +1019,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 8,
-     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。"
+     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。",
+     "male": 1270408,
+     "female": 548171,
+     "female_share": 30.1
     },
     {
      "title": "客户信息工作者",
@@ -855,7 +1035,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 8,
-     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。"
+     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。",
+     "male": 1270408,
+     "female": 548171,
+     "female_share": 30.1
     },
     {
      "title": "数字记录和会计人员",
@@ -868,7 +1051,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 9,
-     "exposure_rationale": "数字记录和会计工作高度程式化，AI和RPA可自动化大部分任务。"
+     "exposure_rationale": "数字记录和会计工作高度程式化，AI和RPA可自动化大部分任务。",
+     "male": 1323729,
+     "female": 297699,
+     "female_share": 18.4
     },
     {
      "title": "材料记录和运输人员",
@@ -881,7 +1067,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 9,
-     "exposure_rationale": "数字记录和会计工作高度程式化，AI和RPA可自动化大部分任务。"
+     "exposure_rationale": "数字记录和会计工作高度程式化，AI和RPA可自动化大部分任务。",
+     "male": 1323729,
+     "female": 297699,
+     "female_share": 18.4
     },
     {
      "title": "其他文职支持人员",
@@ -894,7 +1083,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 8,
-     "exposure_rationale": "其他文职工作涉及多种行政任务，AI可自动化其中大部分。"
+     "exposure_rationale": "其他文职工作涉及多种行政任务，AI可自动化其中大部分。",
+     "male": 1527685,
+     "female": 354481,
+     "female_share": 18.8
     },
     {
      "title": "旅行服务员/导游/厨师",
@@ -907,7 +1099,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。"
+     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。",
+     "male": 7396053,
+     "female": 4414301,
+     "female_share": 37.4
     },
     {
      "title": "厨师",
@@ -920,7 +1115,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。"
+     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。",
+     "male": 7396053,
+     "female": 4414301,
+     "female_share": 37.4
     },
     {
      "title": "服务员和酒吧侍应",
@@ -933,7 +1131,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。"
+     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。",
+     "male": 7396053,
+     "female": 4414301,
+     "female_share": 37.4
     },
     {
      "title": "理发师/美容师及相关人员",
@@ -946,7 +1147,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。"
+     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。",
+     "male": 7396053,
+     "female": 4414301,
+     "female_share": 37.4
     },
     {
      "title": "建筑和家务管理人员",
@@ -959,7 +1163,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。"
+     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。",
+     "male": 7396053,
+     "female": 4414301,
+     "female_share": 37.4
     },
     {
      "title": "其他个人服务人员",
@@ -972,7 +1179,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。"
+     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。",
+     "male": 7396053,
+     "female": 4414301,
+     "female_share": 37.4
     },
     {
      "title": "街头和市场销售人员",
@@ -985,7 +1195,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。"
+     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。",
+     "male": 36177781,
+     "female": 8677772,
+     "female_share": 19.3
     },
     {
      "title": "商店销售人员",
@@ -998,7 +1211,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。"
+     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。",
+     "male": 36177781,
+     "female": 8677772,
+     "female_share": 19.3
     },
     {
      "title": "收银员和售票员",
@@ -1011,7 +1227,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。"
+     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。",
+     "male": 36177781,
+     "female": 8677772,
+     "female_share": 19.3
     },
     {
      "title": "其他销售人员",
@@ -1024,7 +1243,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。"
+     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。",
+     "male": 36177781,
+     "female": 8677772,
+     "female_share": 19.3
     },
     {
      "title": "个人护理人员（卫生机构）",
@@ -1037,7 +1259,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。"
+     "exposure_rationale": "护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。",
+     "male": 161787,
+     "female": 957871,
+     "female_share": 85.6
     },
     {
      "title": "保安人员",
@@ -1050,7 +1275,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。"
+     "exposure_rationale": "安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。",
+     "male": 4989795,
+     "female": 355780,
+     "female_share": 6.7
     },
     {
      "title": "市场园艺师和作物种植者",
@@ -1063,7 +1291,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。"
+     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。",
+     "male": 83593087,
+     "female": 58842994,
+     "female_share": 41.3
     },
     {
      "title": "畜牧工人",
@@ -1076,7 +1307,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。"
+     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。",
+     "male": 83593087,
+     "female": 58842994,
+     "female_share": 41.3
     },
     {
      "title": "混合作物和畜牧农民",
@@ -1089,7 +1323,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。"
+     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。",
+     "male": 83593087,
+     "female": 58842994,
+     "female_share": 41.3
     },
     {
      "title": "林业和相关工人",
@@ -1102,7 +1339,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。"
+     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。",
+     "male": 1959843,
+     "female": 418730,
+     "female_share": 17.6
     },
     {
      "title": "渔业工人/猎人/捕猎者",
@@ -1115,7 +1355,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。"
+     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。",
+     "male": 1959843,
+     "female": 418730,
+     "female_share": 17.6
     },
     {
      "title": "自给型作物种植者",
@@ -1128,7 +1371,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。"
+     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。",
+     "male": 6108213,
+     "female": 10964066,
+     "female_share": 64.2
     },
     {
      "title": "自给型畜牧者",
@@ -1141,7 +1387,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。"
+     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。",
+     "male": 6108213,
+     "female": 10964066,
+     "female_share": 64.2
     },
     {
      "title": "自给型混合种植和畜牧者",
@@ -1154,7 +1403,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。"
+     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。",
+     "male": 6108213,
+     "female": 10964066,
+     "female_share": 64.2
     },
     {
      "title": "自给型渔民/猎人/采集者",
@@ -1167,7 +1419,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。"
+     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。",
+     "male": 6108213,
+     "female": 10964066,
+     "female_share": 64.2
     },
     {
      "title": "建筑工人",
@@ -1180,7 +1435,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 2,
-     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。"
+     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。",
+     "male": 15693048,
+     "female": 214965,
+     "female_share": 1.4
     },
     {
      "title": "建筑装修和相关工人",
@@ -1193,7 +1451,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 2,
-     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。"
+     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。",
+     "male": 15693048,
+     "female": 214965,
+     "female_share": 1.4
     },
     {
      "title": "油漆工/建筑物清洁工及相关",
@@ -1206,7 +1467,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 2,
-     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。"
+     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。",
+     "male": 15693048,
+     "female": 214965,
+     "female_share": 1.4
     },
     {
      "title": "钣金工/结构金属工及相关",
@@ -1219,7 +1483,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。"
+     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。",
+     "male": 8574650,
+     "female": 133761,
+     "female_share": 1.5
     },
     {
      "title": "铁匠/锻工和相关工具制造工",
@@ -1232,7 +1499,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。"
+     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。",
+     "male": 8574650,
+     "female": 133761,
+     "female_share": 1.5
     },
     {
      "title": "机械装配工和修理工",
@@ -1245,7 +1515,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。"
+     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。",
+     "male": 8574650,
+     "female": 133761,
+     "female_share": 1.5
     },
     {
      "title": "手工艺工人",
@@ -1258,7 +1531,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 5,
-     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。"
+     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。",
+     "male": 3740084,
+     "female": 2536687,
+     "female_share": 40.4
     },
     {
      "title": "印刷行业工人",
@@ -1271,7 +1547,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 5,
-     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。"
+     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。",
+     "male": 3740084,
+     "female": 2536687,
+     "female_share": 40.4
     },
     {
      "title": "电气设备安装和修理工",
@@ -1284,7 +1563,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。"
+     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。",
+     "male": 5149998,
+     "female": 28632,
+     "female_share": 0.6
     },
     {
      "title": "电子和通信安装/修理工",
@@ -1297,7 +1579,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。"
+     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。",
+     "male": 5149998,
+     "female": 28632,
+     "female_share": 0.6
     },
     {
      "title": "食品加工及相关行业工人",
@@ -1310,7 +1595,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。"
+     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。",
+     "male": 7987875,
+     "female": 10604431,
+     "female_share": 57.0
     },
     {
      "title": "木材加工工人/家具制造工",
@@ -1323,7 +1611,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。"
+     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。",
+     "male": 7987875,
+     "female": 10604431,
+     "female_share": 57.0
     },
     {
      "title": "服装及相关行业工人",
@@ -1336,7 +1627,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。"
+     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。",
+     "male": 7987875,
+     "female": 10604431,
+     "female_share": 57.0
     },
     {
      "title": "其他手工艺和相关行业工人",
@@ -1349,7 +1643,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。"
+     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。",
+     "male": 7987875,
+     "female": 10604431,
+     "female_share": 57.0
     },
     {
      "title": "采矿和矿物加工设备操作员",
@@ -1362,7 +1659,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。",
+     "male": 5877173,
+     "female": 1143923,
+     "female_share": 16.3
     },
     {
      "title": "金属加工和精加工设备操作员",
@@ -1375,7 +1675,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。",
+     "male": 5877173,
+     "female": 1143923,
+     "female_share": 16.3
     },
     {
      "title": "化工和照相制品设备操作员",
@@ -1388,7 +1691,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。",
+     "male": 5877173,
+     "female": 1143923,
+     "female_share": 16.3
     },
     {
      "title": "橡胶/塑料/纸张产品机器操作员",
@@ -1401,7 +1707,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。",
+     "male": 5877173,
+     "female": 1143923,
+     "female_share": 16.3
     },
     {
      "title": "纺织/皮革/毛皮产品机器操作员",
@@ -1414,7 +1723,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。",
+     "male": 5877173,
+     "female": 1143923,
+     "female_share": 16.3
     },
     {
      "title": "食品和相关产品机器操作员",
@@ -1427,7 +1739,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。",
+     "male": 5877173,
+     "female": 1143923,
+     "female_share": 16.3
     },
     {
      "title": "木材加工和造纸机器操作员",
@@ -1440,7 +1755,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。",
+     "male": 5877173,
+     "female": 1143923,
+     "female_share": 16.3
     },
     {
      "title": "其他固定设备和机器操作员",
@@ -1453,7 +1771,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。",
+     "male": 5877173,
+     "female": 1143923,
+     "female_share": 16.3
     },
     {
      "title": "装配工",
@@ -1466,7 +1787,10 @@
      "education": "高中/12年级毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 4,
-     "exposure_rationale": "装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。"
+     "exposure_rationale": "装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。",
+     "male": 425533,
+     "female": 55959,
+     "female_share": 11.6
     },
     {
      "title": "火车司机和相关人员",
@@ -1479,7 +1803,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。"
+     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。",
+     "male": 21341219,
+     "female": 46371,
+     "female_share": 0.2
     },
     {
      "title": "汽车/货车/摩托车驾驶员",
@@ -1492,7 +1819,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。"
+     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。",
+     "male": 21341219,
+     "female": 46371,
+     "female_share": 0.2
     },
     {
      "title": "重型卡车和客车驾驶员",
@@ -1505,7 +1835,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。"
+     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。",
+     "male": 21341219,
+     "female": 46371,
+     "female_share": 0.2
     },
     {
      "title": "移动设备操作员",
@@ -1518,7 +1851,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。"
+     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。",
+     "male": 21341219,
+     "female": 46371,
+     "female_share": 0.2
     },
     {
      "title": "船舶和飞机控制/操作人员",
@@ -1531,7 +1867,10 @@
      "education": "高中/12年级以下（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。"
+     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。",
+     "male": 21341219,
+     "female": 46371,
+     "female_share": 0.2
     },
     {
      "title": "家庭佣工和帮手",
@@ -1544,7 +1883,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。"
+     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。",
+     "male": 2890139,
+     "female": 6047114,
+     "female_share": 67.7
     },
     {
      "title": "车辆/窗户/洗衣及其他手工清洁工",
@@ -1557,7 +1899,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。"
+     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。",
+     "male": 2890139,
+     "female": 6047114,
+     "female_share": 67.7
     },
     {
      "title": "农林渔业劳工",
@@ -1570,7 +1915,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "农林渔业劳工从事基础体力工作，AI影响极小。"
+     "exposure_rationale": "农林渔业劳工从事基础体力工作，AI影响极小。",
+     "male": 18185363,
+     "female": 17346097,
+     "female_share": 48.8
     },
     {
      "title": "采矿和建筑劳工",
@@ -1583,7 +1931,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。"
+     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。",
+     "male": 45917697,
+     "female": 6895773,
+     "female_share": 13.1
     },
     {
      "title": "制造业劳工",
@@ -1596,7 +1947,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。"
+     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。",
+     "male": 45917697,
+     "female": 6895773,
+     "female_share": 13.1
     },
     {
      "title": "运输和仓储劳工",
@@ -1609,7 +1963,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。"
+     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。",
+     "male": 45917697,
+     "female": 6895773,
+     "female_share": 13.1
     },
     {
      "title": "食品加工助理",
@@ -1622,7 +1979,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "食品加工助理从事基本体力工作，AI影响极小。"
+     "exposure_rationale": "食品加工助理从事基本体力工作，AI影响极小。",
+     "male": 462611,
+     "female": 313682,
+     "female_share": 40.4
     },
     {
      "title": "街头和相关服务工人",
@@ -1635,7 +1995,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 2,
-     "exposure_rationale": "街头销售和服务涉及人际互动，AI影响有限。"
+     "exposure_rationale": "街头销售和服务涉及人际互动，AI影响有限。",
+     "male": 1357857,
+     "female": 214116,
+     "female_share": 13.6
     },
     {
      "title": "街头小贩（不含食品）",
@@ -1648,7 +2011,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 2,
-     "exposure_rationale": "街头销售和服务涉及人际互动，AI影响有限。"
+     "exposure_rationale": "街头销售和服务涉及人际互动，AI影响有限。",
+     "male": 1357857,
+     "female": 214116,
+     "female_share": 13.6
     },
     {
      "title": "垃圾收集工人",
@@ -1661,7 +2027,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "其他基层工作多为体力劳动，AI影响极小。"
+     "exposure_rationale": "其他基层工作多为体力劳动，AI影响极小。",
+     "male": 2405607,
+     "female": 992064,
+     "female_share": 29.2
     },
     {
      "title": "其他基层工人",
@@ -1674,7 +2043,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "其他基层工作多为体力劳动，AI影响极小。"
+     "exposure_rationale": "其他基层工作多为体力劳动，AI影响极小。",
+     "male": 2405607,
+     "female": 992064,
+     "female_share": 29.2
     }
    ]
   },
@@ -1753,7 +2125,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。"
+     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。",
+     "male": 112863,
+     "female": 24869,
+     "female_share": 18.1
     },
     {
      "title": "行政和商务经理",
@@ -1766,7 +2141,10 @@
      "education": "HND/学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 7,
-     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。"
+     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。",
+     "male": 724461,
+     "female": 1819193,
+     "female_share": 71.5
     },
     {
      "title": "生产和专业服务经理",
@@ -1779,7 +2157,10 @@
      "education": "HND/学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 6,
-     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。"
+     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。",
+     "male": 545689,
+     "female": 817193,
+     "female_share": 60.0
     },
     {
      "title": "酒店/零售及其他服务经理",
@@ -1792,7 +2173,10 @@
      "education": "OND/NCE（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。"
+     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。",
+     "male": 2824035,
+     "female": 7197162,
+     "female_share": 71.8
     },
     {
      "title": "科学和工程专业人员",
@@ -1805,7 +2189,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 8,
-     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。"
+     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。",
+     "male": 551681,
+     "female": 194693,
+     "female_share": 26.1
     },
     {
      "title": "卫生专业人员",
@@ -1818,7 +2205,10 @@
      "education": "博士/专业学位（对标：博士学位）",
      "education_idx": 6,
      "exposure": 6,
-     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。"
+     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。",
+     "male": 205281,
+     "female": 222394,
+     "female_share": 52.0
     },
     {
      "title": "教学专业人员",
@@ -1831,7 +2221,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 6,
-     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。"
+     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。",
+     "male": 938397,
+     "female": 1097819,
+     "female_share": 53.9
     },
     {
      "title": "商业和行政专业人员",
@@ -1844,7 +2237,10 @@
      "education": "HND/学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 8,
-     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。"
+     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。",
+     "male": 132256,
+     "female": 65531,
+     "female_share": 33.1
     },
     {
      "title": "信息通信技术专业人员",
@@ -1857,7 +2253,10 @@
      "education": "HND/学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 9,
-     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。"
+     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。",
+     "male": 18351,
+     "female": 19398,
+     "female_share": 51.4
     },
     {
      "title": "法律/社会/文化专业人员",
@@ -1870,7 +2269,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。"
+     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。",
+     "male": 363059,
+     "female": 101081,
+     "female_share": 21.8
     },
     {
      "title": "科学和工程助理专业人员",
@@ -1883,7 +2285,10 @@
      "education": "OND/NCE（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。"
+     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。",
+     "male": 436867,
+     "female": 71161,
+     "female_share": 14.0
     },
     {
      "title": "卫生助理专业人员",
@@ -1896,7 +2301,10 @@
      "education": "OND/NCE（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。"
+     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。",
+     "male": 111489,
+     "female": 126824,
+     "female_share": 53.2
     },
     {
      "title": "商业和行政助理专业人员",
@@ -1909,7 +2317,10 @@
      "education": "OND/NCE（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。"
+     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。",
+     "male": 557224,
+     "female": 230769,
+     "female_share": 29.3
     },
     {
      "title": "法律/社会/文化助理专业人员",
@@ -1922,7 +2333,10 @@
      "education": "OND/NCE（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。"
+     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。",
+     "male": 210372,
+     "female": 90867,
+     "female_share": 30.2
     },
     {
      "title": "信息通信技术技术员",
@@ -1935,7 +2349,10 @@
      "education": "OND/NCE（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。"
+     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "一般文职人员",
@@ -1948,7 +2365,10 @@
      "education": "SSCE/WAEC（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 9,
-     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。"
+     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。",
+     "male": 57804,
+     "female": 57493,
+     "female_share": 49.9
     },
     {
      "title": "客户服务人员",
@@ -1961,7 +2381,10 @@
      "education": "SSCE/WAEC（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 8,
-     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。"
+     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。",
+     "male": 195333,
+     "female": 62523,
+     "female_share": 24.2
     },
     {
      "title": "数字记录和材料记录人员",
@@ -1974,7 +2397,10 @@
      "education": "SSCE/WAEC（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 9,
-     "exposure_rationale": "数字记录和会计工作高度程式化，AI和RPA可自动化大部分任务。"
+     "exposure_rationale": "数字记录和会计工作高度程式化，AI和RPA可自动化大部分任务。",
+     "male": 121690,
+     "female": 31078,
+     "female_share": 20.3
     },
     {
      "title": "其他文职支持人员",
@@ -1987,7 +2413,10 @@
      "education": "SSCE/WAEC（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 8,
-     "exposure_rationale": "其他文职工作涉及多种行政任务，AI可自动化其中大部分。"
+     "exposure_rationale": "其他文职工作涉及多种行政任务，AI可自动化其中大部分。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "个人服务人员",
@@ -2000,7 +2429,10 @@
      "education": "小学毕业证书（对标：小学教育）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。"
+     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。",
+     "male": 998672,
+     "female": 2226541,
+     "female_share": 69.0
     },
     {
      "title": "销售人员",
@@ -2013,7 +2445,10 @@
      "education": "小学毕业证书（对标：小学教育）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。"
+     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。",
+     "male": 1759706,
+     "female": 5085943,
+     "female_share": 74.3
     },
     {
      "title": "个人护理人员",
@@ -2026,7 +2461,10 @@
      "education": "SSCE/WAEC（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。"
+     "exposure_rationale": "护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。",
+     "male": 23661,
+     "female": 70498,
+     "female_share": 74.9
     },
     {
      "title": "保安服务人员",
@@ -2039,7 +2477,10 @@
      "education": "SSCE/WAEC（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。"
+     "exposure_rationale": "安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。",
+     "male": 571884,
+     "female": 45217,
+     "female_share": 7.3
     },
     {
      "title": "面向市场的农业技术工人",
@@ -2052,7 +2493,10 @@
      "education": "小学毕业证书（对标：小学教育）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。"
+     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。",
+     "male": 10346415,
+     "female": 5834206,
+     "female_share": 36.1
     },
     {
      "title": "面向市场的林渔猎技术工人",
@@ -2065,7 +2509,10 @@
      "education": "小学毕业证书（对标：小学教育）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。"
+     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。",
+     "male": 109014,
+     "female": 12609,
+     "female_share": 10.4
     },
     {
      "title": "自给型农林渔业劳动者",
@@ -2078,7 +2525,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。"
+     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。",
+     "male": 4147515,
+     "female": 2322817,
+     "female_share": 35.9
     },
     {
      "title": "建筑和相关行业工人",
@@ -2091,7 +2541,10 @@
      "education": "SSCE/WAEC（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 2,
-     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。"
+     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。",
+     "male": 1688099,
+     "female": 23589,
+     "female_share": 1.4
     },
     {
      "title": "金属/机械及相关行业工人",
@@ -2104,7 +2557,10 @@
      "education": "SSCE/WAEC（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。"
+     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。",
+     "male": 1067207,
+     "female": 22574,
+     "female_share": 2.1
     },
     {
      "title": "手工艺和印刷工人",
@@ -2117,7 +2573,10 @@
      "education": "SSCE/WAEC（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 5,
-     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。"
+     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。",
+     "male": 255553,
+     "female": 406988,
+     "female_share": 61.4
     },
     {
      "title": "电气和电子行业工人",
@@ -2130,7 +2589,10 @@
      "education": "SSCE/WAEC（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。"
+     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "食品加工/木工/服装及相关工人",
@@ -2143,7 +2605,10 @@
      "education": "小学毕业证书（对标：小学教育）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。"
+     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。",
+     "male": 1457239,
+     "female": 3127511,
+     "female_share": 68.2
     },
     {
      "title": "固定设备和机器操作员",
@@ -2156,7 +2621,10 @@
      "education": "小学毕业证书（对标：小学教育）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。",
+     "male": 333986,
+     "female": 812356,
+     "female_share": 70.9
     },
     {
      "title": "装配工",
@@ -2169,7 +2637,10 @@
      "education": "SSCE/WAEC（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 4,
-     "exposure_rationale": "装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。"
+     "exposure_rationale": "装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "驾驶员和移动设备操作员",
@@ -2182,7 +2653,10 @@
      "education": "小学毕业证书（对标：小学教育）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。"
+     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "清洁工和帮佣",
@@ -2195,7 +2669,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。"
+     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。",
+     "male": 128951,
+     "female": 206176,
+     "female_share": 61.5
     },
     {
      "title": "农林渔业劳工",
@@ -2208,7 +2685,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "农林渔业劳工从事基础体力工作，AI影响极小。"
+     "exposure_rationale": "农林渔业劳工从事基础体力工作，AI影响极小。",
+     "male": 801741,
+     "female": 284138,
+     "female_share": 26.2
     },
     {
      "title": "采矿/建筑/制造/运输劳工",
@@ -2221,7 +2701,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。"
+     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。",
+     "male": 693729,
+     "female": 360234,
+     "female_share": 34.2
     },
     {
      "title": "食品加工助理",
@@ -2234,7 +2717,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "食品加工助理从事基本体力工作，AI影响极小。"
+     "exposure_rationale": "食品加工助理从事基本体力工作，AI影响极小。",
+     "male": 56346,
+     "female": 1743616,
+     "female_share": 96.9
     },
     {
      "title": "街头和相关销售服务人员",
@@ -2247,7 +2733,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 2,
-     "exposure_rationale": "街头销售和服务涉及人际互动，AI影响有限。"
+     "exposure_rationale": "街头销售和服务涉及人际互动，AI影响有限。",
+     "male": 40850,
+     "female": 91398,
+     "female_share": 69.1
     },
     {
      "title": "垃圾收集和其他基层工人",
@@ -2260,7 +2749,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "其他基层工作多为体力劳动，AI影响极小。"
+     "exposure_rationale": "其他基层工作多为体力劳动，AI影响极小。",
+     "male": 187288,
+     "female": 116654,
+     "female_share": 38.4
     }
    ]
   },
@@ -2339,7 +2831,10 @@
      "education": "D1-D3文凭（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 4,
-     "exposure_rationale": ""
+     "exposure_rationale": "",
+     "male": 88234,
+     "female": 5441,
+     "female_share": 5.8
     },
     {
      "title": "军士",
@@ -2352,7 +2847,10 @@
      "education": "D1-D3文凭（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 3,
-     "exposure_rationale": ""
+     "exposure_rationale": "",
+     "male": 322905,
+     "female": 18856,
+     "female_share": 5.5
     },
     {
      "title": "其他军人",
@@ -2365,7 +2863,10 @@
      "education": "D1-D3文凭（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 2,
-     "exposure_rationale": ""
+     "exposure_rationale": "",
+     "male": 96304,
+     "female": 8230,
+     "female_share": 7.9
     },
     {
      "title": "首席执行官/高级官员/立法者",
@@ -2378,7 +2879,10 @@
      "education": "S2硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。"
+     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。",
+     "male": 367077,
+     "female": 72025,
+     "female_share": 16.4
     },
     {
      "title": "行政和商务经理",
@@ -2391,7 +2895,10 @@
      "education": "S1学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 7,
-     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。"
+     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。",
+     "male": 361061,
+     "female": 170699,
+     "female_share": 32.1
     },
     {
      "title": "生产和专业服务经理",
@@ -2404,7 +2911,10 @@
      "education": "S1学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 6,
-     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。"
+     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。",
+     "male": 630513,
+     "female": 205889,
+     "female_share": 24.6
     },
     {
      "title": "酒店/零售及其他服务经理",
@@ -2417,7 +2927,10 @@
      "education": "D1-D3文凭（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。"
+     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。",
+     "male": 644420,
+     "female": 541887,
+     "female_share": 45.7
     },
     {
      "title": "科学和工程专业人员",
@@ -2430,7 +2943,10 @@
      "education": "S2硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 8,
-     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。"
+     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。",
+     "male": 411979,
+     "female": 101406,
+     "female_share": 19.8
     },
     {
      "title": "卫生专业人员",
@@ -2443,7 +2959,10 @@
      "education": "S3博士学位（对标：博士学位）",
      "education_idx": 6,
      "exposure": 6,
-     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。"
+     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。",
+     "male": 342484,
+     "female": 813614,
+     "female_share": 70.4
     },
     {
      "title": "教学专业人员",
@@ -2456,7 +2975,10 @@
      "education": "S2硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 6,
-     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。"
+     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。",
+     "male": 1810004,
+     "female": 3746772,
+     "female_share": 67.4
     },
     {
      "title": "商业和行政专业人员",
@@ -2469,7 +2991,10 @@
      "education": "S1学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 8,
-     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。"
+     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。",
+     "male": 296948,
+     "female": 224110,
+     "female_share": 43.0
     },
     {
      "title": "信息通信技术专业人员",
@@ -2482,7 +3007,10 @@
      "education": "S1学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 9,
-     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。"
+     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。",
+     "male": 100913,
+     "female": 26639,
+     "female_share": 20.9
     },
     {
      "title": "法律/社会/文化专业人员",
@@ -2495,7 +3023,10 @@
      "education": "S2硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。"
+     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。",
+     "male": 342875,
+     "female": 163456,
+     "female_share": 32.3
     },
     {
      "title": "科学和工程助理专业人员",
@@ -2508,7 +3039,10 @@
      "education": "D1-D3文凭（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。"
+     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。",
+     "male": 1171571,
+     "female": 150424,
+     "female_share": 11.4
     },
     {
      "title": "卫生助理专业人员",
@@ -2521,7 +3055,10 @@
      "education": "D1-D3文凭（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。"
+     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。",
+     "male": 322210,
+     "female": 519679,
+     "female_share": 61.7
     },
     {
      "title": "商业和行政助理专业人员",
@@ -2534,7 +3071,10 @@
      "education": "D1-D3文凭（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。"
+     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。",
+     "male": 744073,
+     "female": 431353,
+     "female_share": 36.7
     },
     {
      "title": "法律/社会/文化助理专业人员",
@@ -2547,7 +3087,10 @@
      "education": "D1-D3文凭（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。"
+     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。",
+     "male": 325872,
+     "female": 158670,
+     "female_share": 32.7
     },
     {
      "title": "信息通信技术技术员",
@@ -2560,7 +3103,10 @@
      "education": "D1-D3文凭（对标：副学士/职业教育）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。"
+     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。",
+     "male": 269197,
+     "female": 32987,
+     "female_share": 10.9
     },
     {
      "title": "一般文职人员",
@@ -2573,7 +3119,10 @@
      "education": "SMA/SMK毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 9,
-     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。"
+     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。",
+     "male": 1589606,
+     "female": 1303152,
+     "female_share": 45.0
     },
     {
      "title": "客户服务人员",
@@ -2586,7 +3135,10 @@
      "education": "SMA/SMK毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 8,
-     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。"
+     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。",
+     "male": 556163,
+     "female": 400474,
+     "female_share": 41.9
     },
     {
      "title": "数字记录和材料记录人员",
@@ -2599,7 +3151,10 @@
      "education": "SMA/SMK毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 9,
-     "exposure_rationale": "数字记录和会计工作高度程式化，AI和RPA可自动化大部分任务。"
+     "exposure_rationale": "数字记录和会计工作高度程式化，AI和RPA可自动化大部分任务。",
+     "male": 725293,
+     "female": 602747,
+     "female_share": 45.4
     },
     {
      "title": "其他文职支持人员",
@@ -2612,7 +3167,10 @@
      "education": "SMA/SMK毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 8,
-     "exposure_rationale": "其他文职工作涉及多种行政任务，AI可自动化其中大部分。"
+     "exposure_rationale": "其他文职工作涉及多种行政任务，AI可自动化其中大部分。",
+     "male": 338561,
+     "female": 267359,
+     "female_share": 44.1
     },
     {
      "title": "个人服务人员",
@@ -2625,7 +3183,10 @@
      "education": "SD/SMP毕业（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。"
+     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。",
+     "male": 2883218,
+     "female": 3388709,
+     "female_share": 54.0
     },
     {
      "title": "销售人员",
@@ -2638,7 +3199,10 @@
      "education": "SD/SMP毕业（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。"
+     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。",
+     "male": 11505867,
+     "female": 14649779,
+     "female_share": 56.0
     },
     {
      "title": "个人护理人员",
@@ -2651,7 +3215,10 @@
      "education": "SMA/SMK毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。"
+     "exposure_rationale": "护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。",
+     "male": 114353,
+     "female": 438454,
+     "female_share": 79.3
     },
     {
      "title": "保安服务人员",
@@ -2664,7 +3231,10 @@
      "education": "SMA/SMK毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。"
+     "exposure_rationale": "安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。",
+     "male": 1783774,
+     "female": 79896,
+     "female_share": 4.3
     },
     {
      "title": "面向市场的农业技术工人",
@@ -2677,7 +3247,10 @@
      "education": "SD/SMP毕业（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。"
+     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。",
+     "male": 16003156,
+     "female": 8959477,
+     "female_share": 35.9
     },
     {
      "title": "面向市场的林渔猎技术工人",
@@ -2690,7 +3263,10 @@
      "education": "SD/SMP毕业（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。"
+     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。",
+     "male": 1323476,
+     "female": 168527,
+     "female_share": 11.3
     },
     {
      "title": "自给型农林渔业劳动者",
@@ -2703,7 +3279,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。"
+     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。",
+     "male": 2227759,
+     "female": 1424437,
+     "female_share": 39.0
     },
     {
      "title": "建筑和相关行业工人",
@@ -2716,7 +3295,10 @@
      "education": "SMA/SMK毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 2,
-     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。"
+     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。",
+     "male": 3256547,
+     "female": 28895,
+     "female_share": 0.9
     },
     {
      "title": "金属/机械及相关行业工人",
@@ -2729,7 +3311,10 @@
      "education": "SMA/SMK毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。"
+     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。",
+     "male": 2262493,
+     "female": 42385,
+     "female_share": 1.8
     },
     {
      "title": "手工艺和印刷工人",
@@ -2742,7 +3327,10 @@
      "education": "SMA/SMK毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 5,
-     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。"
+     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。",
+     "male": 979796,
+     "female": 1097651,
+     "female_share": 52.8
     },
     {
      "title": "电气和电子行业工人",
@@ -2755,7 +3343,10 @@
      "education": "SMA/SMK毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。"
+     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。",
+     "male": 620077,
+     "female": 24216,
+     "female_share": 3.8
     },
     {
      "title": "食品加工/木工/服装及相关工人",
@@ -2768,7 +3359,10 @@
      "education": "SD/SMP毕业（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。"
+     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。",
+     "male": 3556697,
+     "female": 4271023,
+     "female_share": 54.6
     },
     {
      "title": "固定设备和机器操作员",
@@ -2781,7 +3375,10 @@
      "education": "SD/SMP毕业（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。",
+     "male": 2243697,
+     "female": 1009620,
+     "female_share": 31.0
     },
     {
      "title": "装配工",
@@ -2794,7 +3391,10 @@
      "education": "SMA/SMK毕业（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 4,
-     "exposure_rationale": "装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。"
+     "exposure_rationale": "装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。",
+     "male": 276388,
+     "female": 51427,
+     "female_share": 15.7
     },
     {
      "title": "驾驶员和移动设备操作员",
@@ -2807,7 +3407,10 @@
      "education": "SD/SMP毕业（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。"
+     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。",
+     "male": 5631455,
+     "female": 103469,
+     "female_share": 1.8
     },
     {
      "title": "清洁工和帮佣",
@@ -2820,7 +3423,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。"
+     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。",
+     "male": 1500905,
+     "female": 2067706,
+     "female_share": 57.9
     },
     {
      "title": "农林渔业劳工",
@@ -2833,7 +3439,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "农林渔业劳工从事基础体力工作，AI影响极小。"
+     "exposure_rationale": "农林渔业劳工从事基础体力工作，AI影响极小。",
+     "male": 5022633,
+     "female": 3777817,
+     "female_share": 42.9
     },
     {
      "title": "采矿/建筑/制造/运输劳工",
@@ -2846,7 +3455,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。"
+     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。",
+     "male": 8059011,
+     "female": 1488643,
+     "female_share": 15.6
     },
     {
      "title": "食品加工助理",
@@ -2859,7 +3471,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "食品加工助理从事基本体力工作，AI影响极小。"
+     "exposure_rationale": "食品加工助理从事基本体力工作，AI影响极小。",
+     "male": 222097,
+     "female": 474488,
+     "female_share": 68.1
     },
     {
      "title": "街头和相关销售服务人员",
@@ -2872,7 +3487,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 2,
-     "exposure_rationale": "街头销售和服务涉及人际互动，AI影响有限。"
+     "exposure_rationale": "街头销售和服务涉及人际互动，AI影响有限。",
+     "male": 775609,
+     "female": 262878,
+     "female_share": 25.3
     },
     {
      "title": "垃圾收集和其他基层工人",
@@ -2885,7 +3503,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "其他基层工作多为体力劳动，AI影响极小。"
+     "exposure_rationale": "其他基层工作多为体力劳动，AI影响极小。",
+     "male": 2619789,
+     "female": 740035,
+     "female_share": 22.0
     }
    ]
   },
@@ -2964,7 +3585,10 @@
      "education": "高等教育-硕士/专家（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。"
+     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。",
+     "male": 510905,
+     "female": 325711,
+     "female_share": 38.9
     },
     {
      "title": "行政和商务经理",
@@ -2977,7 +3601,10 @@
      "education": "高等教育-学士（对标：学士学位）",
      "education_idx": 4,
      "exposure": 7,
-     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。"
+     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。",
+     "male": 315282,
+     "female": 353905,
+     "female_share": 52.9
     },
     {
      "title": "生产和专业服务经理",
@@ -2990,7 +3617,10 @@
      "education": "高等教育-学士（对标：学士学位）",
      "education_idx": 4,
      "exposure": 6,
-     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。"
+     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。",
+     "male": 697708,
+     "female": 411096,
+     "female_share": 37.1
     },
     {
      "title": "酒店/零售及其他服务经理",
@@ -3003,7 +3633,10 @@
      "education": "中等职业教育（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。"
+     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。",
+     "male": 398000,
+     "female": 459232,
+     "female_share": 53.6
     },
     {
      "title": "科学和工程专业人员",
@@ -3016,7 +3649,10 @@
      "education": "高等教育-硕士/专家（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 8,
-     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。"
+     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。",
+     "male": 2748018,
+     "female": 1038387,
+     "female_share": 27.4
     },
     {
      "title": "卫生专业人员",
@@ -3029,7 +3665,10 @@
      "education": "研究生学位（对标：博士学位）",
      "education_idx": 6,
      "exposure": 6,
-     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。"
+     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。",
+     "male": 647875,
+     "female": 1383897,
+     "female_share": 68.1
     },
     {
      "title": "教学专业人员",
@@ -3042,7 +3681,10 @@
      "education": "高等教育-硕士/专家（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 6,
-     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。"
+     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。",
+     "male": 814991,
+     "female": 4103127,
+     "female_share": 83.4
     },
     {
      "title": "商业和行政专业人员",
@@ -3055,7 +3697,10 @@
      "education": "高等教育-学士（对标：学士学位）",
      "education_idx": 4,
      "exposure": 8,
-     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。"
+     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。",
+     "male": 1262312,
+     "female": 3714847,
+     "female_share": 74.6
     },
     {
      "title": "信息通信技术专业人员",
@@ -3068,7 +3713,10 @@
      "education": "高等教育-学士（对标：学士学位）",
      "education_idx": 4,
      "exposure": 9,
-     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。"
+     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。",
+     "male": 1159903,
+     "female": 206578,
+     "female_share": 15.1
     },
     {
      "title": "法律/社会/文化专业人员",
@@ -3081,7 +3729,10 @@
      "education": "高等教育-硕士/专家（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。"
+     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。",
+     "male": 1183769,
+     "female": 2468043,
+     "female_share": 67.6
     },
     {
      "title": "科学和工程助理专业人员",
@@ -3094,7 +3745,10 @@
      "education": "中等职业教育（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。"
+     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。",
+     "male": 3131613,
+     "female": 431382,
+     "female_share": 12.1
     },
     {
      "title": "卫生助理专业人员",
@@ -3107,7 +3761,10 @@
      "education": "中等职业教育（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。"
+     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。",
+     "male": 286837,
+     "female": 2717199,
+     "female_share": 90.5
     },
     {
      "title": "商业和行政助理专业人员",
@@ -3120,7 +3777,10 @@
      "education": "中等职业教育（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。"
+     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。",
+     "male": 945326,
+     "female": 2236742,
+     "female_share": 70.3
     },
     {
      "title": "法律/社会/文化助理专业人员",
@@ -3133,7 +3793,10 @@
      "education": "中等职业教育（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。"
+     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。",
+     "male": 226031,
+     "female": 685463,
+     "female_share": 75.2
     },
     {
      "title": "信息通信技术技术员",
@@ -3146,7 +3809,10 @@
      "education": "中等职业教育（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。"
+     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。",
+     "male": 211822,
+     "female": 47248,
+     "female_share": 18.2
     },
     {
      "title": "一般文职人员",
@@ -3159,7 +3825,10 @@
      "education": "中等普通教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 9,
-     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。"
+     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。",
+     "male": 47635,
+     "female": 474192,
+     "female_share": 90.9
     },
     {
      "title": "客户服务人员",
@@ -3172,7 +3841,10 @@
      "education": "中等普通教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 8,
-     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。"
+     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。",
+     "male": 89559,
+     "female": 491196,
+     "female_share": 84.6
     },
     {
      "title": "数字记录和材料记录人员",
@@ -3185,7 +3857,10 @@
      "education": "中等普通教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 9,
-     "exposure_rationale": "数字记录和会计工作高度程式化，AI和RPA可自动化大部分任务。"
+     "exposure_rationale": "数字记录和会计工作高度程式化，AI和RPA可自动化大部分任务。",
+     "male": 318350,
+     "female": 751505,
+     "female_share": 70.2
     },
     {
      "title": "其他文职支持人员",
@@ -3198,7 +3873,10 @@
      "education": "中等普通教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 8,
-     "exposure_rationale": "其他文职工作涉及多种行政任务，AI可自动化其中大部分。"
+     "exposure_rationale": "其他文职工作涉及多种行政任务，AI可自动化其中大部分。",
+     "male": 47400,
+     "female": 435219,
+     "female_share": 90.2
     },
     {
      "title": "个人服务人员",
@@ -3211,7 +3889,10 @@
      "education": "基础普通教育（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。"
+     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。",
+     "male": 474715,
+     "female": 2835203,
+     "female_share": 85.7
     },
     {
      "title": "销售人员",
@@ -3224,7 +3905,10 @@
      "education": "基础普通教育（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。"
+     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。",
+     "male": 844828,
+     "female": 4206579,
+     "female_share": 83.3
     },
     {
      "title": "个人护理人员",
@@ -3237,7 +3921,10 @@
      "education": "中等普通教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。"
+     "exposure_rationale": "护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。",
+     "male": 33080,
+     "female": 668093,
+     "female_share": 95.3
     },
     {
      "title": "保安服务人员",
@@ -3250,7 +3937,10 @@
      "education": "中等普通教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。"
+     "exposure_rationale": "安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。",
+     "male": 1930036,
+     "female": 227743,
+     "female_share": 10.6
     },
     {
      "title": "面向市场的农业技术工人",
@@ -3263,7 +3953,10 @@
      "education": "基础普通教育（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。"
+     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。",
+     "male": 396050,
+     "female": 448511,
+     "female_share": 53.1
     },
     {
      "title": "面向市场的林渔猎技术工人",
@@ -3276,7 +3969,10 @@
      "education": "基础普通教育（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。"
+     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。",
+     "male": 95487,
+     "female": 13458,
+     "female_share": 12.4
     },
     {
      "title": "自给型农林渔业劳动者",
@@ -3289,7 +3985,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。"
+     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。",
+     "male": 245677,
+     "female": 327074,
+     "female_share": 57.1
     },
     {
      "title": "建筑和相关行业工人",
@@ -3302,7 +4001,10 @@
      "education": "中等普通教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 2,
-     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。"
+     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。",
+     "male": 2187654,
+     "female": 166537,
+     "female_share": 7.1
     },
     {
      "title": "金属/机械及相关行业工人",
@@ -3315,7 +4017,10 @@
      "education": "中等普通教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。"
+     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。",
+     "male": 3734192,
+     "female": 94917,
+     "female_share": 2.5
     },
     {
      "title": "手工艺和印刷工人",
@@ -3328,7 +4033,10 @@
      "education": "中等普通教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 5,
-     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。"
+     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。",
+     "male": 185959,
+     "female": 123919,
+     "female_share": 40.0
     },
     {
      "title": "电气和电子行业工人",
@@ -3341,7 +4049,10 @@
      "education": "中等普通教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。"
+     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。",
+     "male": 1046621,
+     "female": 45811,
+     "female_share": 4.2
     },
     {
      "title": "食品加工/木工/服装及相关工人",
@@ -3354,7 +4065,10 @@
      "education": "基础普通教育（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。"
+     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。",
+     "male": 574308,
+     "female": 1052967,
+     "female_share": 64.7
     },
     {
      "title": "固定设备和机器操作员",
@@ -3367,7 +4081,10 @@
      "education": "基础普通教育（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。",
+     "male": 1141496,
+     "female": 720398,
+     "female_share": 38.7
     },
     {
      "title": "装配工",
@@ -3380,7 +4097,10 @@
      "education": "中等普通教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 4,
-     "exposure_rationale": "装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。"
+     "exposure_rationale": "装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。",
+     "male": 355750,
+     "female": 68770,
+     "female_share": 16.2
     },
     {
      "title": "驾驶员和移动设备操作员",
@@ -3393,7 +4113,10 @@
      "education": "基础普通教育（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。"
+     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。",
+     "male": 6469610,
+     "female": 135894,
+     "female_share": 2.1
     },
     {
      "title": "清洁工和帮佣",
@@ -3406,7 +4129,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。"
+     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。",
+     "male": 56483,
+     "female": 946560,
+     "female_share": 94.4
     },
     {
      "title": "农林渔业劳工",
@@ -3419,7 +4145,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "农林渔业劳工从事基础体力工作，AI影响极小。"
+     "exposure_rationale": "农林渔业劳工从事基础体力工作，AI影响极小。",
+     "male": 164457,
+     "female": 76652,
+     "female_share": 31.8
     },
     {
      "title": "采矿/建筑/制造/运输劳工",
@@ -3432,7 +4161,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。"
+     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。",
+     "male": 687175,
+     "female": 320759,
+     "female_share": 31.8
     },
     {
      "title": "食品加工助理",
@@ -3445,7 +4177,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "食品加工助理从事基本体力工作，AI影响极小。"
+     "exposure_rationale": "食品加工助理从事基本体力工作，AI影响极小。",
+     "male": 11800,
+     "female": 139081,
+     "female_share": 92.2
     },
     {
      "title": "街头和相关销售服务人员",
@@ -3458,7 +4193,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 2,
-     "exposure_rationale": "街头销售和服务涉及人际互动，AI影响有限。"
+     "exposure_rationale": "街头销售和服务涉及人际互动，AI影响有限。",
+     "male": 5767,
+     "female": 4483,
+     "female_share": 43.7
     },
     {
      "title": "垃圾收集和其他基层工人",
@@ -3471,7 +4209,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "其他基层工作多为体力劳动，AI影响极小。"
+     "exposure_rationale": "其他基层工作多为体力劳动，AI影响极小。",
+     "male": 1817296,
+     "female": 597216,
+     "female_share": 24.7
     }
    ]
   },
@@ -3550,7 +4291,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。"
+     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。",
+     "male": 130942,
+     "female": 13701,
+     "female_share": 9.5
     },
     {
      "title": "行政和商务经理",
@@ -3563,7 +4307,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 7,
-     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。"
+     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。",
+     "male": 176386,
+     "female": 8022,
+     "female_share": 4.4
     },
     {
      "title": "生产和专业服务经理",
@@ -3576,7 +4323,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 6,
-     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。"
+     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。",
+     "male": 648563,
+     "female": 79449,
+     "female_share": 10.9
     },
     {
      "title": "酒店/零售及其他服务经理",
@@ -3589,7 +4339,10 @@
      "education": "文凭/技术证书（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。"
+     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。",
+     "male": 721623,
+     "female": 8282,
+     "female_share": 1.1
     },
     {
      "title": "科学和工程专业人员",
@@ -3602,7 +4355,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 8,
-     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。"
+     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。",
+     "male": 143502,
+     "female": 5452,
+     "female_share": 3.7
     },
     {
      "title": "卫生专业人员",
@@ -3615,7 +4371,10 @@
      "education": "博士/专业学位（对标：博士学位）",
      "education_idx": 6,
      "exposure": 6,
-     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。"
+     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。",
+     "male": 241960,
+     "female": 185429,
+     "female_share": 43.4
     },
     {
      "title": "教学专业人员",
@@ -3628,7 +4387,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 6,
-     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。"
+     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。",
+     "male": 1315022,
+     "female": 1692877,
+     "female_share": 56.3
     },
     {
      "title": "商业和行政专业人员",
@@ -3641,7 +4403,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 8,
-     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。"
+     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。",
+     "male": 213867,
+     "female": 51476,
+     "female_share": 19.4
     },
     {
      "title": "信息通信技术专业人员",
@@ -3654,7 +4419,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 9,
-     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。"
+     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。",
+     "male": 185080,
+     "female": 35764,
+     "female_share": 16.2
     },
     {
      "title": "法律/社会/文化专业人员",
@@ -3667,7 +4435,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。"
+     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。",
+     "male": 578465,
+     "female": 26832,
+     "female_share": 4.4
     },
     {
      "title": "科学和工程助理专业人员",
@@ -3680,7 +4451,10 @@
      "education": "文凭/技术证书（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。"
+     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "卫生助理专业人员",
@@ -3693,7 +4467,10 @@
      "education": "文凭/技术证书（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。"
+     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。",
+     "male": 515217,
+     "female": 443691,
+     "female_share": 46.3
     },
     {
      "title": "商业和行政助理专业人员",
@@ -3706,7 +4483,10 @@
      "education": "文凭/技术证书（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。"
+     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。",
+     "male": 1559238,
+     "female": 31960,
+     "female_share": 2.0
     },
     {
      "title": "法律/社会/文化助理专业人员",
@@ -3719,7 +4499,10 @@
      "education": "文凭/技术证书（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。"
+     "exposure_rationale": "法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。",
+     "male": 256639,
+     "female": 16639,
+     "female_share": 6.1
     },
     {
      "title": "信息通信技术技术员",
@@ -3732,7 +4515,10 @@
      "education": "文凭/技术证书（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。"
+     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。",
+     "male": 139785,
+     "female": 9646,
+     "female_share": 6.5
     },
     {
      "title": "一般文职人员",
@@ -3745,7 +4531,10 @@
      "education": "中学/高中（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 9,
-     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。"
+     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。",
+     "male": 728288,
+     "female": 39880,
+     "female_share": 5.2
     },
     {
      "title": "客户服务人员",
@@ -3758,7 +4547,10 @@
      "education": "中学/高中（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 8,
-     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。"
+     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。",
+     "male": 315272,
+     "female": 55763,
+     "female_share": 15.0
     },
     {
      "title": "数字记录和材料记录人员",
@@ -3771,7 +4563,10 @@
      "education": "中学/高中（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 9,
-     "exposure_rationale": "数字记录和会计工作高度程式化，AI和RPA可自动化大部分任务。"
+     "exposure_rationale": "数字记录和会计工作高度程式化，AI和RPA可自动化大部分任务。",
+     "male": 173352,
+     "female": 5932,
+     "female_share": 3.3
     },
     {
      "title": "其他文职支持人员",
@@ -3784,7 +4579,10 @@
      "education": "中学/高中（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 8,
-     "exposure_rationale": "其他文职工作涉及多种行政任务，AI可自动化其中大部分。"
+     "exposure_rationale": "其他文职工作涉及多种行政任务，AI可自动化其中大部分。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "个人服务人员",
@@ -3797,7 +4595,10 @@
      "education": "小学/初中（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。"
+     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。",
+     "male": 1788887,
+     "female": 182350,
+     "female_share": 9.3
     },
     {
      "title": "销售人员",
@@ -3810,7 +4611,10 @@
      "education": "小学/初中（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。"
+     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。",
+     "male": 9428141,
+     "female": 355138,
+     "female_share": 3.6
     },
     {
      "title": "个人护理人员",
@@ -3823,7 +4627,10 @@
      "education": "中学/高中（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。"
+     "exposure_rationale": "护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "保安服务人员",
@@ -3836,7 +4643,10 @@
      "education": "中学/高中（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。"
+     "exposure_rationale": "安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。",
+     "male": 1244282,
+     "female": 32897,
+     "female_share": 2.6
     },
     {
      "title": "面向市场的农业技术工人",
@@ -3849,7 +4659,10 @@
      "education": "小学/初中（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。"
+     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。",
+     "male": 11175485,
+     "female": 9385875,
+     "female_share": 45.6
     },
     {
      "title": "面向市场的林渔猎技术工人",
@@ -3862,7 +4675,10 @@
      "education": "小学/初中（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。"
+     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。",
+     "male": 127894,
+     "female": 17775,
+     "female_share": 12.2
     },
     {
      "title": "自给型农林渔业劳动者",
@@ -3875,7 +4691,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。"
+     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。",
+     "male": 797931,
+     "female": 1415339,
+     "female_share": 63.9
     },
     {
      "title": "建筑和相关行业工人",
@@ -3888,7 +4707,10 @@
      "education": "中学/高中（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 2,
-     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。"
+     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。",
+     "male": 1926684,
+     "female": 10441,
+     "female_share": 0.5
     },
     {
      "title": "金属/机械及相关行业工人",
@@ -3901,7 +4723,10 @@
      "education": "中学/高中（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。"
+     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。",
+     "male": 1808601,
+     "female": 32279,
+     "female_share": 1.8
     },
     {
      "title": "手工艺和印刷工人",
@@ -3914,7 +4739,10 @@
      "education": "中学/高中（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 5,
-     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。"
+     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。",
+     "male": 388551,
+     "female": 156495,
+     "female_share": 28.7
     },
     {
      "title": "电气和电子行业工人",
@@ -3927,7 +4755,10 @@
      "education": "中学/高中（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。"
+     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。",
+     "male": 1072577,
+     "female": 13939,
+     "female_share": 1.3
     },
     {
      "title": "食品加工/木工/服装及相关工人",
@@ -3940,7 +4771,10 @@
      "education": "小学/初中（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。"
+     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。",
+     "male": 2638959,
+     "female": 2228327,
+     "female_share": 45.8
     },
     {
      "title": "固定设备和机器操作员",
@@ -3953,7 +4787,10 @@
      "education": "小学/初中（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。",
+     "male": 1988789,
+     "female": 49682,
+     "female_share": 2.4
     },
     {
      "title": "装配工",
@@ -3966,7 +4803,10 @@
      "education": "中学/高中（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 4,
-     "exposure_rationale": "装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。"
+     "exposure_rationale": "装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "驾驶员和移动设备操作员",
@@ -3979,7 +4819,10 @@
      "education": "小学/初中（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。"
+     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。",
+     "male": 4194971,
+     "female": 45815,
+     "female_share": 1.1
     },
     {
      "title": "清洁工和帮佣",
@@ -3992,7 +4835,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。"
+     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。",
+     "male": 734315,
+     "female": 655944,
+     "female_share": 47.2
     },
     {
      "title": "农林渔业劳工",
@@ -4005,7 +4851,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "农林渔业劳工从事基础体力工作，AI影响极小。"
+     "exposure_rationale": "农林渔业劳工从事基础体力工作，AI影响极小。",
+     "male": 2635233,
+     "female": 1171602,
+     "female_share": 30.8
     },
     {
      "title": "采矿/建筑/制造/运输劳工",
@@ -4018,7 +4867,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。"
+     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。",
+     "male": 7285214,
+     "female": 91029,
+     "female_share": 1.2
     },
     {
      "title": "食品加工助理",
@@ -4031,7 +4883,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "食品加工助理从事基本体力工作，AI影响极小。"
+     "exposure_rationale": "食品加工助理从事基本体力工作，AI影响极小。",
+     "male": 94272,
+     "female": 26073,
+     "female_share": 21.7
     },
     {
      "title": "街头和相关销售服务人员",
@@ -4044,7 +4899,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 2,
-     "exposure_rationale": "街头销售和服务涉及人际互动，AI影响有限。"
+     "exposure_rationale": "街头销售和服务涉及人际互动，AI影响有限。",
+     "male": 353678,
+     "female": 8952,
+     "female_share": 2.5
     },
     {
      "title": "垃圾收集和其他基层工人",
@@ -4057,7 +4915,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "其他基层工作多为体力劳动，AI影响极小。"
+     "exposure_rationale": "其他基层工作多为体力劳动，AI影响极小。",
+     "male": 596357,
+     "female": 140760,
+     "female_share": 19.1
     }
    ]
   },
@@ -4136,7 +4997,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。"
+     "exposure_rationale": "高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。",
+     "male": 21850,
+     "female": 8306,
+     "female_share": 27.5
     },
     {
      "title": "行政和商务经理",
@@ -4149,7 +5013,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 7,
-     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。"
+     "exposure_rationale": "行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。",
+     "male": 42452,
+     "female": 11565,
+     "female_share": 21.4
     },
     {
      "title": "生产和专业服务经理",
@@ -4162,7 +5029,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 6,
-     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。"
+     "exposure_rationale": "生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。",
+     "male": 38925,
+     "female": 23744,
+     "female_share": 37.9
     },
     {
      "title": "酒店/零售及其他服务经理",
@@ -4175,7 +5045,10 @@
      "education": "技术职业证书/文凭（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。"
+     "exposure_rationale": "服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。",
+     "male": 292870,
+     "female": 526378,
+     "female_share": 64.3
     },
     {
      "title": "科学和工程专业人员",
@@ -4188,7 +5061,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 8,
-     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。"
+     "exposure_rationale": "科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "卫生专业人员",
@@ -4201,7 +5077,10 @@
      "education": "博士/专业学位（对标：博士学位）",
      "education_idx": 6,
      "exposure": 6,
-     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。"
+     "exposure_rationale": "卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。",
+     "male": 56682,
+     "female": 15409,
+     "female_share": 21.4
     },
     {
      "title": "教学专业人员",
@@ -4214,7 +5093,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 6,
-     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。"
+     "exposure_rationale": "教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。",
+     "male": 84307,
+     "female": 13272,
+     "female_share": 13.6
     },
     {
      "title": "商业和行政专业人员",
@@ -4227,7 +5109,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 8,
-     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。"
+     "exposure_rationale": "商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。",
+     "male": 43743,
+     "female": 59392,
+     "female_share": 57.6
     },
     {
      "title": "信息通信技术专业人员",
@@ -4240,7 +5125,10 @@
      "education": "学士学位（对标：学士学位）",
      "education_idx": 4,
      "exposure": 9,
-     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。"
+     "exposure_rationale": "信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。",
+     "male": 116049,
+     "female": 71361,
+     "female_share": 38.1
     },
     {
      "title": "法律/社会/文化专业人员",
@@ -4253,7 +5141,10 @@
      "education": "硕士学位（对标：硕士学位）",
      "education_idx": 5,
      "exposure": 7,
-     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。"
+     "exposure_rationale": "法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。",
+     "male": 8147,
+     "female": 7744,
+     "female_share": 48.7
     },
     {
      "title": "科学和工程助理专业人员",
@@ -4266,7 +5157,10 @@
      "education": "技术职业证书/文凭（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 6,
-     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。"
+     "exposure_rationale": "科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "卫生助理专业人员",
@@ -4279,7 +5173,10 @@
      "education": "技术职业证书/文凭（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 5,
-     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。"
+     "exposure_rationale": "卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。",
+     "male": 64050,
+     "female": 37897,
+     "female_share": 37.2
     },
     {
      "title": "商业和行政助理专业人员",
@@ -4292,7 +5189,10 @@
      "education": "技术职业证书/文凭（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。"
+     "exposure_rationale": "商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。",
+     "male": 20493,
+     "female": 20976,
+     "female_share": 50.6
     },
     {
      "title": "信息通信技术技术员",
@@ -4305,7 +5205,10 @@
      "education": "技术职业证书/文凭（对标：职业教育证书）",
      "education_idx": 3,
      "exposure": 7,
-     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。"
+     "exposure_rationale": "IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。",
+     "male": 56437,
+     "female": 43749,
+     "female_share": 43.7
     },
     {
      "title": "一般文职人员",
@@ -4318,7 +5221,10 @@
      "education": "中学教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 9,
-     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。"
+     "exposure_rationale": "一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。",
+     "male": 60526,
+     "female": 62594,
+     "female_share": 50.8
     },
     {
      "title": "客户服务人员",
@@ -4331,7 +5237,10 @@
      "education": "中学教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 8,
-     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。"
+     "exposure_rationale": "客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。",
+     "male": 24297,
+     "female": 16370,
+     "female_share": 40.3
     },
     {
      "title": "个人服务人员",
@@ -4344,7 +5253,10 @@
      "education": "小学教育（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。"
+     "exposure_rationale": "个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。",
+     "male": 144876,
+     "female": 179438,
+     "female_share": 55.3
     },
     {
      "title": "销售人员",
@@ -4357,7 +5269,10 @@
      "education": "小学教育（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。"
+     "exposure_rationale": "销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。",
+     "male": 295266,
+     "female": 270452,
+     "female_share": 47.8
     },
     {
      "title": "个人护理人员",
@@ -4370,7 +5285,10 @@
      "education": "中学教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。"
+     "exposure_rationale": "护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。",
+     "male": 199857,
+     "female": 370146,
+     "female_share": 64.9
     },
     {
      "title": "保安服务人员",
@@ -4383,7 +5301,10 @@
      "education": "中学教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。"
+     "exposure_rationale": "安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "面向市场的农业技术工人",
@@ -4396,7 +5317,10 @@
      "education": "小学教育（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。"
+     "exposure_rationale": "农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。",
+     "male": 2456780,
+     "female": 2981786,
+     "female_share": 54.8
     },
     {
      "title": "面向市场的林渔猎技术工人",
@@ -4409,7 +5333,10 @@
      "education": "小学教育（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。"
+     "exposure_rationale": "林业和渔业工作在自然环境中进行，物理性强，AI影响有限。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "自给型农林渔业劳动者",
@@ -4422,7 +5349,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。"
+     "exposure_rationale": "自给型农业几乎完全是体力劳动，AI影响极小。",
+     "male": 154199,
+     "female": 265956,
+     "female_share": 63.3
     },
     {
      "title": "建筑和相关行业工人",
@@ -4435,7 +5365,10 @@
      "education": "中学教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 2,
-     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。"
+     "exposure_rationale": "建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。",
+     "male": 150800,
+     "female": 7106,
+     "female_share": 4.5
     },
     {
      "title": "金属/机械及相关行业工人",
@@ -4448,7 +5381,10 @@
      "education": "中学教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。"
+     "exposure_rationale": "金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。",
+     "male": 266890,
+     "female": 9707,
+     "female_share": 3.5
     },
     {
      "title": "手工艺和印刷工人",
@@ -4461,7 +5397,10 @@
      "education": "中学教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 5,
-     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。"
+     "exposure_rationale": "手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。",
+     "male": 15792,
+     "female": 10630,
+     "female_share": 40.2
     },
     {
      "title": "电气和电子行业工人",
@@ -4474,7 +5413,10 @@
      "education": "中学教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 3,
-     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。"
+     "exposure_rationale": "电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。",
+     "male": 24843,
+     "female": 3081,
+     "female_share": 11.0
     },
     {
      "title": "食品加工/木工/服装及相关工人",
@@ -4487,7 +5429,10 @@
      "education": "小学教育（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 2,
-     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。"
+     "exposure_rationale": "食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。",
+     "male": 77102,
+     "female": 81562,
+     "female_share": 51.4
     },
     {
      "title": "固定设备和机器操作员",
@@ -4500,7 +5445,10 @@
      "education": "小学教育（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 4,
-     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。"
+     "exposure_rationale": "固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "装配工",
@@ -4513,7 +5461,10 @@
      "education": "中学教育（对标：高中文凭）",
      "education_idx": 2,
      "exposure": 4,
-     "exposure_rationale": "装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。"
+     "exposure_rationale": "装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "驾驶员和移动设备操作员",
@@ -4526,7 +5477,10 @@
      "education": "小学教育（对标：初中及以下）",
      "education_idx": 1,
      "exposure": 3,
-     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。"
+     "exposure_rationale": "驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。",
+     "male": null,
+     "female": null,
+     "female_share": null
     },
     {
      "title": "清洁工和帮佣",
@@ -4539,7 +5493,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。"
+     "exposure_rationale": "清洁工作是基本体力劳动，AI影响极小。",
+     "male": 948909,
+     "female": 1060621,
+     "female_share": 52.8
     },
     {
      "title": "农林渔业劳工",
@@ -4552,7 +5509,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "农林渔业劳工从事基础体力工作，AI影响极小。"
+     "exposure_rationale": "农林渔业劳工从事基础体力工作，AI影响极小。",
+     "male": 892554,
+     "female": 835419,
+     "female_share": 48.3
     },
     {
      "title": "采矿/建筑/制造/运输劳工",
@@ -4565,7 +5525,10 @@
      "education": "无正规学历（对标：无正式教育）",
      "education_idx": 0,
      "exposure": 1,
-     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。"
+     "exposure_rationale": "采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。",
+     "male": 707505,
+     "female": 54111,
+     "female_share": 7.1
     }
    ]
   }
