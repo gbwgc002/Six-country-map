@@ -346,17 +346,22 @@ def get_latest_year_data(series_data, min_code_len=2):
             result[num] = {'value': years[latest], 'year': latest, 'history': years}
     return result
 
-def load_oc2_timeseries(country_code):
+def load_oc2_timeseries(country_code, sex='SEX_T'):
     """Load ISCO-08 Level-2 employment time series from ILOSTAT SDMX CSV.
 
-    Source: https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/{CC}.A..SEX_T.
+    Source: https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/{CC}.A..SEX_T+SEX_M+SEX_F.
     (indicator EMP_TEMP_SEX_OC2_NB, national LFS micro-data processed by ILO).
     Values are in thousands (UNIT_MULT=3). Returns {year: {l2_code: persons}}.
+
+    sex: which SEX dimension value to load (SEX_T=total, SEX_M=male, SEX_F=female).
+         Totals and trends always use SEX_T so they stay consistent.
     """
     path = f'ilostat_data/{country_code}_oc2_timeseries.csv'
     data = {}
     with open(path, newline='', encoding='utf-8') as f:
         for row in csv_mod.DictReader(f):
+            if row.get('SEX', 'SEX_T') != sex:
+                continue
             oc2 = row.get('OC2', '')
             val = row.get('OBS_VALUE', '')
             if 'ISCO08' not in oc2 or not val:
@@ -368,6 +373,46 @@ def load_oc2_timeseries(country_code):
             mult = 10 ** int(row.get('UNIT_MULT') or 0)
             data.setdefault(year, {})[code] = float(val) * mult
     return data
+
+
+def load_sex_breakdown(country_code, year):
+    """Per-occupation (ISCO L2) male/female employment for a given survey year.
+
+    Returns {l2_code: {'male': persons, 'female': persons}} using the same
+    ILOSTAT EMP_TEMP_SEX_OC2_NB source as the totals (so figures are consistent).
+    Only includes occupations where both SEX_M and SEX_F are available.
+    """
+    male = load_oc2_timeseries(country_code, sex='SEX_M').get(year, {})
+    female = load_oc2_timeseries(country_code, sex='SEX_F').get(year, {})
+    out = {}
+    for code in set(male) | set(female):
+        m = male.get(code)
+        f = female.get(code)
+        if m is None or f is None:
+            continue
+        out[code] = {'male': m, 'female': f}
+    return out
+
+
+def sex_fields(breakdown, l2_code):
+    """Build the male/female/female_share output fields for an occupation.
+
+    breakdown: dict from load_sex_breakdown
+    l2_code:   2-digit ISCO L2 code (L3 occupations inherit their L2 group)
+    Returns a dict to merge into the occupation record. female_share is the
+    female fraction of (male+female) employment, 0-100, rounded to 1 decimal;
+    None when no data.
+    """
+    b = breakdown.get(l2_code)
+    if not b:
+        return {'male': None, 'female': None, 'female_share': None}
+    m, f = b['male'], b['female']
+    tot = m + f
+    return {
+        'male': int(m),
+        'female': int(f),
+        'female_share': round(f / tot * 100, 1) if tot > 0 else None,
+    }
 
 
 def compute_l2_share_changes(ts, year_from, year_to):
@@ -440,6 +485,10 @@ def build_india_data():
     ts = load_oc2_timeseries('IND')
     ts_years = sorted(ts.keys())
     share_changes_l2 = compute_l2_share_changes(ts, ts_years[0], ts_years[-1])
+
+    # Per-occupation male/female breakdown (ISCO L2) from latest ILOSTAT year;
+    # each 3-digit PLFS occupation inherits its 2-digit group's sex split.
+    sex_bd = load_sex_breakdown('IND', ts_years[-1])
     
     # Parse PLFS Table 25 - percentage distributions at 3-digit level
     wb = openpyxl.load_workbook('ilostat_data/India_PLFS_Table25.xlsx')
@@ -489,7 +538,7 @@ def build_india_data():
         ai_exp = AI_EXPOSURE.get(l2_code, AI_EXPOSURE.get(f'0{major}' if len(major)==1 else major, 5))
         ai_rationale = AI_EXPOSURE_RATIONALE.get(l2_code, '')
         
-        result.append({
+        occ = {
             'title': name_cn,
             'title_en': name_en,
             'code': code,
@@ -501,7 +550,9 @@ def build_india_data():
             'education_idx': edu_idx,
             'exposure': ai_exp,
             'exposure_rationale': ai_rationale,
-        })
+        }
+        occ.update(sex_fields(sex_bd, l2_code))
+        result.append(occ)
     
     return result
 
@@ -521,6 +572,9 @@ def build_country_l2(country_code, level_year=None, share_years=None):
     ts_years = sorted(ts.keys())
     year = level_year or ts_years[-1]
     levels = ts[year]
+
+    # Per-occupation male/female breakdown for the same survey year
+    sex_bd = load_sex_breakdown(country_code, year)
 
     # Per-occupation share changes from real survey data when possible
     share_changes_l2 = {}
@@ -558,7 +612,7 @@ def build_country_l2(country_code, level_year=None, share_years=None):
         ai_exp = AI_EXPOSURE.get(num_code, 5)
         ai_rationale = AI_EXPOSURE_RATIONALE.get(num_code, '')
         
-        result.append({
+        occ = {
             'title': name_cn,
             'title_en': name_en,
             'code': num_code,
@@ -570,7 +624,9 @@ def build_country_l2(country_code, level_year=None, share_years=None):
             'education_idx': edu_idx,
             'exposure': ai_exp,
             'exposure_rationale': ai_rationale,
-        })
+        }
+        occ.update(sex_fields(sex_bd, num_code))
+        result.append(occ)
     
     return result
 

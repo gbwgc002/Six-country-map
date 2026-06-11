@@ -300,6 +300,7 @@ canvas#canvas {
         <button data-mode="share_change" class="active">就业趋势</button>
         <button data-mode="education">学历要求</button>
         <button data-mode="exposure">AI 暴露度</button>
+        <button data-mode="gender">性别比例</button>
       </div>
     </div>
     <div class="gradient-legend">
@@ -388,9 +389,30 @@ function exposureColor(v, a) {
   return greenRedCSS(v / 10, a);
 }
 
+// Gender: diverging blue (male) <-> pink (female), by female share 0-100
+function genderColor(femaleShare, a) {
+  if (femaleShare == null) return `rgba(128,128,128,${a})`;
+  const t = Math.max(0, Math.min(1, femaleShare / 100));
+  // male end #3B82F6 (59,130,246) -> neutral #9AA0B5 (154,160,181) -> female end #EC4899 (236,72,153)
+  let r, g, b;
+  if (t < 0.5) {
+    const s = t / 0.5;
+    r = Math.round(59 + s * (154 - 59));
+    g = Math.round(130 + s * (160 - 130));
+    b = Math.round(246 + s * (181 - 246));
+  } else {
+    const s = (t - 0.5) / 0.5;
+    r = Math.round(154 + s * (236 - 154));
+    g = Math.round(160 + s * (72 - 160));
+    b = Math.round(181 + s * (153 - 181));
+  }
+  return `rgba(${r},${g},${b},${a})`;
+}
+
 function tileColorCSS(d, alpha) {
   if (colorMode === 'exposure') return exposureColor(d.exposure, alpha);
   if (colorMode === 'share_change') return shareChangeColor(d.share_change, alpha);
+  if (colorMode === 'gender') return genderColor(d.female_share, alpha);
   if (colorMode === 'education') {
     const maxIdx = (countryMeta.education_system?.levels?.length || 7) - 1;
     return eduColor(d.education_idx, maxIdx, alpha);
@@ -412,6 +434,10 @@ function tileSubInfo(r) {
     const edu = r.education || '';
     const short = edu.length > 20 ? edu.substring(0, edu.indexOf('（')) || edu.substring(0, 18) + '...' : edu;
     return short + (jobsStr ? ' \u00b7 ' + jobsStr : '');
+  }
+  if (colorMode === 'gender') {
+    const s = r.female_share != null ? '\u5973 ' + r.female_share.toFixed(0) + '%' : '';
+    return s + (jobsStr ? ' \u00b7 ' + jobsStr : '');
   }
   return jobsStr;
 }
@@ -569,6 +595,14 @@ function tooltipHighlight(d) {
     const maxIdx = (countryMeta.education_system?.levels?.length || 7) - 1;
     const color = d.education_idx >= 0 ? eduColor(d.education_idx, maxIdx, 1) : 'var(--fg)';
     return `<span style="color:${color};font-weight:600;">${edu || '\u2014'}</span>`;
+  } else if (colorMode === 'gender') {
+    const fs = d.female_share;
+    if (fs == null) return '<span style="color:var(--fg2);">性别比例：无数据</span>';
+    const maleColor = genderColor(0, 1), femaleColor = genderColor(100, 1);
+    return `<span style="color:${genderColor(fs, 1)};font-weight:600;">女性占比：${fs.toFixed(1)}%　男性占比：${(100 - fs).toFixed(1)}%</span>` +
+      `<div style="margin-top:3px;height:6px;display:flex;border-radius:3px;overflow:hidden;">` +
+      `<div style="height:100%;width:${100 - fs}%;background:${maleColor};"></div>` +
+      `<div style="height:100%;width:${fs}%;background:${femaleColor};"></div></div>`;
   }
   return '';
 }
@@ -580,8 +614,12 @@ function showTooltip(d, mx, my) {
   tt.querySelector('.tt-highlight').innerHTML = tooltipHighlight(d);
 
   const shareStr = d.share_change != null ? (d.share_change > 0 ? '+' : '') + d.share_change.toFixed(2) + '百分点' : '无数据';
+  const genderStr = d.female_share != null
+    ? `男 ${formatNumber(d.male)} / 女 ${formatNumber(d.female)}（女 ${d.female_share.toFixed(0)}%）`
+    : '\u2014';
   tt.querySelector('.tt-stats').innerHTML = `
     <span class="label">就业人数</span><span class="value">${formatNumber(d.jobs)}</span>
+    <span class="label">性别构成</span><span class="value">${genderStr}</span>
     <span class="label">份额变化</span><span class="value">${shareStr} ${d.share_change_desc ? '(' + d.share_change_desc + ')' : ''}</span>
     <span class="label">学历要求</span><span class="value">${d.education || '\u2014'}</span>
     <span class="label">AI 暴露度</span><span class="value">${d.exposure != null ? d.exposure + '/10' : '\u2014'}</span>
@@ -633,6 +671,60 @@ function updateStats() {
   if (colorMode === 'share_change') updateShareChangeStats(totalJobs);
   else if (colorMode === 'education') updateEducationStats(totalJobs);
   else if (colorMode === 'exposure') updateExposureStats(totalJobs);
+  else if (colorMode === 'gender') updateGenderStats(totalJobs);
+}
+
+function updateGenderStats(totalJobs) {
+  // Jobs covered by sex data (use male+female as the denominator)
+  let male = 0, female = 0, covered = 0;
+  for (const d of data) {
+    if (d.female_share != null && d.male != null && d.female != null) {
+      male += d.male; female += d.female; covered += d.jobs || 0;
+    }
+  }
+  const tot = male + female;
+  const femaleShareAll = tot > 0 ? female / tot * 100 : 0;
+  const maleColor = genderColor(0, 1), femaleColor = genderColor(100, 1);
+
+  document.getElementById('block2').innerHTML = tot > 0 ? `<h3>总体女性占比</h3>
+    <div class="stat-big"><span style="color:${genderColor(femaleShareAll, 1)}">${femaleShareAll.toFixed(1)}%</span></div>
+    <div class="stat-label">就业加权（有性别数据职业）</div>` : `<h3>性别数据</h3>
+    <div class="stat-big" style="font-size:20px">无数据</div>`;
+
+  // Overall male/female split bar
+  document.getElementById('block3').innerHTML = tot > 0 ? `<h3>男女就业人数</h3>
+    <div style="display:flex;height:22px;border-radius:4px;overflow:hidden;margin-top:6px;">
+      <div style="width:${male/tot*100}%;background:${maleColor};"></div>
+      <div style="width:${female/tot*100}%;background:${femaleColor};"></div>
+    </div>
+    <div class="hist-labels"><span style="color:${maleColor}">男 ${formatNumber(male)}</span><span style="color:${femaleColor}">女 ${formatNumber(female)}</span></div>` : '';
+
+  // Most male-dominated occupations
+  const withSex = data.filter(d => d.female_share != null && d.jobs);
+  const maleTop = [...withSex].sort((a, b) => a.female_share - b.female_share).slice(0, 6);
+  const femaleTop = [...withSex].sort((a, b) => b.female_share - a.female_share).slice(0, 6);
+
+  document.getElementById('block4').innerHTML = `<h3>男性主导职业</h3><div class="hbar-chart">${renderHbars(maleTop.map(d => ({
+    label: d.title, val: '男 ' + (100 - d.female_share).toFixed(0) + '%', pct: (100 - d.female_share), color: genderColor(d.female_share, 0.85)
+  })))}</div>`;
+
+  document.getElementById('block5').innerHTML = `<h3>女性主导职业</h3><div class="hbar-chart">${renderHbars(femaleTop.map(d => ({
+    label: d.title, val: '女 ' + d.female_share.toFixed(0) + '%', pct: d.female_share, color: genderColor(d.female_share, 0.85)
+  })))}</div>`;
+
+  // Cross: female share by education
+  const levels = countryMeta.education_system?.levels || [];
+  const eduGroups = levels.map((lev, i) => ({
+    label: lev[0].substring(0, lev[0].indexOf('（')) || lev[0].substring(0, 12), idx: i,
+  }));
+  const femByEdu = weightedAvgByGroups(eduGroups, (d, g) => d.education_idx === g.idx, d => d.female_share);
+  const hasEduSex = femByEdu.some(g => g.jobs > 0);
+  document.getElementById('block6').innerHTML = hasEduSex ? `<h3>各学历女性占比</h3><div class="hbar-chart">${renderHbars(femByEdu.map(g => ({
+    label: g.label, val: g.avg.toFixed(0) + '%', pct: g.avg, color: genderColor(g.avg, 0.8)
+  })))}</div>` : '';
+
+  document.getElementById('block7').innerHTML = `<h3>数据来源</h3><div class="stat-label" style="font-size:12px;margin-top:4px">${countryMeta.source || 'ILO ILOSTAT'}</div>`;
+  document.getElementById('block8').innerHTML = '';
 }
 
 function updateShareChangeStats(totalJobs) {
@@ -872,6 +964,7 @@ const LEGEND_CONFIG = {
   exposure:     { low: '低', high: '高' },
   share_change: { low: '下降', high: '增长' },
   education:    { low: '无学历', high: '博士' },
+  gender:       { low: '男性', high: '女性' },
 };
 
 function drawGradientLegend() {
@@ -879,7 +972,8 @@ function drawGradientLegend() {
   const gctx = c.getContext('2d');
   for (let x = 0; x < 80; x++) {
     const t = x / 79;
-    gctx.fillStyle = colorMode === 'exposure' ? greenRedCSS(t, 1) : greenRedCSS(1 - t, 1);
+    if (colorMode === 'gender') gctx.fillStyle = genderColor(t * 100, 1);
+    else gctx.fillStyle = colorMode === 'exposure' ? greenRedCSS(t, 1) : greenRedCSS(1 - t, 1);
     gctx.fillRect(x, 0, 1, 8);
   }
   const cfg = LEGEND_CONFIG[colorMode];
@@ -914,6 +1008,15 @@ function updateColorLegend() {
       { color: exposureColor(4.5, 0.7), label: '\u4e2d\u7b49 (4\u20135\u5206)' },
       { color: exposureColor(6.5, 0.7), label: '\u9ad8 (6\u20137\u5206)' },
       { color: exposureColor(9, 0.7),   label: '\u6781\u9ad8 (8\u201310\u5206)' },
+      { color: 'rgba(128,128,128,0.5)', label: '\u7070\u8272 = \u65e0\u6570\u636e' },
+    ];
+  } else if (colorMode === 'gender') {
+    items = [
+      { color: genderColor(10, 0.8),  label: '\u7537\u6027\u4e3a\u4e3b (\u5973<20%)' },
+      { color: genderColor(35, 0.8),  label: '\u504f\u7537\u6027 (\u597320\u201345%)' },
+      { color: genderColor(50, 0.8),  label: '\u5747\u8861 (\u597345\u201355%)' },
+      { color: genderColor(65, 0.8),  label: '\u504f\u5973\u6027 (\u597355\u201380%)' },
+      { color: genderColor(90, 0.8),  label: '\u5973\u6027\u4e3a\u4e3b (\u5973>80%)' },
       { color: 'rgba(128,128,128,0.5)', label: '\u7070\u8272 = \u65e0\u6570\u636e' },
     ];
   }
