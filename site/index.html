@@ -680,6 +680,17 @@ function formatNumberEn(n) {
 }
 
 // ── Tooltip ──────────────────────────────────────────────────────────
+function trendStatus(d) {
+  return d.share_change_status_label || '缺少可比年份数据';
+}
+
+function trendPeriodLabel() {
+  const trend = countryMeta.trend_summary;
+  if (!trend?.period) return '口径变化，暂停比较';
+  const label = trend.historical_reference ? '历史参考' : trend.method === 'model_l1_reference' ? '模型大类参考' : '调查趋势';
+  return `${label}：${trend.period}`;
+}
+
 function tooltipHighlight(d) {
   if (colorMode === 'exposure') {
     const v = d.exposure;
@@ -690,7 +701,7 @@ function tooltipHighlight(d) {
       `<div style="height:100%;width:${v * 100}%;background:${color};border-radius:2px;"></div></div>`;
   } else if (colorMode === 'share_change') {
     const v = d.share_change;
-    if (v == null) return '<span style="color:var(--fg2);">就业份额变化：无数据</span>';
+    if (v == null) return `<span style="color:var(--fg2);">就业份额变化：${escapeHTML(trendStatus(d))}</span>`;
     const color = shareChangeColor(v, 1);
     return `<span style="color:${color};font-weight:600;">就业份额变化：${v > 0 ? '+' : ''}${v.toFixed(2)}百分点</span>` +
       (d.share_change_desc ? ` <span style="color:var(--fg2);">(${d.share_change_desc})</span>` : '') +
@@ -719,19 +730,19 @@ function showTooltip(d, mx, my) {
   tt.querySelector('.tt-title-en').textContent = d.title_en || '';
   tt.querySelector('.tt-highlight').innerHTML = tooltipHighlight(d);
 
-  const shareStr = d.share_change != null ? (d.share_change > 0 ? '+' : '') + d.share_change.toFixed(2) + '百分点' : '无数据';
+  const shareStr = d.share_change != null ? (d.share_change > 0 ? '+' : '') + d.share_change.toFixed(2) + '百分点' : escapeHTML(trendStatus(d));
   const genderStr = d.female_share == null ? '无数据' : d.sex_method === 'parent_l2_ratio'
     ? `上级 ${d.sex_reference_code} 组女性 ${d.female_share.toFixed(1)}%（${d.sex_year}）`
     : `男 ${formatNumber(d.male)} / 女 ${formatNumber(d.female)}（${d.sex_year}）`;
   tt.querySelector('.tt-stats').innerHTML = `
-    <span class="label">${d.jobs_method === 'scaled_plfs_person_share' ? '换算就业规模' : '就业人数'}</span><span class="value">${formatNumber(d.jobs)}</span>
+    <span class="label">${d.jobs_method === 'scaled_plfs_person_share' ? '换算就业规模' : '就业人数'}（${d.jobs_year}）</span><span class="value">${formatNumber(d.jobs)}</span>
     <span class="label">性别构成</span><span class="value">${genderStr}</span>
     <span class="label">份额变化</span><span class="value">${shareStr} ${d.share_change_desc ? '(' + d.share_change_desc + ')' : ''}</span>
     <span class="label">职业技能等级</span><span class="value">${d.skill || '\u2014'}</span>
     <span class="label">GenAI 参考均分</span><span class="value">${d.exposure != null ? exposureNumber(d.exposure) + ' / 1' : '无数据'}</span>
     <span class="label">ISCO 代码</span><span class="value">${d.code || '\u2014'}</span>
     <span class="label">原始质量标记</span><span class="value">${[...(d.jobs_status || []), ...(d.sex_status || [])].join(' / ') || '无附加标记'}</span>`;
-  tt.querySelector('.tt-rationale').textContent = colorMode === 'exposure' ? (d.exposure_rationale || '') : colorMode === 'share_change' ? countryMeta.trend_note : colorMode === 'skill' ? countryMeta.skill_system.note : (d.sex_method === 'parent_l2_ratio' ? '上级组比例只作参考；未推算本三位职业的男女就业人数。' : 'U = 低可靠性，B = 统计口径断点。');
+  tt.querySelector('.tt-rationale').textContent = colorMode === 'exposure' ? (d.exposure_rationale || '') : colorMode === 'share_change' ? [d.share_change_note, countryMeta.trend_note].filter(Boolean).join(' ') : colorMode === 'skill' ? countryMeta.skill_system.note : (d.sex_method === 'parent_l2_ratio' ? '上级组比例只作参考；未推算本三位职业的男女就业人数。' : 'U = 低可靠性，B = 统计口径断点。');
   const { width, height } = tt.getBoundingClientRect();
   const tx = Math.max(8, Math.min(mx + 16, window.innerWidth - width - 8));
   const ty = Math.max(8, Math.min(my + 16, window.innerHeight - height - 8));
@@ -785,9 +796,14 @@ function updateStats() {
 function updateDataNote() {
   const s = countryMeta.employment_summary;
   const sex = countryMeta.gender_summary;
-  let note = `<strong>${countryMeta.data_year} 年就业快照</strong> · 来源总量 ${formatNumber(s.source_total_jobs)} 人 · 两位职业分类覆盖 ${s.source_classification_coverage_pct.toFixed(1)}%。`;
+  let note = colorMode === 'share_change' ? `<strong>${escapeHTML(trendPeriodLabel())} · 就业规模：${countryMeta.data_year} 年</strong><br>` : '';
+  note += `<strong>${countryMeta.data_year} 年就业快照</strong> · 来源总量 ${formatNumber(s.source_total_jobs)} 人 · 两位职业分类覆盖 ${s.source_classification_coverage_pct.toFixed(1)}%。`;
   note += ` ${escapeHTML(s.notes)}`;
-  if (colorMode === 'share_change') note += `<br><strong>趋势口径：</strong>${escapeHTML(countryMeta.trend_note)} 份额上升不等于就业人数增加。`;
+  if (colorMode === 'share_change') {
+    note += `<br><strong>趋势口径：</strong>${escapeHTML(countryMeta.trend_note)} 份额上升不等于就业人数增加。`;
+    const trend = countryMeta.trend_summary;
+    note += `<br><strong>已保存的调查年份：</strong>${trend.available_survey_years.join('、')}。年份存在不代表可直接跨期比较；<a href="${trend.history_url}" target="_blank" rel="noopener noreferrer">查看历史人数、调查来源和质量标记</a>。`;
+  }
   if (colorMode === 'skill') note += `<br><strong>技能口径：</strong>${escapeHTML(countryMeta.skill_system.note)}`;
   if (colorMode === 'gender') note += `<br><strong>性别口径：</strong>${sex.year} 年两位职业组；每组人数只汇总一次，有男女数据的就业覆盖 ${sex.coverage_pct.toFixed(1)}%。`;
   if (s.quality_flags.length) note += `<br>本国源表标记：${s.quality_flags.join('、')}。B = 统计口径断点；U = 低可靠性（按职业显示）。`;
@@ -826,9 +842,10 @@ function updateShareChangeStats(totalJobs) {
   for (const d of data) { if (d.share_change != null && d.jobs) wC += d.jobs; }
   const hasShareData = wC > 0;
 
-  document.getElementById('block2').innerHTML = `<h3>可计算趋势覆盖</h3>
+  document.getElementById('block2').innerHTML = hasShareData ? `<h3>可计算趋势覆盖</h3>
     <div class="stat-big">${totalJobs ? (wC / totalJobs * 100).toFixed(1) : '0'}%</div>
-    <div class="stat-label">占图示就业；缺失/不可比端点不计算</div>`;
+    <div class="stat-label">${escapeHTML(trendPeriodLabel())}<br>按 ${countryMeta.data_year} 年图示就业规模计算覆盖</div>`
+    : '<h3>趋势状态</h3><div class="stat-big" style="font-size:24px">已暂停</div><div class="stat-label">口径变化，暂停比较；历史观测保留</div>';
 
   // Histogram: jobs by share change buckets
   if (hasShareData) {
@@ -858,7 +875,7 @@ function updateShareChangeStats(totalJobs) {
     });
     document.getElementById('block4').innerHTML = `<h3>趋势分层</h3><div class="tier-bar">${renderTiers(tiers, totalJobs)}</div>`;
   } else {
-    document.getElementById('block3').innerHTML = `<h3>数据年份</h3><div class="stat-big" style="font-size:24px">${countryMeta.data_year || '--'}</div>`;
+    document.getElementById('block3').innerHTML = `<h3>就业规模年份</h3><div class="stat-big" style="font-size:24px">${countryMeta.data_year || '--'}</div>`;
     document.getElementById('block4').innerHTML = '';
   }
 
@@ -867,8 +884,9 @@ function updateShareChangeStats(totalJobs) {
   const renderMajor = groups => renderHbars(groups.map(g => ({label: g.label,
     val: (g.avg > 0 ? '+' : '') + g.avg.toFixed(2) + '百分点',
     pct: Math.min(100,Math.abs(g.avg)*20), color: shareChangeColor(g.avg,0.8)})));
-  document.getElementById('block5').innerHTML = `<h3>份额上升的职业大类</h3><div class="hbar-chart">${renderMajor(majorList.filter(g=>g.avg>0).slice(0,5))}</div>`;
-  document.getElementById('block6').innerHTML = `<h3>份额下降的职业大类</h3><div class="hbar-chart">${renderMajor(majorList.filter(g=>g.avg<0).reverse().slice(0,5))}</div>`;
+  document.getElementById('block5').innerHTML = hasShareData ? `<h3>份额上升的职业大类</h3><div class="hbar-chart">${renderMajor(majorList.filter(g=>g.avg>0).slice(0,5))}</div>` : '';
+  document.getElementById('block6').innerHTML = hasShareData ? `<h3>份额下降的职业大类</h3><div class="hbar-chart">${renderMajor(majorList.filter(g=>g.avg<0).reverse().slice(0,5))}</div>`
+    : `<h3>已保存的历史观测</h3><div class="stat-label">${countryMeta.trend_summary.available_survey_years.join('、')}<br><a href="${countryMeta.trend_summary.history_url}" target="_blank" rel="noopener noreferrer">查看各年人数及调查来源</a></div>`;
 
   // Declining/growing total jobs
   let declining = 0, growing = 0;
@@ -1015,8 +1033,13 @@ function updateColorLegend() {
       { color: shareChangeColor(1.5, 0.7), label: '\u5fae\u5347 (0~+2)' },
       { color: shareChangeColor(-1.5, 0.7), label: '\u5fae\u964d (-2~0)' },
       { color: shareChangeColor(-4, 0.7), label: '\u5927\u5e45\u4e0b\u964d (<-2\u767e\u5206\u70b9)' },
-      { color: 'rgba(80,80,100,0.5)', label: '\u7070\u8272 = \u65e0\u5386\u53f2\u6570\u636e' },
     ];
+    const missing = new Map();
+    for (const d of data.filter(d => d.share_change == null)) {
+      const label = trendStatus(d);
+      missing.set(label, (missing.get(label) || 0) + 1);
+    }
+    for (const [label, count] of missing) items.push({color: shareChangeColor(null, 0.5), label: `灰色 = ${escapeHTML(label)}（${count} 组）`});
   } else if (colorMode === 'skill') {
     const levels = countryMeta.skill_system?.levels || [];
     const maxIdx = levels.length - 1;
