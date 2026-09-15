@@ -1,0 +1,142 @@
+{
+  "reviewed_on": "2026-09-15",
+  "delivery": "six-country-data-raw.zip",
+  "archive_sha256": "6d9181d1fa1a1891c286857aa2457284d34e8bcdff59d96bd50bcd6903adc111",
+  "provenance": "User-supplied files. Supplier reports ILOSTAT downloads on 2026-09-15; HTTP response logs were not included. File contents and hashes independently checked; live retrieval and reasons for missing years are not independently verified.",
+  "files": [
+    {
+      "name": "MODEL_OCU_IDN.csv",
+      "bytes": 7020,
+      "sha256": "ae99b7da2cdae622bcf5e74fe099f37d19494b8455e279ad13b19d09501221d6"
+    },
+    {
+      "name": "MODEL_OCU_NGA.csv",
+      "bytes": 6991,
+      "sha256": "ce57f1e85a4e765d617e004a1e925f8db8688672ccc3117fb1a5944dd786edf8"
+    },
+    {
+      "name": "OC2_IDN.csv",
+      "bytes": 24660,
+      "sha256": "e2f77c0a81fea372e1d15c13c5f2422368e8727b5aa7290d5ffe048402fe61d9"
+    },
+    {
+      "name": "OC2_IND.csv",
+      "bytes": 140187,
+      "sha256": "00c88154ba34e86f32674dba8c1457fcbe210f4d3125656bff4c58f92120d3e3"
+    },
+    {
+      "name": "OC2_KEN.csv",
+      "bytes": 37377,
+      "sha256": "a5cab25e15e29d1cef4179671cf388f266ba451646af0fba42037142b27f90fc"
+    },
+    {
+      "name": "OC2_NGA.csv",
+      "bytes": 59273,
+      "sha256": "175b34b11ba958b80b13283d6f4fa2da937806abb766ceb9ba48bf5dfe3805c2"
+    },
+    {
+      "name": "OC2_PAK.csv",
+      "bytes": 187497,
+      "sha256": "32d1ea071607aadf6896ca3d5cf7236ad96bff7e79e2d9e76bab406cf420344a"
+    },
+    {
+      "name": "OC2_RUS.csv",
+      "bytes": 231769,
+      "sha256": "dc015e5f5afce93f67c16816d77e3b12f351836bada6ee0455b0414b74685dfd"
+    },
+    {
+      "name": "PLFS_2023-24_AnnualReport.pdf",
+      "bytes": 26917638,
+      "sha256": "ab4ead2cee181a13c7ab40f164d2dceb46419cfb58f30f8baa58e35f79d33d39"
+    },
+    {
+      "name": "PLFS_2023-24_Table25_occupation.csv",
+      "bytes": 6997,
+      "sha256": "37f3bee5f99930e4a7944cab6d63fd30aafdd4ca841b8ebab61722bb0a5cffb0"
+    },
+    {
+      "name": "PLFS_2025_Report.pdf",
+      "bytes": 5914743,
+      "sha256": "134bf2de5e4b1142d3bae4899c90ec5be3bf5ec03a2ff4b3f7b0bba34eee0da7"
+    },
+    {
+      "name": "PLFS_2025_Table25_occupation.csv",
+      "bytes": 7848,
+      "sha256": "0d6b858bdb3cc2ccfa977d8a3cde278bd5c123cfcec5263b1ad5544db43ac135"
+    },
+    {
+      "name": "dsd_OC2.xml",
+      "bytes": 1515120,
+      "sha256": "3a9edc4410e3174b11b338154d5548af861bce1cb7d96f50c7df3bd010a06c29"
+    },
+    {
+      "name": "plfs2025.txt",
+      "bytes": 4204178,
+      "sha256": "fb14afd1fe97a48bca1edb8631338bd46db717877101b31c54914ac9e94f0e63"
+    },
+    {
+      "name": "plfs2324.txt",
+      "bytes": 4142461,
+      "sha256": "60e9e3e503eeaad61f0eef97c79f8122f27fd169acadf10b09afcaad59633046"
+    }
+  ],
+  "plfs_2025_extraction_review": {
+    "status": "supplied_extraction_rejected",
+    "supplied_three_digit_rows": 141,
+    "supplied_person_share_sum": 143.1,
+    "correct_three_digit_rows": 127,
+    "correct_person_share_sum": 100.0,
+    "extra_codes_from_table_26": [
+      "011",
+      "012",
+      "013",
+      "014",
+      "015",
+      "016",
+      "017",
+      "021",
+      "022",
+      "023",
+      "024",
+      "031",
+      "032",
+      "051"
+    ],
+    "correct_pdf_pages": [
+      229,
+      230,
+      231
+    ],
+    "correct_printed_pages": [
+      "A-152",
+      "A-153",
+      "A-154"
+    ],
+    "extra_codes_pdf_page": 232,
+    "extra_codes_printed_page": "A-155",
+    "matching_values_for_valid_codes": 1143,
+    "corrected_csv": "data/source_review/2026-09-15/PLFS_2025_Table25_corrected.csv",
+    "corrected_csv_sha256": "5f12895c12c54b2e869b8fb8c6aea7f655536d2518f1f9bfdd2cdf4caecd1c7a",
+    "usage": "Archive for audit only; current map uses direct ILOSTAT ISCO-08 two-digit observations."
+  },
+  "model_comparison": {
+    "NGA": {
+      "received_file": "MODEL_OCU_NGA.csv",
+      "retained_file": "ilostat_data/NGA_model_hist.xml",
+      "matching_observations": 54,
+      "result": "All occupation/year values match; both use PS and UNIT_MULT=3. Retained original XML."
+    },
+    "IDN": {
+      "received_file": "MODEL_OCU_IDN.csv",
+      "retained_file": "ilostat_data/IDN_model_hist.xml",
+      "matching_observations": 54,
+      "result": "All occupation/year values match; both use PS and UNIT_MULT=3. Retained original XML."
+    }
+  },
+  "dsd_codes": {
+    "UNIT_MULT_3": "Thousands",
+    "OBS_STATUS_B": "Break in series",
+    "OBS_STATUS_U": "Unreliable",
+    "note": "Validated against supplied dsd_OC2.xml; does not establish population or year comparability."
+  }
+}

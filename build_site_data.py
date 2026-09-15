@@ -2,7 +2,7 @@
 Build a compact JSON for the website by merging CSV stats with AI exposure scores.
 
 Reads occupations.csv (for stats) and scores.json (for AI exposure).
-Writes site/data.json.
+Writes legacy-output/us-data.json; never overwrites the six-country site.
 
 Usage:
     uv run python build_site_data.py
@@ -10,16 +10,25 @@ Usage:
 
 import csv
 import json
+import argparse
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, default=ROOT / "legacy-output/us-data.json")
+    args = parser.parse_args()
+    if args.output.resolve() == (ROOT / "site/data.json").resolve():
+        parser.error("The legacy US builder cannot overwrite six-country site/data.json")
     # Load AI exposure scores
-    with open("scores.json") as f:
+    with (ROOT / "scores.json").open(encoding="utf-8") as f:
         scores_list = json.load(f)
     scores = {s["slug"]: s for s in scores_list}
 
     # Load CSV stats
-    with open("occupations.csv") as f:
+    with (ROOT / "occupations.csv").open(encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
         rows = list(reader)
 
@@ -42,12 +51,11 @@ def main():
             "url": row.get("url", ""),
         })
 
-    import os
-    os.makedirs("site", exist_ok=True)
-    with open("site/data.json", "w") as f:
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    with args.output.open("w", encoding="utf-8") as f:
         json.dump(data, f)
 
-    print(f"Wrote {len(data)} occupations to site/data.json")
+    print(f"Wrote {len(data)} occupations to {args.output}")
     total_jobs = sum(d["jobs"] for d in data if d["jobs"])
     print(f"Total jobs represented: {total_jobs:,}")
 

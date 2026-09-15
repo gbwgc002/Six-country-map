@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GenAI 暴露度：数据来源与计算方式</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #0a0a0f; color: #e0e0e8; font: 15px/1.8 -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
+  main { max-width: 920px; margin: 0 auto; padding: 28px 24px 70px; }
+  h1 { font-size: 28px; line-height: 1.35; margin: 24px 0 14px; }
+  h2 { margin-top: 32px; font-size: 20px; }
+  a { color: #93a9ff; }
+  .note { padding: 16px 20px; background: #141a2b; border-left: 3px solid #6c8aff; border-radius: 4px; }
+  .muted { color: #a3a3b3; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { padding: 12px 14px; border-bottom: 1px solid #30303f; text-align: left; vertical-align: top; }
+  th { color: #a3a3b3; background: #15151f; }
+  code { font-size: 13px; overflow-wrap: anywhere; }
+  .formula { padding: 12px 16px; background: #161622; border-radius: 4px; }
+  li { margin: 6px 0; }
+  footer { margin-top: 36px; border-top: 1px solid #30303f; padding-top: 18px; font-size: 12px; }
+</style>
+</head>
+<body><main>
+<a href="index.html">← 返回职业地图</a>
+<h1>GenAI 暴露度：每个分数从哪里来？</h1>
+<p class="note"><strong>本图层是“权威研究基准 + 本项目计算的参考值”。</strong><br>
+分数衡量生成式 AI 对职业任务的技术暴露潜力，采用 0–1 原始量表。它不是实际采用率、任务可替代比例或失业概率，也不是 ILO 官方发布的六国暴露度排名。</p>
+
+<h2>1. 权威来源与时间口径</h2>
+<p>基础数据来自 Gmyrek 等（2025）的 <em>Generative AI and Jobs: A Refined Global Index of Occupational Exposure</em>，ILO Working Paper 140，由 ILO 与 NASK 研究人员合作完成。研究结合波兰劳动者的任务评价、国际专家验证和基于这些评价的大模型预测，再映射到全球 ISCO-08 职业任务。它具有可公开核验的方法，但仍是研究估计，不是对各国实际冲击的直接测量。</p>
+<ul>
+  <li><a href="https://www.ilo.org/sites/default/files/2025-05/WP140_web.pdf" target="_blank" rel="noopener noreferrer">ILO 官方论文 PDF</a> · <a href="https://doi.org/10.54394/HETP0387" target="_blank" rel="noopener noreferrer">DOI</a></li>
+  <li><a href="https://github.com/pgmyrek/2025_GenAI_scores_ISCO08/blob/ca5de1ad757ea0f41f1ee5162665ddda1b8f9bb7/Final_Scores_ISCO08_Gmyrek_et_al_2025.xlsx" target="_blank" rel="noopener noreferrer">第一作者公开的原始工作簿（固定版本）</a>：论文印刷页 37（PDF 第 40 页）链接至这一数据项目。</li>
+  <li>技术能力基准：<strong>2025 年初</strong>。本项目核验日期：2026-09-15；核验日期不意味着分数已更新为 2026 年能力。</li>
+  <li>原表包含 3,265 个任务行、427 个有评分的四位职业。项目提取已公布的职业均分、标准差及分档，不重新调用模型打分。</li>
+</ul>
+
+<h2>2. 三层数值，三种含义</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>层次</th><th>来源或计算</th><th>应如何理解</th></tr></thead>
+<tbody>
+<tr><td>四位职业原始分数</td><td>工作簿 <code>mean_score_2025</code>；原始分档为 <code>potential25</code></td><td>ILO 研究作者公布的全球职业基准。任务行重复记录同一职业均分，导入时先按职业代码去重。</td></tr>
+<tr><td>地图职业组参考均分</td><td>其下已匹配四位职业原始均分的简单平均</td><td>本项目派生值。没有组内各四位职业的本国就业权重，采用细分职业等权假设。</td></tr>
+<tr><td>国家、职业大类等参考均分</td><td>地图职业组参考均分 × 该组就业人数，再除以可匹配就业人数</td><td>本项目派生值。国家差异来自地图已有就业结构，并非对当地 AI 普及或任务内容作出的校准。</td></tr>
+</tbody></table></div>
+<p class="formula">职业组参考均分 = Σ（组内已匹配四位职业原始均分）÷ 已匹配四位职业数量<br>
+国家参考均分 = Σ（职业组参考均分 × 该组就业人数）÷ Σ（已匹配职业组就业人数）</p>
+<p>例如，<strong>软件开发人员（2512）</strong>原始均分为 <strong>0.53</strong>、原始分档为梯度 3；<strong>一般办公室文员（4110）</strong>原始均分为 <strong>0.60</strong>、分档为梯度 4。地图中的“信息通信技术专业人员（25）”涵盖多个四位职业，因此其参考均分不等同于某一名软件开发人员的分数。</p>
+
+<h2>3. 如何匹配六国</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>国家</th><th>地图就业数据年份</th><th>现有职业粒度</th><th>本次匹配方法</th></tr></thead>
+<tbody>
+<tr><td>印度</td><td>2025</td><td>ISCO-08 两位</td><td>直接使用 ILOSTAT 两位职业人数，按两位前缀汇总四位基准分数。</td></tr>
+<tr><td>印度尼西亚</td><td>2023</td><td>ISCO-08 两位</td><td rowspan="5">按两位前缀汇总四位基准分数。没有按本国四位职业就业构成调整。</td></tr>
+<tr><td>巴基斯坦</td><td>2025</td><td>ISCO-08 两位</td></tr>
+<tr><td>尼日利亚</td><td>2023</td><td>ISCO-08 两位</td></tr>
+<tr><td>肯尼亚</td><td>2022</td><td>ISCO-08 两位</td></tr>
+<tr><td>俄罗斯</td><td>2025</td><td>ISCO-08 两位</td></tr>
+</tbody></table></div>
+<p>六国就业人数统一使用 ILOSTAT ISCO-08 两位职业观测；印度更新为 2025 年 40 个职业组，不再将 PLFS 三位百分比乘以另一来源总量。尼日利亚 2023 年、肯尼亚 2022 年暂保留历史快照，这些年份未包含在本次交付中，当前发布状态待核实。详见 <a href="data-methodology.html">就业来源与数据限制</a>。上表年份是就业人数的参考年份，不是就业趋势的起止年份。</p>
+<p>六国的前缀匹配只用于职业组参考，不构成逐任务等价性验证。相同职业组在不同国家可能有不同的工作方式；这些差异尚未进入计算。印度由三位改为两位后，参考均分的变化同时受到聚合层级和就业权重影响，不能解释为 AI 影响上升。</p>
+
+<h2>4. 范围、覆盖率与分档</h2>
+<ul>
+  <li><strong>组内范围：</strong>该组已匹配四位职业均分的最小值与最大值。它展示组内职业差异，不是误差条或置信区间。</li>
+  <li><strong>国家参考范围：</strong>分别用各组的最低分、最高分按该组就业人数加权。在组内真实构成未知时展示这种构成的影响；仅覆盖已匹配就业，不包含当地任务差异和评分模型误差。</li>
+  <li><strong>匹配就业覆盖：</strong>可匹配职业组就业人数 ÷ 地图总就业人数。100% 只表示地图中的职业组都可匹配，不表示样本覆盖全国全部就业，也不表示每个职业的实际任务已被调查。</li>
+  <li><strong>无数据：</strong>未匹配类别保留就业面积，分数为 null、显示灰色，并从均分分母中剔除；不赋 0 或默认 5 分。当前印尼军人类别 01、02、03 未匹配。</li>
+  <li><strong>数字分段：</strong>主图的 0–0.2 等区间仅用于颜色与分布展示，不是 ILO 官方暴露梯度。</li>
+  <li><strong>官方梯度：</strong>ILO 的分档同时依据四位职业任务均分和标准差。点击地图职业组可查看作者原始分档；不对两位或三位组平均分套用梯度，不据此推算“高暴露就业人数”。</li>
+</ul>
+
+<h2>5. 可以用来做什么</h2>
+<p>适合识别哪些职业任务值得优先开展 AI 需求访谈，或比较现有就业结构下的技术暴露潜力。由于参考年份、职业粒度和组内等权假设不同，六国均值不宜作为精确的优劣排名。</p>
+<p>如果要测量“某国某职业真实受到多少影响”，需补充同口径的本国四位职业就业数据、实际任务构成、AI 使用率及采用条件。获得这些数据后可替换组内等权假设；没有依据时，不添加自定义国家修正系数。</p>
+
+<h2>6. 复核和更新</h2>
+<p>仓库的 <code>data/ilo_genai_2025/occupations.json</code> 保存全部四位职业分数、原始来源版本和 SHA-256。<code>scripts/import_ilo_genai.py</code> 校验工作簿后导入；<code>ai_exposure.py</code> 对当前就业数据重算参考值。完整国家数据生成脚本也使用同一流程。每次替换研究版本需检查字段、分类映射与量表，不能直接把不同版本分数当作真实时间趋势。</p>
+<footer>
+<p>来源：Gmyrek, P., Berg, J., Kamiński, K., Konopczyński, F., Ładna, A., Nafradi, B., Rosłaniec, K., Troszyński, M. (2025). <em>Generative AI and Jobs: A Refined Global Index of Occupational Exposure.</em> ILO Working Paper 140. © ILO. <a href="https://doi.org/10.54394/HETP0387">https://doi.org/10.54394/HETP0387</a>。论文采用 CC BY 4.0；本项目增加职业组汇总、本地就业加权和中文说明，属于独立派生呈现。</p>
+<p class="muted">This is an adaptation of a copyrighted work of the International Labour Organization (ILO). This adaptation has not been prepared, reviewed or endorsed by the ILO and should not be considered an official ILO adaptation. The ILO disclaims all responsibility for its content and accuracy. Responsibility rests solely with the author(s) of the adaptation.</p>
+<p class="muted">本页中文说明由项目整理，非 ILO 官方翻译。</p>
+</footer>
+</main></body></html>

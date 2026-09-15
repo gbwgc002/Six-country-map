@@ -1,0 +1,3451 @@
+{
+  "source": {
+    "id": "ilo_wp140_2025",
+    "title": "Gmyrek et al. (2025), Generative AI and Jobs: A Refined Global Index of Occupational Exposure",
+    "publisher": "International Labour Organization, Working Paper 140",
+    "reference_year": 2025,
+    "technology_reference": "start of 2025",
+    "doi": "https://doi.org/10.54394/HETP0387",
+    "paper_url": "https://www.ilo.org/sites/default/files/2025-05/WP140_web.pdf",
+    "author_repository": "https://github.com/pgmyrek/2025_GenAI_scores_ISCO08",
+    "source_commit": "ca5de1ad757ea0f41f1ee5162665ddda1b8f9bb7",
+    "workbook_url": "https://github.com/pgmyrek/2025_GenAI_scores_ISCO08/blob/ca5de1ad757ea0f41f1ee5162665ddda1b8f9bb7/Final_Scores_ISCO08_Gmyrek_et_al_2025.xlsx",
+    "download_url": "https://raw.githubusercontent.com/pgmyrek/2025_GenAI_scores_ISCO08/ca5de1ad757ea0f41f1ee5162665ddda1b8f9bb7/Final_Scores_ISCO08_Gmyrek_et_al_2025.xlsx",
+    "workbook_sha256": "c1940b87e7293b1eb95b530b6d3da7cd806b61d217c4bff1e69372b2cff5c90a",
+    "worksheet": "Sheet1",
+    "fields": [
+      "ISCO_08",
+      "Title",
+      "mean_score_2025",
+      "SD_2025",
+      "potential25"
+    ],
+    "retrieved_on": "2026-09-15",
+    "scale": [
+      0,
+      1
+    ],
+    "occupation_count": 427,
+    "task_count": 3265,
+    "provenance": "The official paper links to this author's dataset on printed page 37 (PDF page 40).",
+    "transformation": "Select published 2025 occupation means, SDs and gradients; deduplicate task rows by ISCO_08. Do not recompute rounded means or gradient assignments."
+  },
+  "occupations": [
+    {
+      "code": "1111",
+      "title_en": "Legislators",
+      "mean": 0.31,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "1112",
+      "title_en": "Senior Government Officials",
+      "mean": 0.38,
+      "sd": 0.08,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "1113",
+      "title_en": "Traditional Chiefs and Heads of Villages",
+      "mean": 0.23,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "1114",
+      "title_en": "Senior Officials of Special-interest Organizations",
+      "mean": 0.37,
+      "sd": 0.06,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "1120",
+      "title_en": "Managing Directors and Chief Executives",
+      "mean": 0.38,
+      "sd": 0.06,
+      "gradient": "Minimal Exposure",
+      "task_count": 11
+    },
+    {
+      "code": "1211",
+      "title_en": "Finance Managers",
+      "mean": 0.37,
+      "sd": 0.04,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    },
+    {
+      "code": "1212",
+      "title_en": "Human Resource Managers",
+      "mean": 0.36,
+      "sd": 0.05,
+      "gradient": "Minimal Exposure",
+      "task_count": 11
+    },
+    {
+      "code": "1213",
+      "title_en": "Policy and Planning Managers",
+      "mean": 0.36,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "1219",
+      "title_en": "Business Services and Administration Managers Not Elsewhere Classified",
+      "mean": 0.42,
+      "sd": 0.1,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 10
+    },
+    {
+      "code": "1221",
+      "title_en": "Sales and Marketing Managers",
+      "mean": 0.41,
+      "sd": 0.09,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 8
+    },
+    {
+      "code": "1222",
+      "title_en": "Advertising and Public Relations Managers",
+      "mean": 0.39,
+      "sd": 0.05,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    },
+    {
+      "code": "1223",
+      "title_en": "Research and Development Managers",
+      "mean": 0.4,
+      "sd": 0.06,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    },
+    {
+      "code": "1311",
+      "title_en": "Agricultural and Forestry Production Managers",
+      "mean": 0.27,
+      "sd": 0.13,
+      "gradient": "Minimal Exposure",
+      "task_count": 12
+    },
+    {
+      "code": "1312",
+      "title_en": "Aquaculture and Fisheries Production Managers",
+      "mean": 0.22,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 13
+    },
+    {
+      "code": "1321",
+      "title_en": "Manufacturing Managers",
+      "mean": 0.38,
+      "sd": 0.11,
+      "gradient": "Minimal Exposure",
+      "task_count": 12
+    },
+    {
+      "code": "1322",
+      "title_en": "Mining Managers",
+      "mean": 0.35,
+      "sd": 0.11,
+      "gradient": "Minimal Exposure",
+      "task_count": 10
+    },
+    {
+      "code": "1323",
+      "title_en": "Construction Managers",
+      "mean": 0.34,
+      "sd": 0.06,
+      "gradient": "Minimal Exposure",
+      "task_count": 11
+    },
+    {
+      "code": "1324",
+      "title_en": "Supply, Distribution and Related Managers",
+      "mean": 0.38,
+      "sd": 0.05,
+      "gradient": "Minimal Exposure",
+      "task_count": 12
+    },
+    {
+      "code": "1330",
+      "title_en": "Information and Communications Technology Service Managers",
+      "mean": 0.44,
+      "sd": 0.07,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 11
+    },
+    {
+      "code": "1341",
+      "title_en": "Child Care Service Managers",
+      "mean": 0.3,
+      "sd": 0.15,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "1342",
+      "title_en": "Health Service Managers",
+      "mean": 0.36,
+      "sd": 0.05,
+      "gradient": "Minimal Exposure",
+      "task_count": 10
+    },
+    {
+      "code": "1343",
+      "title_en": "Aged Care Service Managers",
+      "mean": 0.34,
+      "sd": 0.09,
+      "gradient": "Minimal Exposure",
+      "task_count": 10
+    },
+    {
+      "code": "1344",
+      "title_en": "Social Welfare Managers",
+      "mean": 0.37,
+      "sd": 0.07,
+      "gradient": "Minimal Exposure",
+      "task_count": 10
+    },
+    {
+      "code": "1345",
+      "title_en": "Education Managers",
+      "mean": 0.36,
+      "sd": 0.1,
+      "gradient": "Minimal Exposure",
+      "task_count": 11
+    },
+    {
+      "code": "1346",
+      "title_en": "Financial and Insurance Services Branch managers",
+      "mean": 0.47,
+      "sd": 0.12,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 11
+    },
+    {
+      "code": "1349",
+      "title_en": "Professional Services Managers Not Elsewhere Classified",
+      "mean": 0.38,
+      "sd": 0.07,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "1411",
+      "title_en": "Hotel Managers",
+      "mean": 0.37,
+      "sd": 0.13,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 10
+    },
+    {
+      "code": "1412",
+      "title_en": "Restaurant Managers",
+      "mean": 0.36,
+      "sd": 0.12,
+      "gradient": "Minimal Exposure",
+      "task_count": 10
+    },
+    {
+      "code": "1420",
+      "title_en": "Retail and Wholesale Trade Managers",
+      "mean": 0.44,
+      "sd": 0.15,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 7
+    },
+    {
+      "code": "1431",
+      "title_en": "Sports, Recreation and Cultural Centre Managers",
+      "mean": 0.32,
+      "sd": 0.1,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "2111",
+      "title_en": "Physicists and Astronomers",
+      "mean": 0.38,
+      "sd": 0.14,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 11
+    },
+    {
+      "code": "2112",
+      "title_en": "Meteorologists",
+      "mean": 0.54,
+      "sd": 0.13,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 9
+    },
+    {
+      "code": "2113",
+      "title_en": "Chemists",
+      "mean": 0.39,
+      "sd": 0.1,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "2114",
+      "title_en": "Geologists and geophysicists",
+      "mean": 0.36,
+      "sd": 0.1,
+      "gradient": "Minimal Exposure",
+      "task_count": 12
+    },
+    {
+      "code": "2120",
+      "title_en": "Mathematicians, Actuaries and Statisticians",
+      "mean": 0.56,
+      "sd": 0.09,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 10
+    },
+    {
+      "code": "2131",
+      "title_en": "Biologists, Botanists, Zoologists and Related Professionals",
+      "mean": 0.4,
+      "sd": 0.1,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 8
+    },
+    {
+      "code": "2132",
+      "title_en": "Farming, Forestry and Fisheries Advisers",
+      "mean": 0.29,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 12
+    },
+    {
+      "code": "2133",
+      "title_en": "Environmental Protection Professionals",
+      "mean": 0.38,
+      "sd": 0.04,
+      "gradient": "Minimal Exposure",
+      "task_count": 7
+    },
+    {
+      "code": "2141",
+      "title_en": "Industrial and Production Engineers",
+      "mean": 0.37,
+      "sd": 0.07,
+      "gradient": "Minimal Exposure",
+      "task_count": 10
+    },
+    {
+      "code": "2142",
+      "title_en": "Civil Engineers",
+      "mean": 0.3,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "2143",
+      "title_en": "Environmental Engineers",
+      "mean": 0.38,
+      "sd": 0.07,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "2144",
+      "title_en": "Mechanical Engineers",
+      "mean": 0.32,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "2145",
+      "title_en": "Chemical Engineers",
+      "mean": 0.35,
+      "sd": 0.12,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    },
+    {
+      "code": "2146",
+      "title_en": "Mining Engineers, Metallurgists and Related Professionals",
+      "mean": 0.29,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "2149",
+      "title_en": "Engineering Professionals Not Elsewhere Classified",
+      "mean": 0.3,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "2151",
+      "title_en": "Electrical Engineers",
+      "mean": 0.31,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "2152",
+      "title_en": "Electronics Engineers",
+      "mean": 0.42,
+      "sd": 0.13,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 8
+    },
+    {
+      "code": "2153",
+      "title_en": "Telecommunications Engineers",
+      "mean": 0.48,
+      "sd": 0.12,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 7
+    },
+    {
+      "code": "2161",
+      "title_en": "Building Architects",
+      "mean": 0.37,
+      "sd": 0.08,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "2162",
+      "title_en": "Landscape Architects",
+      "mean": 0.37,
+      "sd": 0.08,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "2163",
+      "title_en": "Product and Garment Designers",
+      "mean": 0.35,
+      "sd": 0.09,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "2164",
+      "title_en": "Town and Traffic Planners",
+      "mean": 0.41,
+      "sd": 0.06,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    },
+    {
+      "code": "2165",
+      "title_en": "Cartographers and Surveyors",
+      "mean": 0.44,
+      "sd": 0.12,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 8
+    },
+    {
+      "code": "2166",
+      "title_en": "Graphic and Multimedia Designers",
+      "mean": 0.49,
+      "sd": 0.09,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 10
+    },
+    {
+      "code": "2211",
+      "title_en": "Generalist Medical Practitioners",
+      "mean": 0.29,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "2212",
+      "title_en": "Specialist Medical Practitioners",
+      "mean": 0.27,
+      "sd": 0.12,
+      "gradient": "Not Exposed",
+      "task_count": 12
+    },
+    {
+      "code": "2221",
+      "title_en": "Nursing Professionals",
+      "mean": 0.25,
+      "sd": 0.13,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "2222",
+      "title_en": "Midwifery Professionals",
+      "mean": 0.3,
+      "sd": 0.15,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    },
+    {
+      "code": "2230",
+      "title_en": "Traditional and Complementary Medicine Professionals",
+      "mean": 0.32,
+      "sd": 0.11,
+      "gradient": "Minimal Exposure",
+      "task_count": 7
+    },
+    {
+      "code": "2240",
+      "title_en": "Paramedical Practitioners",
+      "mean": 0.23,
+      "sd": 0.13,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "2250",
+      "title_en": "Veterinarians",
+      "mean": 0.14,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "2261",
+      "title_en": "Dentists",
+      "mean": 0.15,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 12
+    },
+    {
+      "code": "2262",
+      "title_en": "Pharmacists",
+      "mean": 0.33,
+      "sd": 0.09,
+      "gradient": "Minimal Exposure",
+      "task_count": 13
+    },
+    {
+      "code": "2263",
+      "title_en": "Environmental and Occupational Health and Hygiene Professionals",
+      "mean": 0.28,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "2264",
+      "title_en": "Physiotherapists",
+      "mean": 0.28,
+      "sd": 0.14,
+      "gradient": "Minimal Exposure",
+      "task_count": 7
+    },
+    {
+      "code": "2265",
+      "title_en": "Dieticians and Nutritionists",
+      "mean": 0.41,
+      "sd": 0.07,
+      "gradient": "Minimal Exposure",
+      "task_count": 7
+    },
+    {
+      "code": "2266",
+      "title_en": "Audiologists and Speech Therapists",
+      "mean": 0.24,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "2267",
+      "title_en": "Optometrists and Ophthalmic Opticians",
+      "mean": 0.24,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "2269",
+      "title_en": "Health Professionals Not Elsewhere Classified",
+      "mean": 0.2,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "2310",
+      "title_en": "University and Higher Education Teachers",
+      "mean": 0.37,
+      "sd": 0.12,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "2320",
+      "title_en": "Vocational Education Teachers",
+      "mean": 0.35,
+      "sd": 0.12,
+      "gradient": "Minimal Exposure",
+      "task_count": 10
+    },
+    {
+      "code": "2330",
+      "title_en": "Secondary Education Teachers",
+      "mean": 0.3,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "2341",
+      "title_en": "Primary School Teachers",
+      "mean": 0.26,
+      "sd": 0.09,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "2342",
+      "title_en": "Early Childhood Educators",
+      "mean": 0.21,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "2351",
+      "title_en": "Education Methods Specialists",
+      "mean": 0.39,
+      "sd": 0.11,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 10
+    },
+    {
+      "code": "2352",
+      "title_en": "Special Needs Teachers",
+      "mean": 0.28,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "2353",
+      "title_en": "Other Language Teachers",
+      "mean": 0.34,
+      "sd": 0.11,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    },
+    {
+      "code": "2354",
+      "title_en": "Other Music Teachers",
+      "mean": 0.35,
+      "sd": 0.09,
+      "gradient": "Minimal Exposure",
+      "task_count": 11
+    },
+    {
+      "code": "2355",
+      "title_en": "Other Arts Teachers",
+      "mean": 0.35,
+      "sd": 0.1,
+      "gradient": "Minimal Exposure",
+      "task_count": 10
+    },
+    {
+      "code": "2356",
+      "title_en": "Information Technology Trainers",
+      "mean": 0.47,
+      "sd": 0.1,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 6
+    },
+    {
+      "code": "2359",
+      "title_en": "Teaching Professionals Not Elsewhere Classified",
+      "mean": 0.33,
+      "sd": 0.1,
+      "gradient": "Minimal Exposure",
+      "task_count": 12
+    },
+    {
+      "code": "2411",
+      "title_en": "Accountants",
+      "mean": 0.51,
+      "sd": 0.08,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 8
+    },
+    {
+      "code": "2412",
+      "title_en": "Financial and Investment Advisers",
+      "mean": 0.57,
+      "sd": 0.11,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 6
+    },
+    {
+      "code": "2413",
+      "title_en": "Financial Analysts",
+      "mean": 0.62,
+      "sd": 0.06,
+      "gradient": "Exposed: Gradient 4",
+      "task_count": 9
+    },
+    {
+      "code": "2421",
+      "title_en": "Management and Organization Analysts",
+      "mean": 0.46,
+      "sd": 0.1,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 9
+    },
+    {
+      "code": "2422",
+      "title_en": "Policy Administration Professionals",
+      "mean": 0.42,
+      "sd": 0.06,
+      "gradient": "Minimal Exposure",
+      "task_count": 7
+    },
+    {
+      "code": "2423",
+      "title_en": "Personnel and Careers Professionals",
+      "mean": 0.45,
+      "sd": 0.07,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 5
+    },
+    {
+      "code": "2424",
+      "title_en": "Training and Staff Development Professionals",
+      "mean": 0.41,
+      "sd": 0.09,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 8
+    },
+    {
+      "code": "2431",
+      "title_en": "Advertising and Marketing Professionals",
+      "mean": 0.55,
+      "sd": 0.09,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 9
+    },
+    {
+      "code": "2432",
+      "title_en": "Public Relations Professionals",
+      "mean": 0.43,
+      "sd": 0.09,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 8
+    },
+    {
+      "code": "2433",
+      "title_en": "Technical and Medical Sales Professionals (excluding ICT)",
+      "mean": 0.5,
+      "sd": 0.1,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 12
+    },
+    {
+      "code": "2434",
+      "title_en": "Information and Communications Technology Sales Professionals",
+      "mean": 0.51,
+      "sd": 0.09,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 7
+    },
+    {
+      "code": "2511",
+      "title_en": "Systems Analysts",
+      "mean": 0.49,
+      "sd": 0.05,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 7
+    },
+    {
+      "code": "2512",
+      "title_en": "Software Developers",
+      "mean": 0.53,
+      "sd": 0.07,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 8
+    },
+    {
+      "code": "2513",
+      "title_en": "Web and Multimedia Developers",
+      "mean": 0.6,
+      "sd": 0.08,
+      "gradient": "Exposed: Gradient 4",
+      "task_count": 5
+    },
+    {
+      "code": "2514",
+      "title_en": "Applications Programmers",
+      "mean": 0.57,
+      "sd": 0.08,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 5
+    },
+    {
+      "code": "2519",
+      "title_en": "Software and Applications Developers and Analysts Not Elsewhere Classified",
+      "mean": 0.55,
+      "sd": 0.16,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 5
+    },
+    {
+      "code": "2521",
+      "title_en": "Database Designers and Administrators",
+      "mean": 0.57,
+      "sd": 0.08,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 6
+    },
+    {
+      "code": "2522",
+      "title_en": "Systems Aministrators",
+      "mean": 0.57,
+      "sd": 0.05,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 5
+    },
+    {
+      "code": "2523",
+      "title_en": "Computer Network Professionals",
+      "mean": 0.52,
+      "sd": 0.06,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 7
+    },
+    {
+      "code": "2529",
+      "title_en": "Database and Network Professionals Not Elsewhere Classified",
+      "mean": 0.49,
+      "sd": 0.06,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 8
+    },
+    {
+      "code": "2611",
+      "title_en": "Lawyers",
+      "mean": 0.36,
+      "sd": 0.09,
+      "gradient": "Minimal Exposure",
+      "task_count": 10
+    },
+    {
+      "code": "2612",
+      "title_en": "Judges",
+      "mean": 0.31,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "2619",
+      "title_en": "Legal Professionals Not Elsewhere Classified",
+      "mean": 0.37,
+      "sd": 0.09,
+      "gradient": "Minimal Exposure",
+      "task_count": 4
+    },
+    {
+      "code": "2621",
+      "title_en": "Archivists and Curators",
+      "mean": 0.47,
+      "sd": 0.11,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 10
+    },
+    {
+      "code": "2622",
+      "title_en": "Librarians and Related Information Professionals",
+      "mean": 0.55,
+      "sd": 0.04,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 9
+    },
+    {
+      "code": "2631",
+      "title_en": "Economists",
+      "mean": 0.55,
+      "sd": 0.08,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 12
+    },
+    {
+      "code": "2632",
+      "title_en": "Sociologists, Anthropologists and Related Professionals",
+      "mean": 0.48,
+      "sd": 0.12,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 9
+    },
+    {
+      "code": "2633",
+      "title_en": "Philosophers, Historians and Political Scientists",
+      "mean": 0.47,
+      "sd": 0.06,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 8
+    },
+    {
+      "code": "2634",
+      "title_en": "Psychologists",
+      "mean": 0.39,
+      "sd": 0.14,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 9
+    },
+    {
+      "code": "2635",
+      "title_en": "Social Work and Counselling Professionals",
+      "mean": 0.28,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "2636",
+      "title_en": "Religious Professionals",
+      "mean": 0.17,
+      "sd": 0.12,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "2641",
+      "title_en": "Authors and Related Writers",
+      "mean": 0.55,
+      "sd": 0.09,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 6
+    },
+    {
+      "code": "2642",
+      "title_en": "Journalists",
+      "mean": 0.54,
+      "sd": 0.1,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 10
+    },
+    {
+      "code": "2643",
+      "title_en": "Translators, Interpreters and Other Linguists",
+      "mean": 0.59,
+      "sd": 0.11,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 6
+    },
+    {
+      "code": "2651",
+      "title_en": "Visual Artists",
+      "mean": 0.21,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "2652",
+      "title_en": "Musicians, Singers and Composers",
+      "mean": 0.28,
+      "sd": 0.09,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "2653",
+      "title_en": "Dancers and Choreographers",
+      "mean": 0.19,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "2654",
+      "title_en": "Film, Stage and Related Directors and Producers",
+      "mean": 0.37,
+      "sd": 0.07,
+      "gradient": "Minimal Exposure",
+      "task_count": 7
+    },
+    {
+      "code": "2655",
+      "title_en": "Actors",
+      "mean": 0.31,
+      "sd": 0.15,
+      "gradient": "Minimal Exposure",
+      "task_count": 7
+    },
+    {
+      "code": "2656",
+      "title_en": "Announcers on Radio, Television and Other Media",
+      "mean": 0.47,
+      "sd": 0.12,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 5
+    },
+    {
+      "code": "2659",
+      "title_en": "Creative and Performing Artists Not Elsewhere Classified",
+      "mean": 0.13,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 4
+    },
+    {
+      "code": "3111",
+      "title_en": "Chemical and Physical Science Technicians",
+      "mean": 0.26,
+      "sd": 0.09,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "3112",
+      "title_en": "Civil Engineering Technicians",
+      "mean": 0.28,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "3113",
+      "title_en": "Electrical Engineering Technicians",
+      "mean": 0.27,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "3114",
+      "title_en": "Electronics Engineering Technicians",
+      "mean": 0.38,
+      "sd": 0.11,
+      "gradient": "Minimal Exposure",
+      "task_count": 7
+    },
+    {
+      "code": "3115",
+      "title_en": "Mechanical Engineering Technicians",
+      "mean": 0.26,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "3116",
+      "title_en": "Chemical Engineering Technicians",
+      "mean": 0.32,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "3117",
+      "title_en": "Mining and metallurgical technicians",
+      "mean": 0.28,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "3118",
+      "title_en": "Draughtspersons",
+      "mean": 0.35,
+      "sd": 0.11,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    },
+    {
+      "code": "3119",
+      "title_en": "Physical and Engineering Science Technicians Not Elsewhere Classified",
+      "mean": 0.26,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "3121",
+      "title_en": "Mining Supervisors",
+      "mean": 0.29,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "3122",
+      "title_en": "Manufacturing Supervisors",
+      "mean": 0.35,
+      "sd": 0.13,
+      "gradient": "Minimal Exposure",
+      "task_count": 6
+    },
+    {
+      "code": "3123",
+      "title_en": "Construction Supervisors",
+      "mean": 0.28,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "3131",
+      "title_en": "Power Production Plant Operators",
+      "mean": 0.28,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "3132",
+      "title_en": "Incinerator and Water Treatment Plant Operators",
+      "mean": 0.27,
+      "sd": 0.09,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "3133",
+      "title_en": "Chemical Processing Plant Controllers",
+      "mean": 0.29,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "3134",
+      "title_en": "Petroleum and Natural Gas Refining Plant Operators",
+      "mean": 0.29,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "3135",
+      "title_en": "Metal Production Process Controllers",
+      "mean": 0.31,
+      "sd": 0.13,
+      "gradient": "Minimal Exposure",
+      "task_count": 7
+    },
+    {
+      "code": "3141",
+      "title_en": "Life Science Technicians (excluding Medical)",
+      "mean": 0.38,
+      "sd": 0.18,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 13
+    },
+    {
+      "code": "3142",
+      "title_en": "Agricultural Technicians",
+      "mean": 0.26,
+      "sd": 0.09,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "3143",
+      "title_en": "Forestry Technicians",
+      "mean": 0.21,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "3151",
+      "title_en": "Ships' Engineers",
+      "mean": 0.23,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "3152",
+      "title_en": "Ships' Deck Officers and Pilots",
+      "mean": 0.29,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "3153",
+      "title_en": "Aircraft Pilots and Related Associate Professionals",
+      "mean": 0.27,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "3154",
+      "title_en": "Air Traffic Controllers",
+      "mean": 0.31,
+      "sd": 0.09,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    },
+    {
+      "code": "3155",
+      "title_en": "Air Traffic Safety Electronics Technicians",
+      "mean": 0.34,
+      "sd": 0.1,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "3211",
+      "title_en": "Medical Imaging and Therapeutic Equipment Technicians",
+      "mean": 0.22,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "3212",
+      "title_en": "Medical and Pathology Laboratory Technicians",
+      "mean": 0.31,
+      "sd": 0.16,
+      "gradient": "Minimal Exposure",
+      "task_count": 10
+    },
+    {
+      "code": "3213",
+      "title_en": "Pharmaceutical Technicians and Assistants",
+      "mean": 0.3,
+      "sd": 0.12,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "3214",
+      "title_en": "Medical and Dental Prosthetic Technicians",
+      "mean": 0.18,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "3221",
+      "title_en": "Nursing Associate Professionals",
+      "mean": 0.22,
+      "sd": 0.21,
+      "gradient": "Minimal Exposure",
+      "task_count": 6
+    },
+    {
+      "code": "3222",
+      "title_en": "Midwifery Associate Professionals",
+      "mean": 0.2,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 4
+    },
+    {
+      "code": "3230",
+      "title_en": "Traditional and Complementary Medicine Associate Professionals",
+      "mean": 0.19,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "3240",
+      "title_en": "Veterinary Technicians and Assistants",
+      "mean": 0.14,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "3251",
+      "title_en": "Dental Assistants and Therapists",
+      "mean": 0.16,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "3252",
+      "title_en": "Medical Records and Health Information Technicians",
+      "mean": 0.52,
+      "sd": 0.1,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 6
+    },
+    {
+      "code": "3253",
+      "title_en": "Community Health Workers",
+      "mean": 0.22,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "3254",
+      "title_en": "Dispensing Opticians",
+      "mean": 0.24,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 4
+    },
+    {
+      "code": "3255",
+      "title_en": "Physiotherapy Technicians and Assistants",
+      "mean": 0.17,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "3256",
+      "title_en": "Medical Assistants",
+      "mean": 0.35,
+      "sd": 0.23,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 10
+    },
+    {
+      "code": "3257",
+      "title_en": "Environmental and Occupational Health Inspectors and Associates",
+      "mean": 0.24,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "3258",
+      "title_en": "Ambulance Workers",
+      "mean": 0.22,
+      "sd": 0.17,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "3259",
+      "title_en": "Health Associate Professionals Not Elsewhere Classified",
+      "mean": 0.3,
+      "sd": 0.15,
+      "gradient": "Minimal Exposure",
+      "task_count": 7
+    },
+    {
+      "code": "3311",
+      "title_en": "Securities and Finance Dealers and Brokers",
+      "mean": 0.63,
+      "sd": 0.04,
+      "gradient": "Exposed: Gradient 4",
+      "task_count": 5
+    },
+    {
+      "code": "3312",
+      "title_en": "Credit and Loans Officers",
+      "mean": 0.6,
+      "sd": 0.04,
+      "gradient": "Exposed: Gradient 4",
+      "task_count": 6
+    },
+    {
+      "code": "3313",
+      "title_en": "Accounting Associate Professionals",
+      "mean": 0.49,
+      "sd": 0.13,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 6
+    },
+    {
+      "code": "3314",
+      "title_en": "Statistical, Mathematical and Related Associate Professionals",
+      "mean": 0.57,
+      "sd": 0.1,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 8
+    },
+    {
+      "code": "3315",
+      "title_en": "Valuers and Loss Assessors",
+      "mean": 0.45,
+      "sd": 0.19,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 5
+    },
+    {
+      "code": "3321",
+      "title_en": "Insurance Representatives",
+      "mean": 0.53,
+      "sd": 0.12,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 6
+    },
+    {
+      "code": "3322",
+      "title_en": "Commercial Sales Representatives",
+      "mean": 0.49,
+      "sd": 0.08,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 7
+    },
+    {
+      "code": "3323",
+      "title_en": "Buyers",
+      "mean": 0.39,
+      "sd": 0.08,
+      "gradient": "Minimal Exposure",
+      "task_count": 10
+    },
+    {
+      "code": "3324",
+      "title_en": "Trade Brokers",
+      "mean": 0.44,
+      "sd": 0.1,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 6
+    },
+    {
+      "code": "3331",
+      "title_en": "Clearing and Forwarding Aents",
+      "mean": 0.57,
+      "sd": 0.09,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 5
+    },
+    {
+      "code": "3332",
+      "title_en": "Conference and Event Planners",
+      "mean": 0.48,
+      "sd": 0.14,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 7
+    },
+    {
+      "code": "3333",
+      "title_en": "Employment agents and contractors",
+      "mean": 0.39,
+      "sd": 0.09,
+      "gradient": "Minimal Exposure",
+      "task_count": 6
+    },
+    {
+      "code": "3334",
+      "title_en": "Real Estate Agents and Property Managers",
+      "mean": 0.35,
+      "sd": 0.09,
+      "gradient": "Minimal Exposure",
+      "task_count": 7
+    },
+    {
+      "code": "3339",
+      "title_en": "Business Services Agents Not Elsewhere Classified",
+      "mean": 0.44,
+      "sd": 0.12,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 6
+    },
+    {
+      "code": "3341",
+      "title_en": "Office Supervisors",
+      "mean": 0.43,
+      "sd": 0.11,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 6
+    },
+    {
+      "code": "3342",
+      "title_en": "Legal Secretaries",
+      "mean": 0.55,
+      "sd": 0.13,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 7
+    },
+    {
+      "code": "3343",
+      "title_en": "Administrative and Executive Secretaries",
+      "mean": 0.54,
+      "sd": 0.14,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 8
+    },
+    {
+      "code": "3344",
+      "title_en": "Medical Secretaries",
+      "mean": 0.53,
+      "sd": 0.11,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 8
+    },
+    {
+      "code": "3351",
+      "title_en": "Customs and Border Inspectors",
+      "mean": 0.32,
+      "sd": 0.14,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    },
+    {
+      "code": "3352",
+      "title_en": "Government Tax and Excise Officials",
+      "mean": 0.49,
+      "sd": 0.12,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 4
+    },
+    {
+      "code": "3353",
+      "title_en": "Government Social Benefits Officials",
+      "mean": 0.45,
+      "sd": 0.07,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 4
+    },
+    {
+      "code": "3354",
+      "title_en": "Government Licensing Officials",
+      "mean": 0.43,
+      "sd": 0.07,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 5
+    },
+    {
+      "code": "3355",
+      "title_en": "Police Inspectors and Detectives",
+      "mean": 0.23,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "3359",
+      "title_en": "Government Regulatory AssociatePprofessionals Not Elsewhere Classified",
+      "mean": 0.36,
+      "sd": 0.1,
+      "gradient": "Minimal Exposure",
+      "task_count": 4
+    },
+    {
+      "code": "3411",
+      "title_en": "Legal and Related Associate Professionals",
+      "mean": 0.39,
+      "sd": 0.14,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 10
+    },
+    {
+      "code": "3412",
+      "title_en": "Social Work Associate Professionals",
+      "mean": 0.33,
+      "sd": 0.13,
+      "gradient": "Minimal Exposure",
+      "task_count": 10
+    },
+    {
+      "code": "3413",
+      "title_en": "Religious Associate Professionals",
+      "mean": 0.12,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "3421",
+      "title_en": "Athletes and Sports Players",
+      "mean": 0.23,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "3422",
+      "title_en": "Sports Coaches, Instructors and Officials",
+      "mean": 0.37,
+      "sd": 0.12,
+      "gradient": "Minimal Exposure",
+      "task_count": 11
+    },
+    {
+      "code": "3423",
+      "title_en": "Fitness and Recreation Instructors and Programme Leaders",
+      "mean": 0.25,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "3431",
+      "title_en": "Photographers",
+      "mean": 0.39,
+      "sd": 0.12,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 8
+    },
+    {
+      "code": "3432",
+      "title_en": "Interior Designers and Decorators",
+      "mean": 0.37,
+      "sd": 0.08,
+      "gradient": "Minimal Exposure",
+      "task_count": 10
+    },
+    {
+      "code": "3433",
+      "title_en": "Gallery, Museum and Library Technicians",
+      "mean": 0.37,
+      "sd": 0.2,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 9
+    },
+    {
+      "code": "3434",
+      "title_en": "Chefs",
+      "mean": 0.25,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "3511",
+      "title_en": "Information and Communications Technology Operations Technicians",
+      "mean": 0.43,
+      "sd": 0.13,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 8
+    },
+    {
+      "code": "3512",
+      "title_en": "Information and Communications Technology User Support Technicians",
+      "mean": 0.47,
+      "sd": 0.19,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 9
+    },
+    {
+      "code": "3513",
+      "title_en": "Computer Network and Systems Technicians",
+      "mean": 0.43,
+      "sd": 0.08,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 6
+    },
+    {
+      "code": "3514",
+      "title_en": "Web Technicians",
+      "mean": 0.53,
+      "sd": 0.12,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 7
+    },
+    {
+      "code": "3521",
+      "title_en": "Broadcasting and Audio-visual Technicians",
+      "mean": 0.35,
+      "sd": 0.11,
+      "gradient": "Minimal Exposure",
+      "task_count": 7
+    },
+    {
+      "code": "3522",
+      "title_en": "Telecommunications Engineering Technicians",
+      "mean": 0.45,
+      "sd": 0.04,
+      "gradient": "Minimal Exposure",
+      "task_count": 5
+    },
+    {
+      "code": "4110",
+      "title_en": "General Office Clerks",
+      "mean": 0.6,
+      "sd": 0.1,
+      "gradient": "Exposed: Gradient 4",
+      "task_count": 8
+    },
+    {
+      "code": "4120",
+      "title_en": "Secretaries (general)",
+      "mean": 0.58,
+      "sd": 0.1,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 8
+    },
+    {
+      "code": "4131",
+      "title_en": "Typists and Word Processing Operators",
+      "mean": 0.65,
+      "sd": 0.05,
+      "gradient": "Exposed: Gradient 4",
+      "task_count": 7
+    },
+    {
+      "code": "4132",
+      "title_en": "Data Entry Clerks",
+      "mean": 0.7,
+      "sd": 0.03,
+      "gradient": "Exposed: Gradient 4",
+      "task_count": 5
+    },
+    {
+      "code": "4211",
+      "title_en": "Bank Tellers and Related Clerks",
+      "mean": 0.58,
+      "sd": 0.09,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 6
+    },
+    {
+      "code": "4212",
+      "title_en": "Bookmakers, Croupiers and Related Gaming Workers",
+      "mean": 0.45,
+      "sd": 0.19,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 5
+    },
+    {
+      "code": "4213",
+      "title_en": "Pawnbrokers and Money-lenders",
+      "mean": 0.48,
+      "sd": 0.06,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 5
+    },
+    {
+      "code": "4214",
+      "title_en": "Debt Collectors and Related Workers",
+      "mean": 0.43,
+      "sd": 0.07,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 5
+    },
+    {
+      "code": "4221",
+      "title_en": "Travel Consultants and Clerks",
+      "mean": 0.56,
+      "sd": 0.07,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 8
+    },
+    {
+      "code": "4222",
+      "title_en": "Contact Centre Information Clerks",
+      "mean": 0.58,
+      "sd": 0.06,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 6
+    },
+    {
+      "code": "4223",
+      "title_en": "Telephone Switchboard Operators",
+      "mean": 0.54,
+      "sd": 0.15,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 5
+    },
+    {
+      "code": "4224",
+      "title_en": "Hotel Receptionists",
+      "mean": 0.51,
+      "sd": 0.07,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 9
+    },
+    {
+      "code": "4225",
+      "title_en": "Inquiry Clerks",
+      "mean": 0.57,
+      "sd": 0.09,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 5
+    },
+    {
+      "code": "4226",
+      "title_en": "Receptionists (general)",
+      "mean": 0.57,
+      "sd": 0.17,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 5
+    },
+    {
+      "code": "4227",
+      "title_en": "Survey and Market Research Interviewers",
+      "mean": 0.55,
+      "sd": 0.16,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 5
+    },
+    {
+      "code": "4229",
+      "title_en": "Client Information Workers Not Elsewhere Classified",
+      "mean": 0.42,
+      "sd": 0.13,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 6
+    },
+    {
+      "code": "4311",
+      "title_en": "Accounting and Bookkeeping Clerks",
+      "mean": 0.64,
+      "sd": 0.07,
+      "gradient": "Exposed: Gradient 4",
+      "task_count": 5
+    },
+    {
+      "code": "4312",
+      "title_en": "Statistical, Finance and Insurance Clerks",
+      "mean": 0.64,
+      "sd": 0.02,
+      "gradient": "Exposed: Gradient 4",
+      "task_count": 5
+    },
+    {
+      "code": "4313",
+      "title_en": "Payroll Clerks",
+      "mean": 0.61,
+      "sd": 0.08,
+      "gradient": "Exposed: Gradient 4",
+      "task_count": 5
+    },
+    {
+      "code": "4321",
+      "title_en": "Stock Clerks",
+      "mean": 0.37,
+      "sd": 0.06,
+      "gradient": "Minimal Exposure",
+      "task_count": 5
+    },
+    {
+      "code": "4322",
+      "title_en": "Production Clerks",
+      "mean": 0.44,
+      "sd": 0.06,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 5
+    },
+    {
+      "code": "4323",
+      "title_en": "Transport Clerks",
+      "mean": 0.5,
+      "sd": 0.1,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 6
+    },
+    {
+      "code": "4411",
+      "title_en": "Library Clerks",
+      "mean": 0.46,
+      "sd": 0.18,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 6
+    },
+    {
+      "code": "4412",
+      "title_en": "Mail Carriers and Sorting Clerks",
+      "mean": 0.41,
+      "sd": 0.15,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 4
+    },
+    {
+      "code": "4413",
+      "title_en": "Coding, Proofreading and Related Clerks",
+      "mean": 0.51,
+      "sd": 0.2,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 5
+    },
+    {
+      "code": "4414",
+      "title_en": "Scribes and Related Workers",
+      "mean": 0.58,
+      "sd": 0.08,
+      "gradient": "Exposed: Gradient 3",
+      "task_count": 3
+    },
+    {
+      "code": "4415",
+      "title_en": "Filing and Copying Clerks",
+      "mean": 0.37,
+      "sd": 0.17,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 5
+    },
+    {
+      "code": "4416",
+      "title_en": "Personnel Clerks",
+      "mean": 0.6,
+      "sd": 0.09,
+      "gradient": "Exposed: Gradient 4",
+      "task_count": 7
+    },
+    {
+      "code": "4419",
+      "title_en": "Clerical Support Workers Not Elsewhere Classified",
+      "mean": 0.63,
+      "sd": 0.03,
+      "gradient": "Exposed: Gradient 4",
+      "task_count": 4
+    },
+    {
+      "code": "5111",
+      "title_en": "Travel Attendants and Travel Stewards",
+      "mean": 0.22,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "5112",
+      "title_en": "Transport Conductors",
+      "mean": 0.25,
+      "sd": 0.17,
+      "gradient": "Minimal Exposure",
+      "task_count": 10
+    },
+    {
+      "code": "5113",
+      "title_en": "Travel Guides",
+      "mean": 0.32,
+      "sd": 0.11,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "5120",
+      "title_en": "Cooks",
+      "mean": 0.18,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "5131",
+      "title_en": "Waiters",
+      "mean": 0.28,
+      "sd": 0.16,
+      "gradient": "Minimal Exposure",
+      "task_count": 7
+    },
+    {
+      "code": "5132",
+      "title_en": "Bartenders",
+      "mean": 0.26,
+      "sd": 0.12,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "5141",
+      "title_en": "Hairdressers",
+      "mean": 0.17,
+      "sd": 0.18,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "5142",
+      "title_en": "Beauticians and Related Workers",
+      "mean": 0.18,
+      "sd": 0.19,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "5151",
+      "title_en": "Cleaning and Housekeeping Supervisors in Offices, Hotels and Other Establishments",
+      "mean": 0.22,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "5152",
+      "title_en": "Domestic Housekeepers",
+      "mean": 0.2,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "5153",
+      "title_en": "Building Caretakers",
+      "mean": 0.27,
+      "sd": 0.16,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    },
+    {
+      "code": "5161",
+      "title_en": "Astrologers, Fortune-tellers and Related Workers",
+      "mean": 0.3,
+      "sd": 0.16,
+      "gradient": "Minimal Exposure",
+      "task_count": 6
+    },
+    {
+      "code": "5162",
+      "title_en": "Companions and Valets",
+      "mean": 0.22,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 3
+    },
+    {
+      "code": "5163",
+      "title_en": "Undertakers and Embalmers",
+      "mean": 0.17,
+      "sd": 0.17,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "5164",
+      "title_en": "Pet Groomers and Animal Care Workers",
+      "mean": 0.14,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "5165",
+      "title_en": "Driving Instructors",
+      "mean": 0.2,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "5169",
+      "title_en": "Personal Services Workers Not Elsewhere Classified",
+      "mean": 0.21,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 3
+    },
+    {
+      "code": "5211",
+      "title_en": "Stall and Market Salespersons",
+      "mean": 0.35,
+      "sd": 0.17,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 7
+    },
+    {
+      "code": "5212",
+      "title_en": "Street Food Salespersons",
+      "mean": 0.22,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "5221",
+      "title_en": "Shopkeepers",
+      "mean": 0.43,
+      "sd": 0.1,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 7
+    },
+    {
+      "code": "5222",
+      "title_en": "Shop Supervisors",
+      "mean": 0.36,
+      "sd": 0.12,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    },
+    {
+      "code": "5223",
+      "title_en": "Shop Sales Assistants",
+      "mean": 0.38,
+      "sd": 0.16,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 5
+    },
+    {
+      "code": "5230",
+      "title_en": "Cashiers and Ticket Clerks",
+      "mean": 0.39,
+      "sd": 0.14,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 8
+    },
+    {
+      "code": "5241",
+      "title_en": "Fashion and Other Models",
+      "mean": 0.25,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "5242",
+      "title_en": "Sales Demonstrators",
+      "mean": 0.42,
+      "sd": 0.11,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 5
+    },
+    {
+      "code": "5243",
+      "title_en": "Door-to-door Salespersons",
+      "mean": 0.46,
+      "sd": 0.18,
+      "gradient": "Exposed: Gradient 2",
+      "task_count": 7
+    },
+    {
+      "code": "5244",
+      "title_en": "Contact Centre Salespersons",
+      "mean": 0.61,
+      "sd": 0.1,
+      "gradient": "Exposed: Gradient 4",
+      "task_count": 8
+    },
+    {
+      "code": "5245",
+      "title_en": "Service Station Attendants",
+      "mean": 0.24,
+      "sd": 0.16,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    },
+    {
+      "code": "5246",
+      "title_en": "Food Service Counter Attendants",
+      "mean": 0.24,
+      "sd": 0.13,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "5311",
+      "title_en": "Child Care Workers",
+      "mean": 0.19,
+      "sd": 0.09,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "5312",
+      "title_en": "Teachers' Aides",
+      "mean": 0.24,
+      "sd": 0.14,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "5321",
+      "title_en": "Health Care Assistants",
+      "mean": 0.14,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "5322",
+      "title_en": "Home-based Personal Care Workers",
+      "mean": 0.25,
+      "sd": 0.18,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "5329",
+      "title_en": "Personal Care Workers in Health Services Not Elsewhere Classified",
+      "mean": 0.15,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "5411",
+      "title_en": "Fire Fighters",
+      "mean": 0.18,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "5412",
+      "title_en": "Police Officers",
+      "mean": 0.14,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 4
+    },
+    {
+      "code": "5413",
+      "title_en": "Prison Guards",
+      "mean": 0.14,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "5414",
+      "title_en": "Security Guards",
+      "mean": 0.2,
+      "sd": 0.09,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "5419",
+      "title_en": "Protective Services Workers Not Elsewhere Classified",
+      "mean": 0.2,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "6111",
+      "title_en": "Field Crop and Vegetable Growers",
+      "mean": 0.18,
+      "sd": 0.12,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "6112",
+      "title_en": "Tree and Shrub Crop Growers",
+      "mean": 0.17,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "6113",
+      "title_en": "Gardeners, Horticultural and Nursery Growers",
+      "mean": 0.18,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 12
+    },
+    {
+      "code": "6114",
+      "title_en": "Mixed Crop Growers",
+      "mean": 0.17,
+      "sd": 0.12,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "6121",
+      "title_en": "Livestock and Dairy Producers",
+      "mean": 0.17,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 13
+    },
+    {
+      "code": "6122",
+      "title_en": "Poultry Producers",
+      "mean": 0.19,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 12
+    },
+    {
+      "code": "6123",
+      "title_en": "Apiarists and Sericulturists",
+      "mean": 0.22,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "6129",
+      "title_en": "Animal Producers Not Elsewhere Classified",
+      "mean": 0.2,
+      "sd": 0.14,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "6130",
+      "title_en": "Mixed Crop and Animal Producers",
+      "mean": 0.19,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "6210",
+      "title_en": "Forestry and Related Workers",
+      "mean": 0.12,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "6221",
+      "title_en": "Aquaculture Workers",
+      "mean": 0.22,
+      "sd": 0.15,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "6222",
+      "title_en": "Inland and Coastal Waters Fishery Workers",
+      "mean": 0.17,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "6223",
+      "title_en": "Deep-sea Fishery Workers",
+      "mean": 0.18,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "6224",
+      "title_en": "Hunters and Trappers",
+      "mean": 0.09,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "6310",
+      "title_en": "Subsistence Crop Farmers",
+      "mean": 0.13,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "6320",
+      "title_en": "Subsistence Livestock Farmers",
+      "mean": 0.13,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 12
+    },
+    {
+      "code": "6330",
+      "title_en": "Subsistence Mixed Crop and Livestock Farmers",
+      "mean": 0.12,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "6340",
+      "title_en": "Subsistence Fishers, Hunters, Trappers and Gatherers",
+      "mean": 0.12,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "7111",
+      "title_en": "House Builders",
+      "mean": 0.14,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "7112",
+      "title_en": "Bricklayers and Related Workers",
+      "mean": 0.09,
+      "sd": 0.01,
+      "gradient": "Not Exposed",
+      "task_count": 3
+    },
+    {
+      "code": "7113",
+      "title_en": "Stonemasons, Stone Cutters, Splitters and Carvers",
+      "mean": 0.11,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "7114",
+      "title_en": "Concrete Placers, Concrete Finishers and Related Workers",
+      "mean": 0.1,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "7115",
+      "title_en": "Carpenters and Joiners",
+      "mean": 0.13,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "7119",
+      "title_en": "Building Frame and Related Trades Workers Not Elsewhere Classified",
+      "mean": 0.09,
+      "sd": 0.01,
+      "gradient": "Not Exposed",
+      "task_count": 3
+    },
+    {
+      "code": "7121",
+      "title_en": "Roofers",
+      "mean": 0.13,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "7122",
+      "title_en": "Floor Layers and Tile Setters",
+      "mean": 0.1,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 4
+    },
+    {
+      "code": "7123",
+      "title_en": "Plasterers",
+      "mean": 0.11,
+      "sd": 0.01,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "7124",
+      "title_en": "Insulation Workers",
+      "mean": 0.13,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "7125",
+      "title_en": "Glaziers",
+      "mean": 0.14,
+      "sd": 0.0,
+      "gradient": "Not Exposed",
+      "task_count": 4
+    },
+    {
+      "code": "7126",
+      "title_en": "Plumbers and Pipe Fitters",
+      "mean": 0.18,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "7127",
+      "title_en": "Air Conditioning and Refrigeration Mechanics",
+      "mean": 0.21,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 4
+    },
+    {
+      "code": "7131",
+      "title_en": "Painters and Related Workers",
+      "mean": 0.13,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "7132",
+      "title_en": "Spray Painters and Varnishers",
+      "mean": 0.12,
+      "sd": 0.0,
+      "gradient": "Not Exposed",
+      "task_count": 3
+    },
+    {
+      "code": "7133",
+      "title_en": "Building Structure Cleaners",
+      "mean": 0.09,
+      "sd": 0.01,
+      "gradient": "Not Exposed",
+      "task_count": 3
+    },
+    {
+      "code": "7211",
+      "title_en": "Metal Moulders and Coremakers",
+      "mean": 0.13,
+      "sd": 0.01,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "7212",
+      "title_en": "Welders and Flame Cutters",
+      "mean": 0.13,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "7213",
+      "title_en": "Sheet Metal Workers",
+      "mean": 0.21,
+      "sd": 0.09,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "7214",
+      "title_en": "Structural Metal Preparers and Erectors",
+      "mean": 0.11,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "7215",
+      "title_en": "Riggers and Cable Splicers",
+      "mean": 0.13,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "7221",
+      "title_en": "Blacksmiths, Hammersmiths and Forging Press Workers",
+      "mean": 0.17,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "7222",
+      "title_en": "Toolmakers and Related Workers",
+      "mean": 0.2,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "7223",
+      "title_en": "Metal Working Machine Tool Setters and  Operators",
+      "mean": 0.18,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "7224",
+      "title_en": "Metal Polishers, Wheel Grinders and Tool Sharpeners",
+      "mean": 0.17,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "7231",
+      "title_en": "Motor Vehicle Mechanics and Repairers",
+      "mean": 0.18,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "7232",
+      "title_en": "Aircraft Engine Mechanics and Repairers",
+      "mean": 0.19,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "7233",
+      "title_en": "Agricultural and Industrial Machinery Mechanics and Repairers",
+      "mean": 0.17,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "7234",
+      "title_en": "Bicycle and Related Repairers",
+      "mean": 0.13,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "7311",
+      "title_en": "Precision-instrument Makers and Repairers",
+      "mean": 0.21,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 12
+    },
+    {
+      "code": "7312",
+      "title_en": "Musical Instrument Makers and Tuners",
+      "mean": 0.14,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "7313",
+      "title_en": "Jewellery and Precious Metal Workers",
+      "mean": 0.18,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "7314",
+      "title_en": "Potters and Related Workers",
+      "mean": 0.18,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "7315",
+      "title_en": "Glass Makers, Cutters, Grinders and Finishers",
+      "mean": 0.19,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 13
+    },
+    {
+      "code": "7316",
+      "title_en": "Sign Writers, Decorative Painters, Engravers and Etchers",
+      "mean": 0.18,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 14
+    },
+    {
+      "code": "7317",
+      "title_en": "Handicraft Workers in Wood, Basketry and Related Materials",
+      "mean": 0.14,
+      "sd": 0.01,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "7318",
+      "title_en": "Handicraft Workers in Textile, Leather and Related Materials",
+      "mean": 0.13,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 14
+    },
+    {
+      "code": "7321",
+      "title_en": "Pre-press Technicians",
+      "mean": 0.38,
+      "sd": 0.22,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 7
+    },
+    {
+      "code": "7322",
+      "title_en": "Printers",
+      "mean": 0.25,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "7323",
+      "title_en": "Print Finishing and Binding Workers",
+      "mean": 0.22,
+      "sd": 0.09,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "7411",
+      "title_en": "Building and Related Electricians",
+      "mean": 0.19,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "7412",
+      "title_en": "Electrical Mechanics and Fitters",
+      "mean": 0.17,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "7413",
+      "title_en": "Electrical Line Installers and Repairers",
+      "mean": 0.15,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "7421",
+      "title_en": "Electronics Mechanics and Servicers",
+      "mean": 0.25,
+      "sd": 0.13,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "7422",
+      "title_en": "Information and Communications Technology Installers and Servicers",
+      "mean": 0.24,
+      "sd": 0.14,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "7511",
+      "title_en": "Butchers, Fishmongers and Related Food Preparers",
+      "mean": 0.13,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "7512",
+      "title_en": "Bakers, Pastry-cooks and Confectionery Makers",
+      "mean": 0.17,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "7513",
+      "title_en": "Dairy Products Makers",
+      "mean": 0.22,
+      "sd": 0.17,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "7514",
+      "title_en": "Fruit, Vegetable and Related Preservers",
+      "mean": 0.15,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "7515",
+      "title_en": "Food and Beverage Tasters and Graders",
+      "mean": 0.31,
+      "sd": 0.16,
+      "gradient": "Minimal Exposure",
+      "task_count": 5
+    },
+    {
+      "code": "7516",
+      "title_en": "Tobacco Preparers and Tobacco Products Makers",
+      "mean": 0.14,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "7521",
+      "title_en": "Wood Treaters",
+      "mean": 0.22,
+      "sd": 0.15,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "7522",
+      "title_en": "Cabinet-makers and Related Workers",
+      "mean": 0.16,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "7523",
+      "title_en": "Woodworking Machine Tool Setters and Operators",
+      "mean": 0.22,
+      "sd": 0.16,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "7531",
+      "title_en": "Tailors, Dressmakers, Furriers and Hatters",
+      "mean": 0.15,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "7532",
+      "title_en": "Garment and Related Patternmakers and Cutters",
+      "mean": 0.17,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 12
+    },
+    {
+      "code": "7533",
+      "title_en": "Sewing, Embroidery and Related Workers",
+      "mean": 0.12,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 12
+    },
+    {
+      "code": "7534",
+      "title_en": "Upholsterers and Related Workers",
+      "mean": 0.18,
+      "sd": 0.09,
+      "gradient": "Not Exposed",
+      "task_count": 12
+    },
+    {
+      "code": "7535",
+      "title_en": "Pelt Dressers, Tanners and Fellmongers",
+      "mean": 0.11,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 13
+    },
+    {
+      "code": "7536",
+      "title_en": "Shoemakers and Related Workers",
+      "mean": 0.17,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 13
+    },
+    {
+      "code": "7541",
+      "title_en": "Underwater Divers",
+      "mean": 0.16,
+      "sd": 0.09,
+      "gradient": "Not Exposed",
+      "task_count": 12
+    },
+    {
+      "code": "7542",
+      "title_en": "Shotfirers and Blasters",
+      "mean": 0.12,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "7543",
+      "title_en": "Product Graders and Testers (except Foods and Beverages)",
+      "mean": 0.31,
+      "sd": 0.11,
+      "gradient": "Minimal Exposure",
+      "task_count": 9
+    },
+    {
+      "code": "7544",
+      "title_en": "Fumigators and Other Pest and Weed Controllers",
+      "mean": 0.13,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "7549",
+      "title_en": "Craft and Related Workers not Elsewhere Classified",
+      "mean": 0.14,
+      "sd": 0.01,
+      "gradient": "Not Exposed",
+      "task_count": 2
+    },
+    {
+      "code": "8111",
+      "title_en": "Miners and Quarriers",
+      "mean": 0.17,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "8112",
+      "title_en": "Mineral and Stone Processing Plant Operators",
+      "mean": 0.21,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "8113",
+      "title_en": "Well Drillers and Borers and Related Workers",
+      "mean": 0.19,
+      "sd": 0.12,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "8114",
+      "title_en": "Cement, Stone and Other Mineral Products Machine Operators",
+      "mean": 0.23,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "8121",
+      "title_en": "Metal Processing Plant Operators",
+      "mean": 0.26,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "8122",
+      "title_en": "Metal Finishing, Plating and Coating Machine Operators",
+      "mean": 0.2,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "8131",
+      "title_en": "Chemical Products Plant and Machine Operators",
+      "mean": 0.24,
+      "sd": 0.07,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "8132",
+      "title_en": "Photographic Products Machine Operators",
+      "mean": 0.27,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "8141",
+      "title_en": "Rubber Products Machine Operators",
+      "mean": 0.18,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "8142",
+      "title_en": "Plastic Products Machine Operators",
+      "mean": 0.17,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "8143",
+      "title_en": "Paper Products Machine Operators",
+      "mean": 0.18,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 3
+    },
+    {
+      "code": "8151",
+      "title_en": "Fibre Preparing, Spinning and Winding Machine Operators",
+      "mean": 0.15,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 12
+    },
+    {
+      "code": "8152",
+      "title_en": "Weaving and Knitting Machine Operators",
+      "mean": 0.16,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 13
+    },
+    {
+      "code": "8153",
+      "title_en": "Sewing Machine Operators",
+      "mean": 0.15,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "8154",
+      "title_en": "Bleaching, Dyeing and Fabric Cleaning Machine Operators",
+      "mean": 0.21,
+      "sd": 0.15,
+      "gradient": "Not Exposed",
+      "task_count": 12
+    },
+    {
+      "code": "8155",
+      "title_en": "Fur and Leather Preparing Machine Operators",
+      "mean": 0.15,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "8156",
+      "title_en": "Shoemaking and Related Machine Operators",
+      "mean": 0.16,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 3
+    },
+    {
+      "code": "8157",
+      "title_en": "Laundry Machine Operators",
+      "mean": 0.16,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "8159",
+      "title_en": "Textile, Fur and Leather Products Machine Operators Not Elsewhere Classified",
+      "mean": 0.16,
+      "sd": 0.01,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "8160",
+      "title_en": "Food and Related Products Machine Operators",
+      "mean": 0.15,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "8171",
+      "title_en": "Pulp and Papermaking Plant Operators",
+      "mean": 0.28,
+      "sd": 0.14,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    },
+    {
+      "code": "8172",
+      "title_en": "Wood Processing Plant Operators",
+      "mean": 0.14,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "8181",
+      "title_en": "Glass and Ceramics Plant Operators",
+      "mean": 0.17,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 13
+    },
+    {
+      "code": "8182",
+      "title_en": "Steam Engine and Boiler Operators",
+      "mean": 0.2,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "8183",
+      "title_en": "Packing, Bottling and Labelling Machine Operators",
+      "mean": 0.22,
+      "sd": 0.01,
+      "gradient": "Not Exposed",
+      "task_count": 3
+    },
+    {
+      "code": "8211",
+      "title_en": "Mechanical Machinery Assemblers",
+      "mean": 0.27,
+      "sd": 0.17,
+      "gradient": "Minimal Exposure",
+      "task_count": 5
+    },
+    {
+      "code": "8212",
+      "title_en": "Electrical and Electronic Equipment Assemblers",
+      "mean": 0.28,
+      "sd": 0.19,
+      "gradient": "Minimal Exposure",
+      "task_count": 5
+    },
+    {
+      "code": "8219",
+      "title_en": "Assemblers Not Elsewhere Classified",
+      "mean": 0.32,
+      "sd": 0.17,
+      "gradient": "Minimal Exposure",
+      "task_count": 5
+    },
+    {
+      "code": "8311",
+      "title_en": "Locomotive Engine Drivers",
+      "mean": 0.2,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "8312",
+      "title_en": "Railway Brake, Signal and Switch Operators",
+      "mean": 0.17,
+      "sd": 0.04,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "8321",
+      "title_en": "Motorcycle Drivers",
+      "mean": 0.25,
+      "sd": 0.17,
+      "gradient": "Minimal Exposure",
+      "task_count": 5
+    },
+    {
+      "code": "8322",
+      "title_en": "Car, Taxi and Van Drivers",
+      "mean": 0.28,
+      "sd": 0.23,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 8
+    },
+    {
+      "code": "8331",
+      "title_en": "Bus and Tram Drivers",
+      "mean": 0.18,
+      "sd": 0.06,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "8332",
+      "title_en": "Heavy Truck and Lorry Drivers",
+      "mean": 0.24,
+      "sd": 0.22,
+      "gradient": "Minimal Exposure",
+      "task_count": 6
+    },
+    {
+      "code": "8341",
+      "title_en": "Mobile Farm and Forestry Plant Operators",
+      "mean": 0.12,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "8342",
+      "title_en": "Earthmoving and Related Plant Operators",
+      "mean": 0.13,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "8343",
+      "title_en": "Crane, hoist and related plant operators",
+      "mean": 0.18,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "8344",
+      "title_en": "Lifting Truck Operators",
+      "mean": 0.2,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "8350",
+      "title_en": "Ships' Deck Crews and Related Workers",
+      "mean": 0.14,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "9111",
+      "title_en": "Domestic Cleaners and Helpers",
+      "mean": 0.14,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "9112",
+      "title_en": "Cleaners and Helpers in Offices, Hotels and Other Establishments",
+      "mean": 0.12,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 4
+    },
+    {
+      "code": "9121",
+      "title_en": "Hand Launderers and Pressers",
+      "mean": 0.14,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 4
+    },
+    {
+      "code": "9122",
+      "title_en": "Vehicle Cleaners",
+      "mean": 0.09,
+      "sd": 0.01,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "9123",
+      "title_en": "Window Cleaners",
+      "mean": 0.11,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 3
+    },
+    {
+      "code": "9129",
+      "title_en": "Other Cleaning Workers",
+      "mean": 0.1,
+      "sd": 0.01,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "9211",
+      "title_en": "Crop Farm Labourers",
+      "mean": 0.09,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "9212",
+      "title_en": "Livestock Farm Labourers",
+      "mean": 0.12,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 10
+    },
+    {
+      "code": "9213",
+      "title_en": "Mixed Crop and Livestock Farm Labourers",
+      "mean": 0.11,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 11
+    },
+    {
+      "code": "9214",
+      "title_en": "Garden and Horticultural Labourers",
+      "mean": 0.12,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "9215",
+      "title_en": "Forestry Labourers",
+      "mean": 0.09,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "9216",
+      "title_en": "Fishery and Aquaculture Labourers",
+      "mean": 0.11,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "9311",
+      "title_en": "Mining and Quarrying Labourers",
+      "mean": 0.11,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "9312",
+      "title_en": "Civil Engineering Labourers",
+      "mean": 0.09,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "9313",
+      "title_en": "Building Construction Labourers",
+      "mean": 0.09,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "9321",
+      "title_en": "Hand Packers",
+      "mean": 0.2,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 3
+    },
+    {
+      "code": "9329",
+      "title_en": "Manufacturing Labourers Not Elsewhere Classified",
+      "mean": 0.12,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 4
+    },
+    {
+      "code": "9331",
+      "title_en": "Hand and Pedal Vehicle Drivers",
+      "mean": 0.21,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "9332",
+      "title_en": "Drivers of Animal-drawn Vehicles and Machinery",
+      "mean": 0.13,
+      "sd": 0.08,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "9333",
+      "title_en": "Freight Handlers",
+      "mean": 0.14,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "9334",
+      "title_en": "Shelf Fillers",
+      "mean": 0.2,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "9411",
+      "title_en": "Fast Food Preparers",
+      "mean": 0.18,
+      "sd": 0.05,
+      "gradient": "Not Exposed",
+      "task_count": 9
+    },
+    {
+      "code": "9412",
+      "title_en": "Kitchen Helpers",
+      "mean": 0.13,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "9510",
+      "title_en": "Street and Related Service Workers",
+      "mean": 0.18,
+      "sd": 0.09,
+      "gradient": "Not Exposed",
+      "task_count": 8
+    },
+    {
+      "code": "9520",
+      "title_en": "Street Vendors (excluding Food)",
+      "mean": 0.2,
+      "sd": 0.1,
+      "gradient": "Not Exposed",
+      "task_count": 5
+    },
+    {
+      "code": "9611",
+      "title_en": "Garbage and Recycling Collectors",
+      "mean": 0.09,
+      "sd": 0.02,
+      "gradient": "Not Exposed",
+      "task_count": 4
+    },
+    {
+      "code": "9612",
+      "title_en": "Refuse Sorters",
+      "mean": 0.18,
+      "sd": 0.11,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "9613",
+      "title_en": "Sweepers and Related Labourers",
+      "mean": 0.09,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 4
+    },
+    {
+      "code": "9621",
+      "title_en": "Messengers, Package Deliverers and Luggage Porters",
+      "mean": 0.37,
+      "sd": 0.19,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 6
+    },
+    {
+      "code": "9622",
+      "title_en": "Odd Job Persons",
+      "mean": 0.11,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 7
+    },
+    {
+      "code": "9623",
+      "title_en": "Meter Readers and Vending-machine Collectors",
+      "mean": 0.38,
+      "sd": 0.21,
+      "gradient": "Exposed: Gradient 1",
+      "task_count": 7
+    },
+    {
+      "code": "9624",
+      "title_en": "Water and Firewood Collectors",
+      "mean": 0.09,
+      "sd": 0.03,
+      "gradient": "Not Exposed",
+      "task_count": 6
+    },
+    {
+      "code": "9629",
+      "title_en": "Elementary Workers Not Elsewhere Classified",
+      "mean": 0.29,
+      "sd": 0.14,
+      "gradient": "Minimal Exposure",
+      "task_count": 8
+    }
+  ]
+}
