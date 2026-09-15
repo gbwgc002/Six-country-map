@@ -1,0 +1,89 @@
+{
+  "reviewed_on": "2026-09-15",
+  "freshness": "Historical repository snapshots; source retrieval dates were not recorded. Review date is not a data update date.",
+  "online_check": {
+    "checked_on": "2026-09-15",
+    "sdmx": "HTTP 403 for all six countries",
+    "bulk": "HTTP 403 for bulk catalogue and India annual download",
+    "api": "HTTP 403 for rplumber openapi endpoint",
+    "result": "Latest same-definition country observations could not be verified; snapshots retained."
+  },
+  "files": [
+    {
+      "path": "ilostat_data/IND_oc2_timeseries.csv",
+      "sha256": "00c88154ba34e86f32674dba8c1457fcbe210f4d3125656bff4c58f92120d3e3",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/IND.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/NGA_oc2_timeseries.csv",
+      "sha256": "2ab58c0e90223b7c699df1b61693a6aed5f5ecb03b9cb234bc3a2f1ef03b8ab7",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/NGA.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/IDN_oc2_timeseries.csv",
+      "sha256": "e2f77c0a81fea372e1d15c13c5f2422368e8727b5aa7290d5ffe048402fe61d9",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/IDN.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/RUS_oc2_timeseries.csv",
+      "sha256": "dc015e5f5afce93f67c16816d77e3b12f351836bada6ee0455b0414b74685dfd",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/RUS.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/PAK_oc2_timeseries.csv",
+      "sha256": "32d1ea071607aadf6896ca3d5cf7236ad96bff7e79e2d9e76bab406cf420344a",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/PAK.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/KEN_oc2_timeseries.csv",
+      "sha256": "59b9f6b80532991ff070221ba61a7af42b658b2e51620723884b9e3c4863ed82",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/KEN.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/India_PLFS_Table25.xlsx",
+      "sha256": "5c83bb784f755b4e890f0824e60cd1d6144113f1e68157e8c95f52edc06a283c",
+      "source_url": "https://www.mospi.gov.in/sites/default/files/publication_reports/AnnualReport_PLFS2023-24L2.pdf",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/NGA_model_hist.xml",
+      "sha256": "18f4a2acb0865c01833804fdd85cfbc2e0467d13bacfe60774db51f0bde7f2ac",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_2EMP_SEX_OCU_NB/NGA.A..SEX_T.?startPeriod=2020&endPeriod=2025",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/IDN_model_hist.xml",
+      "sha256": "72b4beab7e3fbcd38f608725c96a92d911b2317ec27ee303ca19f6614f7b0772",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_2EMP_SEX_OCU_NB/IDN.A..SEX_T.?startPeriod=2020&endPeriod=2025",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    }
+  ],
+  "plfs_table_verification": {
+    "reference": "https://www.mospi.gov.in/sites/default/files/publication_reports/AnnualReport_PLFS2023-24L2.pdf",
+    "sha256": "ab4ead2cee181a13c7ab40f164d2dceb46419cfb58f30f8baa58e35f79d33d39",
+    "pages": "Table 25, printed A147–A149",
+    "result": "127 three-digit occupation rows × 9 numeric columns matched the repository workbook exactly. Correct person distribution is column 10."
+  },
+  "newer_release_found": {
+    "country": "IND",
+    "title": "Annual Report, PLFS, 2025",
+    "url": "https://www.mospi.gov.in/uploads/publications_reports/publications_reports1780040415321_0624fb13-fb47-40bc-b470-7c7e9635c3ef_PLFS_2025_F_REV_29052026.pdf",
+    "sha256": "134bf2de5e4b1142d3bae4899c90ec5be3bf5ec03a2ff4b3f7b0bba34eee0da7",
+    "status": "Found and downloaded, not imported. Sampling design and reporting period changed; matching employment definition and population weights require review."
+  }
+}

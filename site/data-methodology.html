@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>数据来源与更新记录 · 六国职业地图</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#0f1117;color:#e4e6ed;font:16px/1.8 system-ui,-apple-system,"Noto Sans SC",sans-serif}main{max-width:980px;margin:auto;padding:40px 24px 80px}a{color:#a2baff;text-underline-offset:3px}h1{font-size:32px;line-height:1.3;margin:22px 0}h2{font-size:22px;margin-top:38px}p{color:#bcc2d0}strong{color:#eef0f5}.note{background:#1c2233;border:1px solid #38445e;padding:18px 22px;border-radius:10px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid #303541}th{background:#1c2233}code{overflow-wrap:anywhere}li{margin:8px 0}footer{border-top:1px solid #303541;margin-top:40px;padding-top:18px;color:#929aab}@media(max-width:600px){main{padding:24px 16px}h1{font-size:26px}table{min-width:640px}}
+</style>
+</head>
+<body><main>
+<a href="index.html">← 返回六国职业地图</a>
+<h1>数据从哪里来，哪些值可以比较？</h1>
+<p>本轮审核：2026-09-15。就业参考年为 2022–2025；GenAI 技术基准为 2025 年初。</p>
+<div class="note"><strong>审核日期不等于数据更新日期。</strong> 六国在线 ILOSTAT CSV 接口本次均返回 HTTP 403，尚未核实更近的同口径就业数据。本轮修正已确认的计算错误，保留历史来源快照；不能把地图视作六国最新全量官方统计。</div>
+
+<h2>四个图层分别表示什么</h2>
+<div class="table-wrap"><table><thead><tr><th>图层</th><th>依据</th><th>解读边界</th></tr></thead><tbody>
+<tr><td>就业规模（面积）</td><td>ILOSTAT 两位职业人数；印度用 PLFS 三位职业 person 百分比换算</td><td>图中只含有数值的职业。印度人数为项目换算值，来源定义和总体一致性尚未核验，不是官方三位人数。</td></tr>
+<tr><td>就业趋势</td><td>职业人数 ÷ 来源 TOTAL 的占比之差，单位为百分点；两国采用明确标注的大类建模参考</td><td>份额变化不等于人数增长。不同时间跨度不能直接排名；缺失、不可靠或不可比端点不计算。</td></tr>
+<tr><td>职业技能等级</td><td>ILO ISCO-08 四级技能模型</td><td>表示职业任务复杂度；不是本国招聘学历要求或就业者学历。原人工学历表已移除。</td></tr>
+<tr><td>性别比例</td><td>同年、同调查两位职业中的女性 ÷（男性 + 女性）</td><td>印度三位职业继承上级组比例，仅作参考；不复制父组人数。总体每个两位组只统计一次。</td></tr>
+<tr><td>GenAI 暴露度</td><td>ILO/NASK 2025 四位职业研究基准 + 地图就业权重</td><td>全球职业技术暴露潜力参考，非本国实际使用率或失业预测；<a href="ai-exposure-methodology.html">完整计算说明</a>。</td></tr>
+</tbody></table></div>
+
+<h2>六国当前使用的数据</h2>
+<div class="table-wrap"><table><thead><tr><th>国家</th><th>面积参考年</th><th>职业细度</th><th>趋势</th><th>主要限制</th></tr></thead><tbody>
+<tr><td>印度</td><td>2024 / PLFS 2023–24</td><td>三位，126 个正值组</td><td>两位组 2022–2024 参考</td><td>表 25 第 10 列 person 占比合计 99.99%（舍入）；乘 ILOSTAT 总量仅作规模换算。男女统计统一为 2024。</td></tr>
+<tr><td>印尼</td><td>2023</td><td>两位</td><td>一位大类 ILO 建模 2020–2025</td><td>只有本地 ISCO-08 快照是一年；BPS 已发布更新报告，需核对职业分类和时点。</td></tr>
+<tr><td>巴基斯坦</td><td>2025</td><td>两位</td><td>暂停</td><td>原 2020 HIES 与 2025 LFS 不同，且 2020 有 B 断点；不能直接拼接。</td></tr>
+<tr><td>尼日利亚</td><td>2023</td><td>两位</td><td>一位大类 ILO 建模 2020–2025</td><td>职业覆盖约 99.74%；保留 B/U。2024 快照约 23.27% 未分类，暂未替换。</td></tr>
+<tr><td>肯尼亚</td><td>2022</td><td>两位</td><td>2021–2022；剔除 U/缺失端点</td><td>职业分类覆盖约 85.13%；2,535,990 人归为 X 未分类。图示就业不能当作全部就业。</td></tr>
+<tr><td>俄罗斯</td><td>2025</td><td>两位</td><td>2020–2025 同名 LFS</td><td>不同年度、国家的年龄范围和调查定义仍需核对。</td></tr>
+</tbody></table></div>
+
+<h2>覆盖率与质量标记</h2>
+<ul>
+<li><strong>职业分类覆盖</strong>：有数值的两位职业人数之和 ÷ 来源公布的全部就业人数。未分类 X、缺失职业不进入方块，仍保留在分母。各源表单独舍入可能造成微小差额，不强行补齐。</li>
+<li><strong>性别统计覆盖</strong>：同时有男女数据的独立两位职业组的就业规模 ÷ 来源总量。不把单一性别缺失当作零。</li>
+<li><strong>GenAI 匹配覆盖</strong>：已匹配研究分数的图示就业 ÷ 所有图示就业。100% 不等于覆盖了全国全部就业。</li>
+<li><strong>B</strong>：来源标记统计序列断点；<strong>U</strong>：低可靠性。页面保留 U 人数并提示，趋势计算排除 U 端点。缺失数值不生成默认数。</li>
+</ul>
+
+<h2>已发现的新发布</h2>
+<p><a href="https://www.mospi.gov.in/uploads/publications_reports/publications_reports1780040415321_0624fb13-fb47-40bc-b470-7c7e9635c3ef_PLFS_2025_F_REV_29052026.pdf" target="_blank" rel="noopener noreferrer">印度官方 PLFS 2025 年报</a>已经发布。本次已下载核查，但未导入：2025 年起抽样设计和统计周期发生变化，职业百分比和相同定义的总体权重需要一起核验。<a href="https://www.mospi.gov.in/uploads/latestReleases/latest_release_1774607827733_3e8964a9-268b-4cc9-ad65-cfc8a9e32f08_Press_note_AR_PLFS_2025_23032025_V2.1_26032026_final.pdf" target="_blank" rel="noopener noreferrer">官方发布说明</a>解释了这一变化。</p>
+<p><a href="https://www.bps.go.id/id/publication/2026/06/26/96b31cf730df9e84f17bfe03/keadaan-angkatan-kerja-di-indonesia-februari-2026.html" target="_blank" rel="noopener noreferrer">印尼 Sakernas 2026 年 2 月报告</a>于 2026-06-26 发布，覆盖 15 岁以上人口。2 月时点统计不能直接替代当前年度职业细表；需确认分类映射和同口径数据后更新。</p>
+<p>其他国家尚未取得可验证、可直接替换的更新职业细表。报告标题较新，并不能证明其中含有地图所需的两位职业、性别和一致的就业定义。</p>
+
+<h2>原始来源与复核方式</h2>
+<p>印度原表为 <a href="https://www.mospi.gov.in/sites/default/files/publication_reports/AnnualReport_PLFS2023-24L2.pdf" target="_blank" rel="noopener noreferrer">MOSPI PLFS 2023–24 表 25（A147–A149）</a>；全部 127 行、9 列数值已与仓库工作簿逐项核对。两位职业人数来自 <a href="https://ilostat.ilo.org/data/" target="_blank" rel="noopener noreferrer">ILOSTAT</a> 的 <code>EMP_TEMP_SEX_OC2_NB</code> 指标；人数按 <code>UNIT_MULT</code> 转为人，保留调查来源和质量标记。</p>
+<p>技能等级依据 <a href="https://ilostat.ilo.org/methods/concepts-and-definitions/classification-occupation/" target="_blank" rel="noopener noreferrer">ILO 职业分类与技能定义</a>。各国学历体系不能仅凭职业大类自动转换，页面已撤下原来的固定学历要求。</p>
+<p><a href="https://github.com/gbwgc002/Six-country-map/blob/fix/data-quality-review/data/employment_sources.json" target="_blank" rel="noopener noreferrer">来源清单</a>保存输入版本、SHA-256 和核查状态；<a href="https://github.com/gbwgc002/Six-country-map/blob/fix/data-quality-review/docs/review-2026-09.md" target="_blank" rel="noopener noreferrer">完整代码与数据审查记录</a>包含错误证据、处理方式和待解决问题。原始快照缺少历史下载日期，因此不会补写一个虚假的刷新时间。</p>
+<footer>使用建议：用来观察职业结构和提出研究问题；跨国精确排名、政策判断或实际就业影响估计，需要进一步核对同年、同年龄和同定义的数据。</footer>
+</main></body></html>

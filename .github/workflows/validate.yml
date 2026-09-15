@@ -1,0 +1,28 @@
+name: Validate data
+
+on:
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          version: "0.12.11"
+          python-version: "3.12"
+      - name: Install locked dependencies
+        run: uv sync --frozen
+      - name: Verify sources, calculations and committed build
+        run: |
+          uv run --frozen python -m unittest discover -s tests -v
+          uv run --frozen python build_country_data.py --check
+      - name: Check inline JavaScript syntax
+        run: |
+          uv run --frozen python -c "from pathlib import Path; s=Path('site/index.html').read_text(); Path('/tmp/map-script.js').write_text(s.split('<script>')[1].split('</script>')[0])"
+          node --check /tmp/map-script.js

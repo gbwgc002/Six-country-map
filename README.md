@@ -1,6 +1,8 @@
 # 六国职业地图
 
-交互式职业就业分布地图，覆盖印度、印度尼西亚、巴基斯坦、尼日利亚、肯尼亚和俄罗斯。方块面积表示就业人数；颜色可切换就业趋势、学历要求、生成式 AI 暴露度和性别比例。
+交互式职业就业分布地图，覆盖印度、印度尼西亚、巴基斯坦、尼日利亚、肯尼亚和俄罗斯。方块面积表示就业人数；颜色可切换就业趋势、ISCO-08 职业技能等级、生成式 AI 暴露度和性别比例。
+
+**2026-09 全面审查：** 修正印度取列与性别重复累计、趋势分母和统计断点；补齐来源哈希、覆盖率和发布校验。[完整审查记录](docs/review-2026-09.md) · [页面数据说明](site/data-methodology.html)。核查日期不代表就业数据已更新：官方实时接口当前返回 403。
 
 ## GenAI 指标：ILO 研究基准与本项目派生值
 
@@ -27,11 +29,16 @@
 | 肯尼亚 | 2022 | KNBS CHS / ILOSTAT | ISCO-08 两位 |
 | 俄罗斯 | 2025 | Rosstat LFS / ILOSTAT | ISCO-08 两位 |
 
-原始就业文件在 `ilostat_data/`，来源链接见各国页面及 `build_country_data.py`。本次 GenAI 更新沿用现有就业人数、趋势、学历和性别字段。学历字段是职业要求的映射，并非个人实际学历调查结果。
+原始就业文件在 `ilostat_data/`，版本和 SHA-256 见 `data/employment_sources.json`。印度三位面积为 PLFS 全体就业百分比 × ILOSTAT 2024 总量的换算值，二者总体一致性尚未验证；三位性别只展示上级两位组的参考比例。其余国家保留调查职业人数。各国页面分别显示来源总量、图示规模、职业分类覆盖和 B/U 质量标记。
+
+技能等级采用 ISCO-08 的四级定义，不是招聘学历要求或个人实际学历。巴基斯坦原趋势跨调查且存在统计断点，暂不计算；印度趋势截到 2024。印尼和尼日利亚仅展示明确标注的一位大类建模趋势参考。
 
 ## 运行与更新
 
 ```bash
+# 安装锁定依赖（Python 3.10+；CI 使用 3.12）
+uv sync --frozen
+
 # 从已保存的权威职业分数刷新 AI 指标；Python 标准库即可，离线运行
 python ai_exposure.py
 
@@ -39,14 +46,20 @@ python ai_exposure.py
 python scripts/import_ilo_genai.py /path/to/Final_Scores_ISCO08_Gmyrek_et_al_2025.xlsx
 
 # 完整重建国家数据（需要 openpyxl 与 ilostat_data/ 中的输入）
-python build_country_data.py
+uv run --frozen python build_country_data.py
 
 # 本地预览
 python -m http.server 8000 --directory site
 
 # 验证数据与缺失值处理
-python -m unittest discover -s tests -v
+uv run --frozen python -m unittest discover -s tests -v
+uv run --frozen python build_country_data.py --check
+
+# 检查在线就业数据是否变化（只输出检查结果，不替换已审核输入）
+python scripts/check_source_updates.py --output /tmp/ilostat-update-check.json
 ```
+
+完整重建先核对所有活跃输入的 SHA-256，输入变动必须先复核并更新来源清单。构建脚本可从任意工作目录执行，导入模块不会改写文件；`--check` 只校验，不写入。
 
 完整国家重建同样调用 `ai_exposure.py` 中的统一函数，不会恢复旧预设分数。工作簿 URL、固定提交版本、SHA-256、字段名和转换方式保存在 `data/ilo_genai_2025/occupations.json`。
 
@@ -58,12 +71,16 @@ python -m unittest discover -s tests -v
 | `scripts/import_ilo_genai.py` | 校验并导入原始工作簿，避免按任务重复计权 |
 | `data/ilo_genai_2025/occupations.json` | 427 条原始职业参考分数和来源元数据 |
 | `build_country_data.py` | 构建六国就业数据并附加 GenAI 指标 |
+| `employment_data.py` | CSV 维度校验、源表总量分母、性别去重和趋势可比性 |
+| `occupation_skills.py` | 官方 ISCO-08 技能等级映射 |
+| `data/employment_sources.json` | 就业输入哈希、来源和更新核实状态 |
+| `scripts/check_source_updates.py` | 只读线上变化检查 |
 | `site/data.json` | 页面实际读取的数据与参考分数明细 |
 | `site/index.html` | 职业地图、指标说明与原始分数明细弹窗 |
 | `site/ai-exposure-methodology.html` | 可访问的数据来源和方法说明 |
 
-GitHub Actions 从 `master` 的 `site/` 部署 GitHub Pages。功能分支修改需合入后才进入线上站点。
+GitHub Actions 校验源文件、16 项数据测试、重建一致性和 JS 语法后，从 `master` 的 `site/` 部署 GitHub Pages。功能分支修改需合入后才进入线上站点。
 
 ## 历史美国项目文件
 
-原版美国 BLS 项目的 `score.py`、`scores.json`、`build_site_data.py` 等保留用于历史溯源；它们**不参与当前六国 AI 指标**。历史说明见 [legacy-us-readme.md](docs/legacy-us-readme.md)。不要运行旧 `build_site_data.py` 覆盖六国页面数据。
+原版美国 BLS 项目的 `score.py`、`scores.json`、`build_site_data.py` 等保留用于历史溯源；它们**不参与当前六国 AI 指标**。历史说明见 [legacy-us-readme.md](docs/legacy-us-readme.md)。旧 `build_site_data.py` 默认写入 `legacy-output/us-data.json`，并拒绝覆盖六国 `site/data.json`。
