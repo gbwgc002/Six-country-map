@@ -8,6 +8,7 @@ import xml.etree.ElementTree as ET
 import csv as csv_mod
 import json, os, math
 import openpyxl
+from ai_exposure import apply_ai_exposure
 
 # ─── ISCO-08 Occupation Names (Chinese + English) ───────────────────────
 
@@ -238,63 +239,6 @@ ISCO_L2_EDU_OVERRIDE = {
     '71': 2, '72': 2, '73': 2, '74': 2, '75': 1,
     '81': 1, '82': 2, '83': 1,
     '91': 0, '92': 0, '93': 0, '94': 0, '95': 0, '96': 0,
-}
-
-# AI Exposure ratings by ISCO L2 code
-AI_EXPOSURE = {
-    '01': 4, '02': 3, '03': 2,
-    '11': 7, '12': 7, '13': 6, '14': 5,
-    '21': 8, '22': 6, '23': 6, '24': 8, '25': 9, '26': 7,
-    '31': 6, '32': 5, '33': 7, '34': 6, '35': 7,
-    '41': 9, '42': 8, '43': 9, '44': 8,
-    '51': 3, '52': 4, '53': 3, '54': 3,
-    '61': 2, '62': 2, '63': 1,
-    '71': 2, '72': 3, '73': 5, '74': 3, '75': 2,
-    '81': 4, '82': 4, '83': 3,
-    '91': 1, '92': 1, '93': 1, '94': 1, '95': 2, '96': 1,
-}
-
-AI_EXPOSURE_RATIONALE = {
-    '11': '高级管理和立法工作涉及大量信息处理、决策和沟通，AI可辅助数据分析和报告生成，但最终决策仍需人类判断。',
-    '12': '行政和商务管理工作高度依赖数据分析、报告和沟通，AI可显著提升效率，但团队领导和战略决策仍需人际技能。',
-    '13': '生产管理需现场监督和设备相关知识，AI可优化调度和质量控制，但物理现场管理难以替代。',
-    '14': '服务业管理涉及客户互动和现场管理，AI可辅助运营优化，但人际服务管理仍需人类参与。',
-    '21': '科学和工程工作高度数字化，AI在建模、数据分析和设计优化方面能力很强，但创新性研究仍需人类创造力。',
-    '22': '卫生专业人员的诊断和治疗正越来越多地利用AI辅助，但直接患者护理和手术等核心工作仍需人类执行。',
-    '23': '教学工作正被AI辅助工具改变（个性化学习、自动批改等），但课堂管理和学生情感支持难以替代。',
-    '24': '商业和行政专业工作高度数字化，AI在财务分析、合规检查和报告生成方面表现出色。',
-    '25': '信息通信技术专业人员的核心工作——编程、系统设计、数据分析——正是AI能力快速提升的领域。',
-    '26': '法律研究、写作和文化创作正受到生成式AI的深刻影响，但需要创造力和人类判断。',
-    '31': '科学和工程技术员工作包含实验操作和设备维护等物理成分，AI影响适中。',
-    '32': '卫生助理工作涉及直接患者接触，AI可辅助诊断但不能替代护理行为。',
-    '33': '商业助理工作高度依赖数据处理和客户沟通，AI可显著提升效率。',
-    '34': '法律和社会助理工作涉及文档处理和研究，AI可大幅加速这些任务。',
-    '35': 'IT技术员负责系统维护和故障排除，AI可辅助诊断但物理操作仍需人类。',
-    '41': '一般文职工作几乎完全是数字化的——数据输入、文档处理、日程安排——是AI自动化的首要目标。',
-    '42': '客户服务工作正被AI聊天机器人和虚拟助手快速改变，但复杂投诉仍需人工处理。',
-    '43': '数字记录和会计工作高度程式化，AI和RPA可自动化大部分任务。',
-    '44': '其他文职工作涉及多种行政任务，AI可自动化其中大部分。',
-    '51': '个人服务工作如厨师、服务员等需要物理操作和人际互动，AI影响较小。',
-    '52': '销售工作中的推荐和分析部分可被AI增强，但面对面销售和人际关系仍是关键。',
-    '53': '护理工作需要直接身体接触和情感支持，是AI最难替代的领域之一。',
-    '54': '安保工作需要物理存在和实时判断，AI可辅助监控但不能替代现场人员。',
-    '61': '农业工作主要在户外进行，涉及植物和土壤的物理操作，AI在精准农业方面有辅助作用。',
-    '62': '林业和渔业工作在自然环境中进行，物理性强，AI影响有限。',
-    '63': '自给型农业几乎完全是体力劳动，AI影响极小。',
-    '71': '建筑工作需要体力劳动和现场技能，AI可辅助设计但施工难以自动化。',
-    '72': '金属和机械工作需要手工技能，AI可优化流程但核心操作需人类完成。',
-    '73': '手工艺和印刷工作中，AI在设计领域有显著影响，但手工制作仍需人类技能。',
-    '74': '电气和电子安装需要现场操作技能，AI可辅助诊断但物理工作难以替代。',
-    '75': '食品加工和服装制造中部分工作可自动化，但手工操作仍有需求。',
-    '81': '固定设备操作正越来越多地通过自动化控制，AI可优化操作参数。',
-    '82': '装配工作中的重复性部分易被机器人替代，但复杂装配仍需人类技能。',
-    '83': '驾驶工作面临自动驾驶技术的长期影响，但短期内仍大量需要人类驾驶员。',
-    '91': '清洁工作是基本体力劳动，AI影响极小。',
-    '92': '农林渔业劳工从事基础体力工作，AI影响极小。',
-    '93': '采矿和建筑劳工从事繁重体力工作，AI可提升安全性但不能替代人力。',
-    '94': '食品加工助理从事基本体力工作，AI影响极小。',
-    '95': '街头销售和服务涉及人际互动，AI影响有限。',
-    '96': '其他基层工作多为体力劳动，AI影响极小。',
 }
 
 # ─── Parse functions ────────────────────────────────────────────────────
@@ -534,9 +478,6 @@ def build_india_data():
         edu_idx = ISCO_L2_EDU_OVERRIDE.get(l2_code, ISCO_MAJOR_EDU.get(major, 2))
         edu_label = EDUCATION_SYSTEMS['IND']['levels'][min(edu_idx, 6)][0]
         
-        # AI exposure
-        ai_exp = AI_EXPOSURE.get(l2_code, AI_EXPOSURE.get(f'0{major}' if len(major)==1 else major, 5))
-        ai_rationale = AI_EXPOSURE_RATIONALE.get(l2_code, '')
         
         occ = {
             'title': name_cn,
@@ -548,8 +489,6 @@ def build_india_data():
             'share_change_desc': f"{share_info.get('year_from','')}-{share_info.get('year_to','')}" if share_change is not None else '',
             'education': edu_label,
             'education_idx': edu_idx,
-            'exposure': ai_exp,
-            'exposure_rationale': ai_rationale,
         }
         occ.update(sex_fields(sex_bd, l2_code))
         result.append(occ)
@@ -608,9 +547,6 @@ def build_country_l2(country_code, level_year=None, share_years=None):
         edu_idx = ISCO_L2_EDU_OVERRIDE.get(num_code, ISCO_MAJOR_EDU.get(major, 2))
         edu_label = EDUCATION_SYSTEMS[country_code]['levels'][min(edu_idx, 6)][0]
         
-        # AI exposure
-        ai_exp = AI_EXPOSURE.get(num_code, 5)
-        ai_rationale = AI_EXPOSURE_RATIONALE.get(num_code, '')
         
         occ = {
             'title': name_cn,
@@ -622,8 +558,6 @@ def build_country_l2(country_code, level_year=None, share_years=None):
             'share_change_desc': f"{share_info.get('year_from','')}-{share_info.get('year_to','')}" if share_change is not None else '',
             'education': edu_label,
             'education_idx': edu_idx,
-            'exposure': ai_exp,
-            'exposure_rationale': ai_rationale,
         }
         occ.update(sex_fields(sex_bd, num_code))
         result.append(occ)
@@ -770,6 +704,9 @@ for cc, occupations in all_country_data.items():
         'education_system': EDUCATION_SYSTEMS[cc],
         'occupations': occupations,
     }
+
+# Use the same traceable reference enrichment for full rebuilds and AI-only refreshes.
+apply_ai_exposure(output)
 
 with open('site/data.json', 'w', encoding='utf-8') as f:
     json.dump(output, f, ensure_ascii=False, indent=1)
