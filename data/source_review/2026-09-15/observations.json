@@ -1,0 +1,168 @@
+{
+  "checked_at": "2026-09-15T13:06:03.979040+00:00",
+  "results": [
+    {
+      "country": "IND",
+      "url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/IND.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "supplied_file": "OC2_IND.csv",
+      "status": "unchanged",
+      "sha256": "00c88154ba34e86f32674dba8c1457fcbe210f4d3125656bff4c58f92120d3e3",
+      "changed_observations": 0,
+      "added_observations": 0,
+      "removed_observations": 0,
+      "modified_observations": 0,
+      "available_isco08_years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "previous_available_isco08_years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "added_years": [],
+      "removed_years": []
+    },
+    {
+      "country": "NGA",
+      "url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/NGA.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "supplied_file": "OC2_NGA.csv",
+      "status": "review_required",
+      "sha256": "175b34b11ba958b80b13283d6f4fa2da937806abb766ceb9ba48bf5dfe3805c2",
+      "changed_observations": 132,
+      "added_observations": 0,
+      "removed_observations": 132,
+      "modified_observations": 0,
+      "available_isco08_years": [
+        "2019",
+        "2024"
+      ],
+      "previous_available_isco08_years": [
+        "2019",
+        "2023",
+        "2024"
+      ],
+      "added_years": [],
+      "removed_years": [
+        "2023"
+      ]
+    },
+    {
+      "country": "IDN",
+      "url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/IDN.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "supplied_file": "OC2_IDN.csv",
+      "status": "unchanged",
+      "sha256": "e2f77c0a81fea372e1d15c13c5f2422368e8727b5aa7290d5ffe048402fe61d9",
+      "changed_observations": 0,
+      "added_observations": 0,
+      "removed_observations": 0,
+      "modified_observations": 0,
+      "available_isco08_years": [
+        "2023"
+      ],
+      "previous_available_isco08_years": [
+        "2023"
+      ],
+      "added_years": [],
+      "removed_years": []
+    },
+    {
+      "country": "RUS",
+      "url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/RUS.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "supplied_file": "OC2_RUS.csv",
+      "status": "unchanged",
+      "sha256": "dc015e5f5afce93f67c16816d77e3b12f351836bada6ee0455b0414b74685dfd",
+      "changed_observations": 0,
+      "added_observations": 0,
+      "removed_observations": 0,
+      "modified_observations": 0,
+      "available_isco08_years": [
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "previous_available_isco08_years": [
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "added_years": [],
+      "removed_years": []
+    },
+    {
+      "country": "PAK",
+      "url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/PAK.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "supplied_file": "OC2_PAK.csv",
+      "status": "unchanged",
+      "sha256": "32d1ea071607aadf6896ca3d5cf7236ad96bff7e79e2d9e76bab406cf420344a",
+      "changed_observations": 0,
+      "added_observations": 0,
+      "removed_observations": 0,
+      "modified_observations": 0,
+      "available_isco08_years": [
+        "2015",
+        "2016",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2025"
+      ],
+      "previous_available_isco08_years": [
+        "2015",
+        "2016",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2025"
+      ],
+      "added_years": [],
+      "removed_years": []
+    },
+    {
+      "country": "KEN",
+      "url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/KEN.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "supplied_file": "OC2_KEN.csv",
+      "status": "review_required",
+      "sha256": "a5cab25e15e29d1cef4179671cf388f266ba451646af0fba42037142b27f90fc",
+      "changed_observations": 111,
+      "added_observations": 0,
+      "removed_observations": 111,
+      "modified_observations": 0,
+      "available_isco08_years": [
+        "2019",
+        "2021"
+      ],
+      "previous_available_isco08_years": [
+        "2019",
+        "2021",
+        "2022"
+      ],
+      "added_years": [],
+      "removed_years": [
+        "2022"
+      ]
+    }
+  ],
+  "input_mode": "user_supplied_files",
+  "scope": "Six employment CSVs only; check PLFS, model estimates and GenAI releases separately.",
+  "next_step": "Review definitions, quality and coverage. Missing years do not prove prior labels were wrong or that the publisher withdrew them."
+}

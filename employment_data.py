@@ -147,7 +147,7 @@ def model_changes(country, start="2020", end="2025"):
 
 def verify_snapshot(manifest_path=ROOT / "data/employment_sources.json"):
     manifest = json.loads(Path(manifest_path).read_text(encoding="utf-8"))
-    for item in manifest["files"]:
+    for item in manifest["files"] + manifest.get("review_files", []):
         digest = hashlib.sha256((ROOT / item["path"]).read_bytes()).hexdigest()
         if digest != item["sha256"]:
             raise ValueError(f"Source checksum changed; review metadata before rebuilding: {item['path']}")

@@ -149,7 +149,7 @@ ISCO_L3_NAMES = {
 
 
 COUNTRIES = {
-    "IND": {"cn": "印度", "en": "India", "year": "2024", "survey": "MOSPI PLFS / ILOSTAT", "trend": ("2022", "2024")},
+    "IND": {"cn": "印度", "en": "India", "year": "2025", "survey": "MOSPI PLFS / ILOSTAT"},
     "NGA": {"cn": "尼日利亚", "en": "Nigeria", "year": "2023", "survey": "NBS NLFS / ILOSTAT", "model": True},
     "IDN": {"cn": "印度尼西亚", "en": "Indonesia", "year": "2023", "survey": "BPS Sakernas / ILOSTAT", "model": True},
     "RUS": {"cn": "俄罗斯", "en": "Russia", "year": "2025", "survey": "Rosstat LFS / ILOSTAT", "trend": ("2020", "2025")},
@@ -157,7 +157,7 @@ COUNTRIES = {
     "KEN": {"cn": "肯尼亚", "en": "Kenya", "year": "2022", "survey": "KNBS CHS / ILOSTAT", "trend": ("2021", "2022")},
 }
 TREND_NOTES = {
-    "IND": "2022–2024 年 ILOSTAT 两位职业组的份额变化；三位职业沿用上级组参考值。2025 年 PLFS 改变抽样设计和统计周期，本次不跨该调整拼接趋势。",
+    "IND": "已暂停跨年趋势：就业人数现采用 2025 年两位职业观测。2025 年 PLFS 改变抽样设计和统计周期，未验证与往年同口径前不计算变化。",
     "NGA": "2020–2025 年 ILO 建模的一位职业大类份额变化；同一大类内各方块共用参考值，不是两位职业的调查变化。",
     "IDN": "本地快照仅有 2023 年 ISCO-08 两位调查。颜色采用 2020–2025 年 ILO 建模的一位职业大类参考变化，不是两位职业的调查变化。",
     "RUS": "2020–2025 年同名 Rosstat LFS 两位职业组的份额变化，分母为来源公布的全部就业人数。仍需注意各期调查范围。",
@@ -165,7 +165,7 @@ TREND_NOTES = {
     "KEN": "2021–2022 年两位职业组的份额变化，以包括未分类就业的官方总量为分母。两期职业覆盖不完整；U 标记或缺失端点不计算趋势。",
 }
 EMPLOYMENT_NOTES = {
-    "IND": "三位职业面积来自 PLFS 2023–24 表 25 第 10 列（城乡合计 person）× ILOSTAT 2024 就业总量。两来源的就业定义和总体未完成一致性核验，因此人数只作规模换算；原始百分比才是该表公布值。不可当作官方三位职业人数。",
+    "IND": "直接采用 ILOSTAT 2025 年 ISCO-08 两位职业人数和同年男女数据，共 40 个职业组。来源公布总量为 476,557,086 人；职业细项合计多 2 人，处于独立舍入误差范围，保留原值。男女合计为 476,542,322 人，比源表总量少 14,764 人，原因未核实，不强行补齐。100% 分类覆盖只指源表内部分类完整性，不代表与年报或其他国家的人口口径相同。",
     "NGA": "沿用 2023 年快照；2024 年快照约 23.3% 就业归为未分类。保留源表 B（统计断点）和 U（低可靠性）标记。",
     "IDN": "沿用本地已保存的 2023 年 ISCO-08 调查快照；这不表示 BPS 此后没有发布新版调查。",
     "RUS": "沿用本地已保存的 2025 年两位职业调查快照；人数保留原调查覆盖口径。",
@@ -175,7 +175,7 @@ EMPLOYMENT_NOTES = {
 
 
 def india_distribution(path=DATA / "India_PLFS_Table25.xlsx"):
-    """Published person percentages, never the male distribution or sample counts."""
+    """Legacy PLFS audit only; the current India map uses direct ISCO-08 counts."""
     wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
     try:
         ws = wb["Sheet1"]
@@ -232,26 +232,18 @@ def build_country(cc, manifest):
         trends = survey_changes(observations, *config["trend"])
     else:
         trends = {}
-    if cc == "IND":
-        percentages = india_distribution()
-        rows = [dict(occupation(code, round(published_total * pct / 100), year, observations, trends, True),
-                     published_person_share=pct)
-                for code, pct in percentages.items() if pct > 0]
-    else:
-        rows = [occupation(code, round(row["value"]), year, observations, trends)
-                for code, row in sorted(levels.items()) if code.isdigit() and row["value"] is not None and row["value"] > 0]
+    rows = [occupation(code, round(row["value"]), year, observations, trends)
+            for code, row in sorted(levels.items()) if code.isdigit() and row["value"] is not None and row["value"] > 0]
     total = sum(r["jobs"] for r in rows)
     listed = sum(r["value"] for code, r in levels.items() if code.isdigit() and r["value"] is not None)
     coverage = min(100, listed / published_total * 100)
     unclassified = levels.get("X", {}).get("value")
     sex_codes = {r["code"][:2] for r in rows}
     source_url = f"https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/{cc}.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015"
-    source_files = [i for i in manifest["files"] if Path(i["path"]).name.startswith(cc) or (cc == "IND" and i["path"].endswith(".xlsx"))]
+    source_files = [i for i in manifest["files"] if Path(i["path"]).name.startswith(cc)]
     links = [{"label": "ILOSTAT 原始 CSV（含男女、总量及质量标记）", "url": source_url},
              {"label": "数据口径与更新记录", "url": "data-methodology.html"},
              {"label": "ILOSTAT 职业数据入口", "url": f"https://rshiny.ilo.org/dataexplorer56/?lang=en&id=EMP_TEMP_SEX_OC2_NB_A&ref_area={cc}"}]
-    if cc == "IND":
-        links.insert(0, {"label": "MOSPI PLFS 2023–24 原表（表 25）", "url": "https://www.mospi.gov.in/sites/default/files/publication_reports/AnnualReport_PLFS2023-24L2.pdf"})
     if config.get("model"):
         links.append({"label": "ILO 大类建模趋势原始数据", "url": source_files[-1]["source_url"]})
     # Major-group share changes are sums of component share differences, not an
@@ -273,6 +265,8 @@ def build_country(cc, manifest):
         "name_cn": config["cn"], "name_en": config["en"], "title": config["cn"] + "职业地图",
         "description": f"{config['cn']} · {year} 年参考数据 · <b>{len(rows)} 个职业组</b>。方块面积表示图示就业规模，颜色表示所选指标。",
         "source": config["survey"], "source_links": links, "data_year": year,
+        "occupation_system": "ISCO-08", "occupation_level": 2,
+        "source_review": manifest["country_reviews"][cc],
         "total_jobs": total, "occ_count": len(rows), "occupations": rows,
         "skill_system": SKILL_SYSTEM,
         "employment_summary": {
@@ -280,7 +274,7 @@ def build_country(cc, manifest):
             "source_classification_coverage_pct": coverage,
             "source_unclassified_jobs": round(unclassified) if unclassified is not None else None,
             "source_unrepresented_jobs": max(0, round(published_total - listed)),
-            "map_jobs": total, "map_is_scaled_estimate": cc == "IND",
+            "map_jobs": total, "map_is_scaled_estimate": False,
             "quality_flags": sorted({r["status"] for r in levels.values() if r["status"]}),
             "notes": EMPLOYMENT_NOTES[cc],
         },

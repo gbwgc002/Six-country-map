@@ -409,12 +409,12 @@ function updateExposureNote() {
   el.hidden = colorMode !== 'exposure';
   if (el.hidden) return;
   const src = allData.genai_reference.source;
-  const digits = currentCountry === 'IND' ? '三位' : '两位';
+  const digits = countryMeta.occupation_level === 3 ? '三位' : '两位';
   el.innerHTML = `<strong>生成式 AI 技术暴露潜力 · ILO/NASK 2025 · 0–1 原始量表</strong><br>
     颜色表示职业组参考均分：将该${digits}职业组下已匹配的四位职业分数等权平均，再按本国就业人数计算整体参考值。
     分数越高，任务的技术暴露潜力越高；不代表实际采用率、失业概率或可替代任务比例。<br>
     <strong>全球职业基准，未按本国任务或 AI 普及率校准。</strong> 技术基准：2025 年初；就业数据：${countryMeta.data_year} 年。
-    各国调查年份和职业粒度不同，不宜作精确排名。点击地图职业组可查看原始细分分数。${currentCountry === 'IND' ? '印度就业权重为换算值，其限制见上方数据口径。' : ''}
+    各国调查年份和人口口径可能不同，不宜作精确排名。点击地图职业组可查看原始细分分数。
     <div class="source-links">
       <a href="${src.paper_url}" target="_blank" rel="noopener noreferrer">ILO 官方研究</a>
       <a href="${src.workbook_url}" target="_blank" rel="noopener noreferrer">作者原始工作簿</a>
@@ -789,9 +789,10 @@ function updateDataNote() {
   note += ` ${escapeHTML(s.notes)}`;
   if (colorMode === 'share_change') note += `<br><strong>趋势口径：</strong>${escapeHTML(countryMeta.trend_note)} 份额上升不等于就业人数增加。`;
   if (colorMode === 'skill') note += `<br><strong>技能口径：</strong>${escapeHTML(countryMeta.skill_system.note)}`;
-  if (colorMode === 'gender') note += `<br><strong>性别口径：</strong>${sex.year} 年两位职业组；总体按上级组去重汇总，有男女数据的就业覆盖 ${sex.coverage_pct.toFixed(1)}%。${currentCountry === 'IND' ? '印度三位方块颜色沿用上级两位组比例，不能解读为三位职业的实际性别构成。' : ''}`;
+  if (colorMode === 'gender') note += `<br><strong>性别口径：</strong>${sex.year} 年两位职业组；每组人数只汇总一次，有男女数据的就业覆盖 ${sex.coverage_pct.toFixed(1)}%。`;
   if (s.quality_flags.length) note += `<br>本国源表标记：${s.quality_flags.join('、')}。B = 统计口径断点；U = 低可靠性（按职业显示）。`;
-  note += '<br><a href="data-methodology.html">查看来源版本、更新进度和数据限制</a> · 审核日期 2026-09-15；在线数据更新未核实。';
+  note += `<br><strong>来源核验：</strong>${escapeHTML(countryMeta.source_review.note)}`;
+  note += '<br><a href="data-methodology.html">查看来源版本、更新进度和数据限制</a> · 原始交付核验日期 2026-09-15。';
   document.getElementById('dataNote').innerHTML = note;
 }
 

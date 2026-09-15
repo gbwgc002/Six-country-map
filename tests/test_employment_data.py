@@ -10,6 +10,7 @@ from build_country_data import build_data, india_distribution
 from employment_data import (ROOT, read_observations, survey_changes, sex_fields,
                              gender_summary, total_value)
 from occupation_skills import skill_fields
+from scripts.check_source_updates import check
 
 
 class EmploymentTests(unittest.TestCase):
@@ -90,17 +91,52 @@ class EmploymentTests(unittest.TestCase):
                                  country["employment_summary"]["source_total_jobs"] + 1000)
             for o in rows:
                 self.assertNotIn("education_idx", o)
-                if cc == "IND":
-                    self.assertIsNone(o["male"])
-                    self.assertIsNone(o["female"])
-                elif o["male"] is not None:
+                if cc != "IND" and o["male"] is not None:
                     # Sources round independently; tolerate <= 2 people per row.
                     self.assertAlmostEqual(o["male"] + o["female"], o["jobs"], delta=2)
-                if cc == "PAK":
+                if cc in ("PAK", "IND"):
                     self.assertIsNone(o["share_change"])
         kenya = generated["countries"]["KEN"]["employment_summary"]
         self.assertEqual(kenya["source_unclassified_jobs"], 2535990)
         self.assertAlmostEqual(kenya["source_classification_coverage_pct"], 85.1316999)
+
+    def test_india_uses_direct_same_year_isco_counts(self):
+        from unittest.mock import patch
+        with patch("build_country_data.india_distribution", side_effect=AssertionError("Legacy scaling used")):
+            india = build_data()["countries"]["IND"]
+        self.assertEqual(india["data_year"], "2025")
+        self.assertEqual(india["occ_count"], 40)
+        self.assertFalse(india["employment_summary"]["map_is_scaled_estimate"])
+        self.assertEqual(india["employment_summary"]["source_total_jobs"], 476557086)
+        # The raw 2025 source has an unexplained T versus M+F discrepancy.
+        # Preserve it instead of allocating missing people to either sex.
+        self.assertEqual(india["gender_summary"]["male"] + india["gender_summary"]["female"], 476542322)
+        obs = read_observations("IND")
+        for row in india["occupations"]:
+            self.assertEqual(len(row["code"]), 2)
+            self.assertEqual(row["jobs_method"], "survey_l2")
+            self.assertEqual(row["sex_year"], "2025")
+            self.assertEqual(row["jobs"], round(obs["2025", "SEX_T", row["code"]]["value"]))
+            self.assertIsNotNone(row["male"])
+            self.assertIsNotNone(row["female"])
+            self.assertEqual(row["male"], round(obs["2025", "SEX_M", row["code"]]["value"]))
+            self.assertEqual(row["female"], round(obs["2025", "SEX_F", row["code"]]["value"]))
+        self.assertFalse(any(f["path"].endswith(".xlsx") for f in india["source_files"]))
+
+    def test_supplied_missing_years_are_flagged_without_relabelling(self):
+        manifest = json.loads((ROOT / "data/employment_sources.json").read_text())
+        generated = build_data()["countries"]
+        for cc, year, count in [("NGA", "2023", 132), ("KEN", "2022", 111)]:
+            item = next(f for f in manifest["files"] if f["path"].endswith(f"{cc}_oc2_timeseries.csv"))
+            result = check(item, ROOT / "data/source_review/2026-09-15")
+            self.assertEqual(result["status"], "review_required")
+            self.assertEqual(result["removed_years"], [year])
+            self.assertEqual(result["removed_observations"], count)
+            self.assertEqual(result["added_observations"], 0)
+            self.assertEqual(result["modified_observations"], 0)
+            self.assertEqual(generated[cc]["data_year"], year)
+            self.assertFalse(generated[cc]["source_review"]["display_year_in_delivery"])
+            self.assertIn("当前发布状态待核实", generated[cc]["source_review"]["note"])
 
     def test_legacy_builder_cannot_overwrite_current_site(self):
         original = (ROOT / "site/data.json").read_bytes()
