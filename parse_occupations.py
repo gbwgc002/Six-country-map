@@ -2,6 +2,7 @@
 
 from bs4 import BeautifulSoup
 import json
+from urllib.parse import urlparse
 
 with open("occupational_outlook_handbook.html", "r") as f:
     soup = BeautifulSoup(f.read(), "html.parser")
@@ -60,7 +61,7 @@ for url, name in sorted_occupations[-10:]:
 # Save to JSON for further analysis
 output = []
 for url, name in sorted_occupations:
-    output.append({"title": name, "url": url})
+    output.append({"title": name, "url": url, "slug": urlparse(url).path.rsplit("/", 1)[-1].rsplit(".", 1)[0]})
 
 with open("occupations.json", "w") as f:
     json.dump(output, f, indent=2)

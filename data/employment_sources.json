@@ -1,0 +1,164 @@
+{
+  "reviewed_on": "2026-09-15",
+  "freshness": "Original repository snapshots compared with user-supplied raw files on 2026-09-15. India now selects existing 2025 ISCO-08 observations. Nigeria 2023 and Kenya 2022 remain explicitly historical; their publication status is unresolved.",
+  "online_check": {
+    "checked_on": "2026-09-15",
+    "sdmx": "HTTP 403 for all six countries",
+    "bulk": "HTTP 403 for bulk catalogue and India annual download",
+    "api": "HTTP 403 for rplumber openapi endpoint",
+    "result": "Local HTTP access blocked by Cloudflare 1010. User-supplied raw files subsequently reviewed; see delivery_review. No independent live refresh confirmed."
+  },
+  "files": [
+    {
+      "path": "ilostat_data/IND_oc2_timeseries.csv",
+      "sha256": "00c88154ba34e86f32674dba8c1457fcbe210f4d3125656bff4c58f92120d3e3",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/IND.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/NGA_oc2_timeseries.csv",
+      "sha256": "2ab58c0e90223b7c699df1b61693a6aed5f5ecb03b9cb234bc3a2f1ef03b8ab7",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/NGA.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/IDN_oc2_timeseries.csv",
+      "sha256": "e2f77c0a81fea372e1d15c13c5f2422368e8727b5aa7290d5ffe048402fe61d9",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/IDN.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/RUS_oc2_timeseries.csv",
+      "sha256": "dc015e5f5afce93f67c16816d77e3b12f351836bada6ee0455b0414b74685dfd",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/RUS.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/PAK_oc2_timeseries.csv",
+      "sha256": "32d1ea071607aadf6896ca3d5cf7236ad96bff7e79e2d9e76bab406cf420344a",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/PAK.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/KEN_oc2_timeseries.csv",
+      "sha256": "59b9f6b80532991ff070221ba61a7af42b658b2e51620723884b9e3c4863ed82",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/KEN.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/NGA_model_hist.xml",
+      "sha256": "18f4a2acb0865c01833804fdd85cfbc2e0467d13bacfe60774db51f0bde7f2ac",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_2EMP_SEX_OCU_NB/NGA.A..SEX_T.?startPeriod=2020&endPeriod=2025",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    },
+    {
+      "path": "ilostat_data/IDN_model_hist.xml",
+      "sha256": "72b4beab7e3fbcd38f608725c96a92d911b2317ec27ee303ca19f6614f7b0772",
+      "source_url": "https://sdmx.ilo.org/rest/data/ILO,DF_EMP_2EMP_SEX_OCU_NB/IDN.A..SEX_T.?startPeriod=2020&endPeriod=2025",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    }
+  ],
+  "plfs_table_verification": {
+    "reference": "https://www.mospi.gov.in/sites/default/files/publication_reports/AnnualReport_PLFS2023-24L2.pdf",
+    "sha256": "ab4ead2cee181a13c7ab40f164d2dceb46419cfb58f30f8baa58e35f79d33d39",
+    "pages": "Table 25, printed A147–A149",
+    "result": "127 three-digit occupation rows × 9 numeric columns matched the repository workbook exactly. Correct person distribution is column 10."
+  },
+  "newer_release_found": {
+    "country": "IND",
+    "title": "Annual Report, PLFS, 2025",
+    "url": "https://www.mospi.gov.in/uploads/publications_reports/publications_reports1780040415321_0624fb13-fb47-40bc-b470-7c7e9635c3ef_PLFS_2025_F_REV_29052026.pdf",
+    "sha256": "134bf2de5e4b1142d3bae4899c90ec5be3bf5ec03a2ff4b3f7b0bba34eee0da7",
+    "status": "Official PDF identity verified against supplied copy. Supplied Table 25 extraction rejected for mixing 14 Table 26 industry codes. Corrected 127-row extraction archived, not used as map employment weights."
+  },
+  "delivery_review": {
+    "reviewed_on": "2026-09-15",
+    "receipt": "data/source_review/2026-09-15/receipt.json",
+    "observations": "data/source_review/2026-09-15/observations.json",
+    "method": "User-supplied original files, byte hashes and normalized observation comparisons. Not an independent HTTP download.",
+    "status": "partially_resolved_with_historical_year_conflicts"
+  },
+  "historical_files": [
+    {
+      "path": "ilostat_data/India_PLFS_Table25.xlsx",
+      "sha256": "5c83bb784f755b4e890f0824e60cd1d6144113f1e68157e8c95f52edc06a283c",
+      "source_url": "https://www.mospi.gov.in/sites/default/files/publication_reports/AnnualReport_PLFS2023-24L2.pdf",
+      "original_retrieved_on": null,
+      "snapshot_commit": "0811f64fb588ab59382388f138dfe96a22c098e9"
+    }
+  ],
+  "country_reviews": {
+    "IND": {
+      "status": "matched_user_delivery",
+      "display_year": "2025",
+      "display_year_in_delivery": true,
+      "latest_received_isco08_year": "2025",
+      "note": "2026-09-15 原始交付与仓库 CSV 完全一致；本次改为直接采用其中的 2025 年两位职业数据。查询日期不代表数据发布日。"
+    },
+    "IDN": {
+      "status": "matched_user_delivery",
+      "display_year": "2023",
+      "display_year_in_delivery": true,
+      "latest_received_isco08_year": "2023",
+      "note": "2026-09-15 原始交付与仓库 CSV 完全一致，其中 ISCO-08 仅含 2023 年；这不表示 BPS 此后没有发布其他调查表。"
+    },
+    "RUS": {
+      "status": "matched_user_delivery",
+      "display_year": "2025",
+      "display_year_in_delivery": true,
+      "latest_received_isco08_year": "2025",
+      "note": "2026-09-15 原始交付与仓库 CSV 完全一致，所用 2025 年记录在交付中。仍需注意调查定义与 U 标记。"
+    },
+    "PAK": {
+      "status": "matched_user_delivery",
+      "display_year": "2025",
+      "display_year_in_delivery": true,
+      "latest_received_isco08_year": "2025",
+      "note": "2026-09-15 原始交付与仓库 CSV 完全一致，维持 2025 年就业数据；跨调查趋势仍暂停。"
+    },
+    "NGA": {
+      "status": "historical_year_absent_from_delivery",
+      "display_year": "2023",
+      "display_year_in_delivery": false,
+      "latest_received_isco08_year": "2024",
+      "note": "历史快照：本图使用的 2023 年未包含在本次原始交付中，当前发布状态待核实。交付与旧文件的差异仅为缺少该年，不能据此认定旧年份错误或官方撤回。2024 年未分类约 23.27%，暂未替换。"
+    },
+    "KEN": {
+      "status": "historical_year_absent_from_delivery",
+      "display_year": "2022",
+      "display_year_in_delivery": false,
+      "latest_received_isco08_year": "2021",
+      "note": "历史快照：本图使用的 2022 年未包含在本次原始交付中，当前发布状态待核实。交付与旧文件的差异仅为缺少该年；不能把 2022 年人数改标成 2021 年。趋势也仅为历史快照参考。"
+    }
+  },
+  "review_files": [
+    {
+      "path": "data/source_review/2026-09-15/OC2_KEN.csv",
+      "sha256": "a5cab25e15e29d1cef4179671cf388f266ba451646af0fba42037142b27f90fc"
+    },
+    {
+      "path": "data/source_review/2026-09-15/OC2_NGA.csv",
+      "sha256": "175b34b11ba958b80b13283d6f4fa2da937806abb766ceb9ba48bf5dfe3805c2"
+    },
+    {
+      "path": "data/source_review/2026-09-15/PLFS_2025_Table25_corrected.csv",
+      "sha256": "5f12895c12c54b2e869b8fb8c6aea7f655536d2518f1f9bfdd2cdf4caecd1c7a"
+    },
+    {
+      "path": "data/source_review/2026-09-15/observations.json",
+      "sha256": "163cefc13d2aff0a50614e51368ddfe669ffe9b5b1e09f6ea3acaa51a9bc1ff7"
+    },
+    {
+      "path": "data/source_review/2026-09-15/receipt.json",
+      "sha256": "22b0a3c03f2f483c7596142b6fefc0877abdcd9f64cda01182a2073647184a7e"
+    }
+  ]
+}

@@ -88,7 +88,7 @@ def apply_ai_exposure(payload, source=None):
             "country": "Employment-weighted mean of displayed group reference scores, over matched employment only.",
             "composition_range": "Employment-weighted minima/maxima of constituent unit-group means; not confidence intervals and not calibrated for local tasks.",
             "country_adjustment": "None. Local task content, adoption, infrastructure and skills are not observed.",
-            "india_mapping": "NCO-2015 three-digit prefixes matched to ISCO-08 three-digit minor groups as used by the existing map; not a task-level country calibration.",
+            "india_mapping": "Direct ILOSTAT ISCO-08 two-digit employment counts, like the other five countries; no NCO-to-ISCO conversion or PLFS percentage scaling.",
             "missing": "Unmatched groups are null and excluded from means; their employment remains in the map and coverage denominator.",
             "grades": "Published four-digit gradients are shown only at four-digit level; no gradient or high-exposure headcount is inferred from a group mean.",
             "methodology_url": "ai-exposure-methodology.html",

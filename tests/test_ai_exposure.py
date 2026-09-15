@@ -28,7 +28,7 @@ class ReferenceTests(unittest.TestCase):
         self.assertEqual(result["exposure_max"], 0.9)
         self.assertNotIn("exposure_gradient", result)
 
-    def test_india_uses_three_digits_not_parent_two_digits(self):
+    def test_three_digit_reference_does_not_inherit_parent_mean(self):
         result = occupation_exposure("251", [unit("2511", 0.4), unit("2512", 0.6), unit("2521", 0.9)])
         self.assertEqual(result["exposure"], 0.5)
         self.assertEqual(result["exposure_unit_codes"], ["2511", "2512"])

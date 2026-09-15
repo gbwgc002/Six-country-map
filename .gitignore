@@ -21,3 +21,6 @@ embeddings.json
 
 # macOS
 .DS_Store
+
+# Legacy US output (not served by the six-country site)
+legacy-output/
