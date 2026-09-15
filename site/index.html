@@ -409,10 +409,8 @@ function updateExposureNote() {
   el.hidden = colorMode !== 'exposure';
   if (el.hidden) return;
   const src = allData.genai_reference.source;
-  const digits = countryMeta.occupation_level === 3 ? '三位' : '两位';
-  el.innerHTML = `<strong>生成式 AI 技术暴露潜力 · ILO/NASK 2025 · 0–1 原始量表</strong><br>
-    颜色表示职业组参考均分：将该${digits}职业组下已匹配的四位职业分数等权平均，再按本国就业人数计算整体参考值。
-    分数越高，任务的技术暴露潜力越高；不代表实际采用率、失业概率或可替代任务比例。<br>
+  el.innerHTML = `<strong>生成式 AI 技术暴露潜力 · ILO/NASK 2025 · 0–1 原始量表</strong>
+    <p id="exposureExplanation" style="margin: 6px 0 8px;">AI暴露度表示一个职业的工作内容有多容易被AI辅助或改变。分数为0—1，越高表示影响潜力越大，<strong>不代表失业概率</strong>。分数来自国际劳工组织（ILO）与NASK的2025年研究，就业人数来自ILOSTAT数据库。网站先把同一职业组内的细分职业分数取平均，再根据各国就业人数计算整体分数，人数越多的职业占比越大。因此，它反映的是各国职业结构下的AI潜在影响，并非当地实际使用AI的情况。</p>
     <strong>全球职业基准，未按本国任务或 AI 普及率校准。</strong> 技术基准：2025 年初；就业数据：${countryMeta.data_year} 年。
     各国调查年份和人口口径可能不同，不宜作精确排名。点击地图职业组可查看原始细分分数。
     <div class="source-links">
