@@ -149,7 +149,7 @@ ISCO_L3_NAMES = {
 
 
 COUNTRIES = {
-    "IND": {"cn": "印度", "en": "India", "year": "2025", "survey": "MOSPI PLFS / ILOSTAT"},
+    "IND": {"cn": "印度", "en": "India", "year": "2025", "survey": "MOSPI PLFS / ILOSTAT", "trend": ("2022", "2024")},
     "NGA": {"cn": "尼日利亚", "en": "Nigeria", "year": "2023", "survey": "NBS NLFS / ILOSTAT", "model": True},
     "IDN": {"cn": "印度尼西亚", "en": "Indonesia", "year": "2023", "survey": "BPS Sakernas / ILOSTAT", "model": True},
     "RUS": {"cn": "俄罗斯", "en": "Russia", "year": "2025", "survey": "Rosstat LFS / ILOSTAT", "trend": ("2020", "2025")},
@@ -157,7 +157,7 @@ COUNTRIES = {
     "KEN": {"cn": "肯尼亚", "en": "Kenya", "year": "2022", "survey": "KNBS CHS / ILOSTAT", "trend": ("2021", "2022")},
 }
 TREND_NOTES = {
-    "IND": "已暂停跨年趋势：就业人数现采用 2025 年两位职业观测。2025 年 PLFS 改变抽样设计和统计周期，未验证与往年同口径前不计算变化。",
+    "IND": "历史趋势采用 2022–2024 年同名 PLFS 两位职业观测，以各年官方 TOTAL 为分母。方块面积和性别数据仍为 2025 年；颜色不表示截至 2025 年的变化。2025 年 PLFS 改变抽样设计和统计周期，跨入 2025 年的比较继续暂停。",
     "NGA": "2020–2025 年 ILO 建模的一位职业大类份额变化；同一大类内各方块共用参考值，不是两位职业的调查变化。",
     "IDN": "本地快照仅有 2023 年 ISCO-08 两位调查。颜色采用 2020–2025 年 ILO 建模的一位职业大类参考变化，不是两位职业的调查变化。",
     "RUS": "2020–2025 年同名 Rosstat LFS 两位职业组的份额变化，分母为来源公布的全部就业人数。仍需注意各期调查范围。",
@@ -199,21 +199,50 @@ def india_distribution(path=DATA / "India_PLFS_Table25.xlsx"):
         wb.close()
 
 
-def occupation(code, jobs, year, observations, trends, india=False):
+def trend_fields(code, observations, trends, config):
+    """Keep missing-reference reasons separate from an observed zero change."""
+    trend = trends.get(code[:2]) or trends.get(code[0])
+    period = config.get("trend") or (("2020", "2025") if config.get("model") else None)
+    status, label, note = "available", "可计算", ""
+    if trend is None:
+        if period is None:
+            status, label = "paused_comparability", "口径变化，暂停比较"
+            note = "历史观测仍保留；调查来源和就业定义的跨期可比性尚未核实。"
+        elif config.get("model"):
+            status, label = "missing_model_reference", "缺少对应大类参考"
+            note = "当前模型快照没有该职业所属单独大类的参考趋势，不能用其他组的变化补齐。"
+        else:
+            endpoints = [observations.get((y, "SEX_T", code[:2])) for y in period]
+            if any(r is None or r["value"] is None for r in endpoints):
+                status, label = "missing_endpoint", "缺少可比年份数据"
+                note = "比较区间的一端缺少该职业人数，未补零或推算。"
+            elif any("U" in r["status"] for r in endpoints):
+                status, label = "low_reliability", "低可靠性，未计算"
+                flagged = "、".join(y for y, r in zip(period, endpoints) if "U" in r["status"])
+                note = f"{flagged} 年该职业观测带 U（低可靠性）标记；原始人数保留。"
+            else:
+                raise ValueError(f"Unexplained missing trend: {code}/{period}")
+    return {
+        "share_change": trend["change"] if trend else None,
+        "share_change_desc": "–".join(period) if period else "",
+        "share_change_method": trend["method"] if trend else "unavailable",
+        "share_change_reference_code": trend["reference_code"] if trend else None,
+        "share_change_status": status, "share_change_status_label": label,
+        "share_change_note": note,
+    }
+
+
+def occupation(code, jobs, year, observations, trends, config, india=False):
     major, parent = code[0], code[:2]
     names = ISCO_L3_NAMES if india else ISCO_L2_NAMES
     title, english = names.get(code, (f"职业代码 {code}", f"Occupation {code}"))
-    trend = trends.get(parent) or trends.get(major) or {}
     row = observations.get((year, "SEX_T", parent), {})
     record = {
         "title": title, "title_en": english, "code": code,
         "category": f"{major}-{ISCO_L1_NAMES[major][0]}", "jobs": jobs,
         "jobs_year": year, "jobs_method": "scaled_plfs_person_share" if india else "survey_l2",
         "jobs_status": [] if india else list(filter(None, [row.get("status")])),
-        "share_change": trend.get("change"),
-        "share_change_desc": f"{trend['year_from']}–{trend['year_to']}" if trend else "",
-        "share_change_method": trend.get("method", "unavailable"),
-        "share_change_reference_code": trend.get("reference_code"),
+        **trend_fields(code, observations, trends, config),
         **sex_fields(observations, year, parent, inherited=india),
         **skill_fields(code),
     }
@@ -232,7 +261,7 @@ def build_country(cc, manifest):
         trends = survey_changes(observations, *config["trend"])
     else:
         trends = {}
-    rows = [occupation(code, round(row["value"]), year, observations, trends)
+    rows = [occupation(code, round(row["value"]), year, observations, trends, config)
             for code, row in sorted(levels.items()) if code.isdigit() and row["value"] is not None and row["value"] > 0]
     total = sum(r["jobs"] for r in rows)
     listed = sum(r["value"] for code, r in levels.items() if code.isdigit() and r["value"] is not None)
@@ -241,7 +270,9 @@ def build_country(cc, manifest):
     sex_codes = {r["code"][:2] for r in rows}
     source_url = f"https://sdmx.ilo.org/rest/data/ILO,DF_EMP_TEMP_SEX_OC2_NB/{cc}.A..SEX_T+SEX_M+SEX_F.?format=csv&startPeriod=2015"
     source_files = [i for i in manifest["files"] if Path(i["path"]).name.startswith(cc)]
+    snapshot_url = f"https://github.com/gbwgc002/Six-country-map/blob/master/ilostat_data/{cc}_oc2_timeseries.csv"
     links = [{"label": "ILOSTAT 原始 CSV（含男女、总量及质量标记）", "url": source_url},
+             {"label": "已保存的历史观测（含各年调查来源）", "url": snapshot_url},
              {"label": "数据口径与更新记录", "url": "data-methodology.html"},
              {"label": "ILOSTAT 职业数据入口", "url": f"https://rshiny.ilo.org/dataexplorer56/?lang=en&id=EMP_TEMP_SEX_OC2_NB_A&ref_area={cc}"}]
     if config.get("model"):
@@ -280,6 +311,15 @@ def build_country(cc, manifest):
         },
         "gender_summary": gender_summary(observations, year, sex_codes),
         "trend_note": TREND_NOTES[cc], "major_share_changes": major_changes,
+        "trend_summary": {
+            "period": "–".join(config["trend"]) if config.get("trend") else "2020–2025" if config.get("model") else None,
+            "historical_reference": bool(config.get("trend") and config["trend"][1] < year),
+            "status": "available" if trends else "paused_comparability",
+            "method": "model_l1_reference" if config.get("model") else "survey_l2" if trends else "unavailable",
+            "available_survey_years": sorted({y for (y, sex, code), r in observations.items()
+                                              if sex == "SEX_T" and code == "TOTAL" and r["value"] is not None}),
+            "history_url": snapshot_url,
+        },
         "source_files": source_files,
     }
 

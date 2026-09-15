@@ -25,13 +25,23 @@
 
 <h2>六国当前使用的数据</h2>
 <div class="table-wrap"><table><thead><tr><th>国家</th><th>面积参考年</th><th>职业细度</th><th>趋势</th><th>主要限制</th></tr></thead><tbody>
-<tr><td>印度</td><td>2025</td><td>两位，40 个正值组</td><td>暂停跨 2025 方法调整的趋势</td><td>直接采用 ILOSTAT 职业人数及同年男女数据。官方 TOTAL 为 476,557,086 人，职业合计多 2 人，处于独立舍入范围。男女合计比源表 TOTAL 少 14,764 人，原因未核实，保留差额。100% 分类覆盖仅指源表内部完整性。</td></tr>
+<tr><td>印度</td><td>2025</td><td>两位，40 个正值组</td><td>历史参考 2022–2024；不跨入 2025</td><td>趋势颜色与面积年份不同：2022–2024 份额变化来自同名 PLFS 两位观测；2025 年调查调整后的跨期可比性待核实。直接采用 2025 年职业人数及同年男女数据。官方 TOTAL 为 476,557,086 人，职业合计多 2 人，处于独立舍入范围。男女合计比源表 TOTAL 少 14,764 人，原因未核实，保留差额。100% 分类覆盖仅指源表内部完整性。</td></tr>
 <tr><td>印尼</td><td>2023</td><td>两位</td><td>一位大类 ILO 建模 2020–2025</td><td>只有本地 ISCO-08 快照是一年；BPS 已发布更新报告，需核对职业分类和时点。</td></tr>
 <tr><td>巴基斯坦</td><td>2025</td><td>两位</td><td>暂停</td><td>原 2020 HIES 与 2025 LFS 不同，且 2020 有 B 断点；不能直接拼接。</td></tr>
 <tr><td>尼日利亚</td><td>2023 历史快照</td><td>两位</td><td>一位大类 ILO 建模 2020–2025</td><td>2023 年未包含在本次交付中，当前发布状态待核实。历史职业覆盖约 99.74%；保留 B/U。2024 年约 23.27% 未分类，暂未替换。</td></tr>
 <tr><td>肯尼亚</td><td>2022 历史快照</td><td>两位</td><td>历史 2021–2022；剔除 U/缺失端点</td><td>2022 年未包含在本次交付中，当前发布状态待核实。历史职业覆盖约 85.13%；2,535,990 人归为 X 未分类。不能将这些人数改标为 2021 年。</td></tr>
 <tr><td>俄罗斯</td><td>2025</td><td>两位</td><td>2020–2025 同名 LFS</td><td>不同年度、国家的年龄范围和调查定义仍需核对。</td></tr>
 </tbody></table></div>
+
+<h2>为什么有些职业没有趋势？</h2>
+<p>有历史观测不等于可以跨期计算涨跌。印度恢复 2022–2024 年的 40 个两位职业历史参考，未将 2025 年人数用于趋势端点；面积、性别仍为 2025 年。历史原始文件均保留，主图提供已保存的调查年份和原始观测入口。</p>
+<ul>
+<li><strong>口径变化，暂停比较</strong>：巴基斯坦原比较混用 HIES 与 LFS，且有统计断点；保留 2015、2016、2018、2019、2020、2021、2025 年观测，但不连成未经核实的增长序列。</li>
+<li><strong>低可靠性，未计算</strong>：肯尼亚 21、26、62、74、82 组在比较端点带 U 标记；原始人数保留，趋势不计算。</li>
+<li><strong>缺少可比年份数据</strong>：该职业在比较区间的一端缺少人数，不能补零。</li>
+<li><strong>缺少对应大类参考</strong>：印尼、尼日利亚的当前模型快照没有某些单独大类的趋势，不能借用其他职业的变化补齐。</li>
+</ul>
+<p>灰色表示以上具体状态；实际零变化仍按数值 0 展示。趋势覆盖率按地图当前就业规模计算，表示有趋势参考的职业覆盖了多少图示就业，不是历史时期的就业覆盖率。</p>
 
 <h2>覆盖率与质量标记</h2>
 <ul>
@@ -49,6 +59,6 @@
 <h2>原始来源与复核方式</h2>
 <p>六国两位职业人数来自 <a href="https://ilostat.ilo.org/data/" target="_blank" rel="noopener noreferrer">ILOSTAT</a> 的 <code>EMP_TEMP_SEX_OC2_NB</code> 指标；人数按 <code>UNIT_MULT</code> 转为人，保留调查来源和质量标记。旧印度 <a href="https://www.mospi.gov.in/sites/default/files/publication_reports/AnnualReport_PLFS2023-24L2.pdf" target="_blank" rel="noopener noreferrer">PLFS 2023–24 表 25（A147–A149）</a>已退出地图计算，仅保留历史审计。职业分类一致并不等于各国人口与就业定义相同。</p>
 <p>技能等级依据 <a href="https://ilostat.ilo.org/methods/concepts-and-definitions/classification-occupation/" target="_blank" rel="noopener noreferrer">ILO 职业分类与技能定义</a>。各国学历体系不能仅凭职业大类自动转换，页面已撤下原来的固定学历要求。</p>
-<p><a href="https://github.com/gbwgc002/Six-country-map/blob/fix/data-quality-review/data/employment_sources.json" target="_blank" rel="noopener noreferrer">来源清单</a>保存输入版本、SHA-256 和核查状态；<a href="https://github.com/gbwgc002/Six-country-map/blob/fix/data-quality-review/docs/review-2026-09.md" target="_blank" rel="noopener noreferrer">完整代码与数据审查记录</a>包含错误证据、处理方式和待解决问题。原始快照缺少历史下载日期，因此不会补写一个虚假的刷新时间。</p>
+<p><a href="https://github.com/gbwgc002/Six-country-map/blob/master/data/employment_sources.json" target="_blank" rel="noopener noreferrer">来源清单</a>保存输入版本、SHA-256 和核查状态；<a href="https://github.com/gbwgc002/Six-country-map/blob/master/docs/review-2026-09.md" target="_blank" rel="noopener noreferrer">完整代码与数据审查记录</a>及<a href="https://github.com/gbwgc002/Six-country-map/blob/master/docs/history-trend-fix-2026-09.md" target="_blank" rel="noopener noreferrer">历史趋势修复记录</a>包含错误证据、处理方式和待解决问题。原始快照缺少历史下载日期，因此不会补写一个虚假的刷新时间。</p>
 <footer>使用建议：用来观察职业结构和提出研究问题；跨国精确排名、政策判断或实际就业影响估计，需要进一步核对同年、同年龄和同定义的数据。</footer>
 </main></body></html>
